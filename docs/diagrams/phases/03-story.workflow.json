@@ -1,0 +1,219 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Phase 3: Story (free: ideas, facts, script, grade)",
+    "output": "03-story.html",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "drew",
+      "label": "Drew decides"
+    },
+    {
+      "id": "skill",
+      "label": "Skill does the work"
+    },
+    {
+      "id": "files",
+      "label": "Saved files"
+    }
+  ],
+  "phases": [
+    {
+      "id": "a",
+      "label": "Idea",
+      "fromCol": 0,
+      "toCol": 1
+    },
+    {
+      "id": "b",
+      "label": "Facts",
+      "fromCol": 2,
+      "toCol": 2
+    },
+    {
+      "id": "c",
+      "label": "Script",
+      "fromCol": 3,
+      "toCol": 5,
+      "variant": "emphasis"
+    }
+  ],
+  "mainPath": [
+    "ideas",
+    "pickidea",
+    "facts",
+    "dropfacts",
+    "script",
+    "grade",
+    "fix",
+    "gate",
+    "files"
+  ],
+  "nodes": [
+    {
+      "id": "ideas",
+      "lane": "skill",
+      "col": 0,
+      "width": 128,
+      "type": "backend",
+      "label": "10 ideas",
+      "sublabel": "title, promise, wrong belief"
+    },
+    {
+      "id": "pickidea",
+      "lane": "drew",
+      "col": 1,
+      "width": 128,
+      "type": "security",
+      "label": "More, or a number",
+      "sublabel": "pick one"
+    },
+    {
+      "id": "facts",
+      "lane": "skill",
+      "col": 2,
+      "width": 128,
+      "type": "backend",
+      "label": "Sourced facts",
+      "sublabel": "free Blotato research + web"
+    },
+    {
+      "id": "dropfacts",
+      "lane": "drew",
+      "col": 2,
+      "width": 128,
+      "type": "security",
+      "label": "Drop 4 and 9",
+      "sublabel": "or OK"
+    },
+    {
+      "id": "script",
+      "lane": "skill",
+      "col": 3,
+      "width": 128,
+      "type": "backend",
+      "label": "Scene-cut script",
+      "sublabel": "6-7 words per 4-second clip"
+    },
+    {
+      "id": "grade",
+      "lane": "skill",
+      "col": 4,
+      "width": 128,
+      "type": "backend",
+      "label": "Grader",
+      "sublabel": "8 checks, Shorts ruler",
+      "tag": "7 is good"
+    },
+    {
+      "id": "fix",
+      "lane": "drew",
+      "col": 4,
+      "width": 128,
+      "type": "security",
+      "label": "Shorter, creepier",
+      "sublabel": "fix in plain words"
+    },
+    {
+      "id": "gate",
+      "lane": "drew",
+      "col": 5,
+      "width": 128,
+      "type": "security",
+      "label": "Gate 1",
+      "sublabel": "OK + credit limit"
+    },
+    {
+      "id": "files",
+      "lane": "files",
+      "col": 5,
+      "width": 128,
+      "type": "database",
+      "label": "videos/<slug>/",
+      "sublabel": "idea, facts, script, OK"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ideas",
+      "to": "pickidea",
+      "label": "lettered list",
+      "variant": "emphasis"
+    },
+    {
+      "from": "pickidea",
+      "to": "facts",
+      "label": "chosen idea",
+      "variant": "emphasis"
+    },
+    {
+      "from": "facts",
+      "to": "dropfacts",
+      "label": "numbered, each with a link",
+      "variant": "emphasis"
+    },
+    {
+      "from": "dropfacts",
+      "to": "script",
+      "label": "approved facts",
+      "variant": "emphasis"
+    },
+    {
+      "from": "script",
+      "to": "grade",
+      "label": "draft",
+      "variant": "emphasis"
+    },
+    {
+      "from": "grade",
+      "to": "fix",
+      "label": "score + top 3 fixes",
+      "variant": "emphasis"
+    },
+    {
+      "from": "fix",
+      "to": "gate",
+      "label": "final script",
+      "variant": "emphasis"
+    },
+    {
+      "from": "gate",
+      "to": "files",
+      "label": "saves with the exact script",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Where the words come from",
+      "items": [
+        "Ideas open on the viewer's wrong belief (Veritasium)",
+        "Facts: anything without a source is barred",
+        "Script written in passes: structure, spoken draft, specifics, strip AI tone"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "The Shorts ruler",
+      "items": [
+        "Hook in 2 seconds, title confirmed fast",
+        "One twist, ending on the reveal",
+        "Beats linked by but / therefore, never and-then",
+        "Originality: not interchangeable with the competitor's video"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Honest gap",
+      "items": [
+        "No grader is proven against real retention data yet",
+        "It catches bad scripts; it cannot promise a hit",
+        "The analytics plugin will teach it later"
+      ]
+    }
+  ]
+}

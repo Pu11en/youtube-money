@@ -1,0 +1,318 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "youtube-money: six phases from a new niche to a posted video",
+    "output": "00-overview.html",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "free",
+        "label": "Free phases",
+        "focus": [
+          "niche",
+          "profiles",
+          "story",
+          "script_ok"
+        ],
+        "note": "Phases 1 and 3 cost nothing: talking, files, free Blotato research."
+      },
+      {
+        "id": "paid",
+        "label": "Where credits go",
+        "focus": [
+          "refs",
+          "make",
+          "finish",
+          "meter"
+        ],
+        "note": "Only phases 2, 4 and 5 spend credits, and the meter checks the limit first."
+      },
+      {
+        "id": "loop",
+        "label": "Learning loop",
+        "focus": [
+          "publish",
+          "lessons",
+          "profiles"
+        ],
+        "note": "Results flow back into the profiles and the asset bible."
+      }
+    ]
+  },
+  "lanes": [
+    {
+      "id": "drew",
+      "label": "Drew decides"
+    },
+    {
+      "id": "skills",
+      "label": "Skills do the free work"
+    },
+    {
+      "id": "blotato",
+      "label": "Blotato spends credits"
+    }
+  ],
+  "phases": [
+    {
+      "id": "p1",
+      "label": "1 New niche",
+      "fromCol": 0,
+      "toCol": 0
+    },
+    {
+      "id": "p2",
+      "label": "2 Asset bible",
+      "fromCol": 1,
+      "toCol": 1,
+      "variant": "emphasis"
+    },
+    {
+      "id": "p3",
+      "label": "3 Story",
+      "fromCol": 2,
+      "toCol": 2
+    },
+    {
+      "id": "p4",
+      "label": "4 Make",
+      "fromCol": 3,
+      "toCol": 3,
+      "variant": "emphasis"
+    },
+    {
+      "id": "p5",
+      "label": "5 Finish",
+      "fromCol": 4,
+      "toCol": 4,
+      "variant": "emphasis"
+    },
+    {
+      "id": "p6",
+      "label": "6 Publish + learn",
+      "fromCol": 5,
+      "toCol": 5,
+      "variant": "dashed"
+    }
+  ],
+  "mainPath": [
+    "niche",
+    "profiles",
+    "bible",
+    "story",
+    "script_ok",
+    "meter",
+    "make",
+    "finish",
+    "watch",
+    "publish"
+  ],
+  "nodes": [
+    {
+      "id": "niche",
+      "lane": "drew",
+      "col": 0,
+      "width": 128,
+      "type": "frontend",
+      "label": "Pick niche + look",
+      "sublabel": "by talking, for now"
+    },
+    {
+      "id": "profiles",
+      "lane": "skills",
+      "col": 0,
+      "width": 128,
+      "type": "database",
+      "label": "Write profiles",
+      "sublabel": "niche.md + style.md"
+    },
+    {
+      "id": "bible",
+      "lane": "skills",
+      "col": 1,
+      "width": 128,
+      "type": "backend",
+      "label": "Asset bible",
+      "sublabel": "characters, worlds, items"
+    },
+    {
+      "id": "refs",
+      "lane": "blotato",
+      "col": 1,
+      "width": 128,
+      "type": "cloud",
+      "label": "Reference images",
+      "sublabel": "Drew picks, then locked",
+      "tag": "credits"
+    },
+    {
+      "id": "story",
+      "lane": "skills",
+      "col": 2,
+      "width": 128,
+      "type": "backend",
+      "label": "Story",
+      "sublabel": "ideas, facts, graded script"
+    },
+    {
+      "id": "script_ok",
+      "lane": "drew",
+      "col": 2,
+      "width": 128,
+      "type": "security",
+      "label": "Gate 1",
+      "sublabel": "script OK + credit limit"
+    },
+    {
+      "id": "meter",
+      "lane": "skills",
+      "col": 3,
+      "width": 128,
+      "type": "security",
+      "label": "Credit meter",
+      "sublabel": "checks limit each call"
+    },
+    {
+      "id": "make",
+      "lane": "blotato",
+      "col": 3,
+      "width": 128,
+      "type": "cloud",
+      "label": "Scenes to clips",
+      "sublabel": "images, motion, voice",
+      "tag": "credits"
+    },
+    {
+      "id": "finish",
+      "lane": "blotato",
+      "col": 4,
+      "width": 128,
+      "type": "cloud",
+      "label": "Combine + cover",
+      "sublabel": "music, captions, thumbnail"
+    },
+    {
+      "id": "watch",
+      "lane": "drew",
+      "col": 4,
+      "width": 128,
+      "type": "security",
+      "label": "Gate 2",
+      "sublabel": "Drew watches, says OK"
+    },
+    {
+      "id": "publish",
+      "lane": "blotato",
+      "col": 5,
+      "width": 128,
+      "type": "external",
+      "label": "Post to YouTube",
+      "sublabel": "now or scheduled"
+    },
+    {
+      "id": "lessons",
+      "lane": "skills",
+      "col": 5,
+      "width": 128,
+      "type": "database",
+      "label": "Lessons",
+      "sublabel": "saved into the profiles"
+    }
+  ],
+  "edges": [
+    {
+      "from": "niche",
+      "to": "profiles",
+      "label": "answers",
+      "variant": "emphasis"
+    },
+    {
+      "from": "profiles",
+      "to": "bible",
+      "label": "look + niche",
+      "variant": "emphasis"
+    },
+    {
+      "from": "bible",
+      "to": "refs",
+      "label": "image prompts"
+    },
+    {
+      "from": "bible",
+      "to": "story",
+      "variant": "emphasis"
+    },
+    {
+      "from": "story",
+      "to": "script_ok",
+      "label": "script + grade",
+      "variant": "emphasis"
+    },
+    {
+      "from": "script_ok",
+      "to": "meter",
+      "label": "OK + limit",
+      "variant": "emphasis"
+    },
+    {
+      "from": "meter",
+      "to": "make",
+      "label": "allows each call",
+      "variant": "security"
+    },
+    {
+      "from": "make",
+      "to": "finish",
+      "label": "clips in order",
+      "variant": "emphasis"
+    },
+    {
+      "from": "finish",
+      "to": "watch",
+      "label": "final video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "watch",
+      "to": "publish",
+      "label": "post it",
+      "variant": "emphasis"
+    },
+    {
+      "from": "publish",
+      "to": "lessons",
+      "label": "results pasted in",
+      "variant": "dashed"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Free phases",
+      "items": [
+        "1 New niche: decided by talking until the analytics plugin exists",
+        "3 Story: ideas, sourced facts, scene-cut script, harsh grader",
+        "Nothing here touches Blotato credits"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Paid phases",
+      "items": [
+        "2 Asset bible: a few images to lock the look (15-50 credits each)",
+        "4 Make: one clip per scene, reviewed one at a time",
+        "5 Finish: combine is free; the thumbnail is one image"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "What makes it dynamic",
+      "items": [
+        "Profiles hold niche + style; skills only hold the method",
+        "Any phase can be re-run alone on last week's files",
+        "Fixes in plain words; good fixes get saved to the profile"
+      ]
+    }
+  ]
+}

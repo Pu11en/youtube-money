@@ -1,0 +1,226 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Phase 4: Make (scenes to clips, one at a time)",
+    "output": "04-make.html",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "drew",
+      "label": "Drew decides"
+    },
+    {
+      "id": "skill",
+      "label": "Skill does the work"
+    },
+    {
+      "id": "blotato",
+      "label": "Blotato / OpenCLI"
+    }
+  ],
+  "phases": [
+    {
+      "id": "a",
+      "label": "Plan scenes",
+      "fromCol": 0,
+      "toCol": 1
+    },
+    {
+      "id": "b",
+      "label": "Pictures",
+      "fromCol": 2,
+      "toCol": 3,
+      "variant": "emphasis"
+    },
+    {
+      "id": "c",
+      "label": "Motion + voice",
+      "fromCol": 4,
+      "toCol": 5,
+      "variant": "emphasis"
+    }
+  ],
+  "mainPath": [
+    "scenes",
+    "okscenes",
+    "meter",
+    "stills",
+    "review",
+    "chain",
+    "clips",
+    "voice",
+    "done"
+  ],
+  "nodes": [
+    {
+      "id": "scenes",
+      "lane": "skill",
+      "col": 0,
+      "width": 128,
+      "type": "backend",
+      "label": "Scene prompts",
+      "sublabel": "one paragraph each"
+    },
+    {
+      "id": "okscenes",
+      "lane": "drew",
+      "col": 1,
+      "width": 128,
+      "type": "security",
+      "label": "OK, or your beats",
+      "sublabel": "scene 3 in the alley"
+    },
+    {
+      "id": "meter",
+      "lane": "skill",
+      "col": 2,
+      "width": 128,
+      "type": "security",
+      "label": "Credit meter",
+      "sublabel": "limit checked every call"
+    },
+    {
+      "id": "stills",
+      "lane": "blotato",
+      "col": 2,
+      "width": 128,
+      "type": "cloud",
+      "label": "Scene images",
+      "sublabel": "refs by name",
+      "tag": "credits"
+    },
+    {
+      "id": "review",
+      "lane": "drew",
+      "col": 3,
+      "width": 128,
+      "type": "security",
+      "label": "Keep / redo / fix",
+      "sublabel": "one scene at a time"
+    },
+    {
+      "id": "chain",
+      "lane": "skill",
+      "col": 3,
+      "width": 128,
+      "type": "backend",
+      "label": "Chain",
+      "sublabel": "kept scene is next ref"
+    },
+    {
+      "id": "clips",
+      "lane": "blotato",
+      "col": 4,
+      "width": 128,
+      "type": "cloud",
+      "label": "Animate",
+      "sublabel": "Framepack 55, Kling 210, Veo",
+      "tag": "credits"
+    },
+    {
+      "id": "voice",
+      "lane": "blotato",
+      "col": 5,
+      "width": 128,
+      "type": "cloud",
+      "label": "Voice per scene",
+      "sublabel": "20 voices, free"
+    },
+    {
+      "id": "done",
+      "lane": "skill",
+      "col": 5,
+      "width": 128,
+      "type": "database",
+      "label": "clips/scene-NN.mp4",
+      "sublabel": "+ credits.log"
+    }
+  ],
+  "edges": [
+    {
+      "from": "scenes",
+      "to": "okscenes",
+      "label": "list",
+      "variant": "emphasis"
+    },
+    {
+      "from": "okscenes",
+      "to": "meter",
+      "label": "approved scenes",
+      "variant": "emphasis"
+    },
+    {
+      "from": "meter",
+      "to": "stills",
+      "label": "allows",
+      "variant": "emphasis"
+    },
+    {
+      "from": "stills",
+      "to": "review",
+      "label": "each image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "review",
+      "to": "chain",
+      "label": "kept",
+      "variant": "emphasis"
+    },
+    {
+      "from": "chain",
+      "to": "clips",
+      "label": "stills in order",
+      "variant": "emphasis"
+    },
+    {
+      "from": "review",
+      "to": "stills",
+      "label": "redo with a fix",
+      "variant": "dashed"
+    },
+    {
+      "from": "clips",
+      "to": "voice",
+      "label": "clip + line",
+      "variant": "emphasis"
+    },
+    {
+      "from": "voice",
+      "to": "done",
+      "label": "saves",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Natural-language moves",
+      "items": [
+        "The detective in the alley with the lantern: picks refs by name",
+        "Redo 4, darker: regenerates only scene 4",
+        "Save that for the channel: writes the fix into style.md"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Credits",
+      "items": [
+        "Image 15-50, Framepack 55, Kling 210, Veo 3.1 Fast about 35-50 per second",
+        "Meter stops before the call that would pass the limit",
+        "Dry-run mode prints what it would spend"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Two routes",
+      "items": [
+        "API: still + voice, then animate (video-with-voice template, never run live yet)",
+        "OpenCLI website: pick Veo or Kling, reference image, sound in the clip",
+        "Frame chaining (Kling 1.6 start + end image) for continuity"
+      ]
+    }
+  ]
+}

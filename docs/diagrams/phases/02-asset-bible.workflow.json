@@ -1,0 +1,205 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Phase 2: Asset bible",
+    "output": "02-asset-bible.html",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "drew",
+      "label": "Drew decides"
+    },
+    {
+      "id": "skill",
+      "label": "Skill does the work"
+    },
+    {
+      "id": "blotato",
+      "label": "Blotato / OpenCLI"
+    }
+  ],
+  "phases": [
+    {
+      "id": "a",
+      "label": "Describe",
+      "fromCol": 0,
+      "toCol": 1
+    },
+    {
+      "id": "b",
+      "label": "Generate + pick",
+      "fromCol": 2,
+      "toCol": 3,
+      "variant": "emphasis"
+    },
+    {
+      "id": "c",
+      "label": "Lock + reuse",
+      "fromCol": 4,
+      "toCol": 5
+    }
+  ],
+  "mainPath": [
+    "need",
+    "sheet",
+    "gen",
+    "pick",
+    "lock",
+    "library"
+  ],
+  "nodes": [
+    {
+      "id": "need",
+      "lane": "drew",
+      "col": 0,
+      "width": 128,
+      "type": "frontend",
+      "label": "Say what you need",
+      "sublabel": "a detective, 1890s London"
+    },
+    {
+      "id": "own",
+      "lane": "drew",
+      "col": 1,
+      "width": 128,
+      "type": "frontend",
+      "label": "Or give a picture",
+      "sublabel": "your own reference"
+    },
+    {
+      "id": "sheet",
+      "lane": "skill",
+      "col": 1,
+      "width": 128,
+      "type": "backend",
+      "label": "Sheet prompt",
+      "sublabel": "front, side, faces, plain"
+    },
+    {
+      "id": "gen",
+      "lane": "blotato",
+      "col": 2,
+      "width": 128,
+      "type": "cloud",
+      "label": "Make 2 variants",
+      "sublabel": "Nano Banana 2, 30 credits each",
+      "tag": "credits"
+    },
+    {
+      "id": "pick",
+      "lane": "drew",
+      "col": 3,
+      "width": 128,
+      "type": "security",
+      "label": "Pick A or B",
+      "sublabel": "or: redo, less shadow"
+    },
+    {
+      "id": "lock",
+      "lane": "skill",
+      "col": 4,
+      "width": 128,
+      "type": "backend",
+      "label": "Lock it",
+      "sublabel": "name it: detective"
+    },
+    {
+      "id": "more",
+      "lane": "blotato",
+      "col": 4,
+      "width": 128,
+      "type": "cloud",
+      "label": "Worlds + items",
+      "sublabel": "same way, from the sheet",
+      "tag": "credits"
+    },
+    {
+      "id": "library",
+      "lane": "skill",
+      "col": 5,
+      "width": 128,
+      "type": "database",
+      "label": "assets/",
+      "sublabel": "characters, worlds, items"
+    }
+  ],
+  "edges": [
+    {
+      "from": "need",
+      "to": "sheet",
+      "label": "words",
+      "variant": "emphasis"
+    },
+    {
+      "from": "own",
+      "to": "sheet",
+      "label": "picture",
+      "variant": "dashed"
+    },
+    {
+      "from": "sheet",
+      "to": "gen",
+      "label": "prompt + cost",
+      "variant": "emphasis"
+    },
+    {
+      "from": "gen",
+      "to": "pick",
+      "label": "2 pictures",
+      "variant": "emphasis"
+    },
+    {
+      "from": "pick",
+      "to": "lock",
+      "label": "the winner",
+      "variant": "emphasis"
+    },
+    {
+      "from": "lock",
+      "to": "more",
+      "label": "as reference"
+    },
+    {
+      "from": "lock",
+      "to": "library",
+      "label": "saves",
+      "variant": "emphasis"
+    },
+    {
+      "from": "more",
+      "to": "library",
+      "label": "saves"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Three kinds of reference",
+      "items": [
+        "Character: keeps face, outfit, proportions",
+        "World: keeps palette, era, line style, mood",
+        "Item: keeps an object's shape and markings"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "What to expect",
+      "items": [
+        "Identity and style hold well; tiny details drift",
+        "Every run is a fresh roll: look, keep, or redo",
+        "2 references per image is best, 3 the ceiling"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Blotato routes",
+      "items": [
+        "Text to image: API, any of 17 models",
+        "From a reference: the Edit models, 15-50 credits",
+        "Which template exposes Edit: confirm with the live list"
+      ]
+    }
+  ]
+}

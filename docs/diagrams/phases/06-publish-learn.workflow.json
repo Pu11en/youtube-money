@@ -1,0 +1,186 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Phase 6: Publish and learn",
+    "output": "06-publish-learn.html",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "drew",
+      "label": "Drew decides"
+    },
+    {
+      "id": "skill",
+      "label": "Skill does the work"
+    },
+    {
+      "id": "blotato",
+      "label": "Blotato / OpenCLI"
+    }
+  ],
+  "phases": [
+    {
+      "id": "a",
+      "label": "Post",
+      "fromCol": 0,
+      "toCol": 1,
+      "variant": "emphasis"
+    },
+    {
+      "id": "b",
+      "label": "Wait",
+      "fromCol": 2,
+      "toCol": 3,
+      "variant": "dashed"
+    },
+    {
+      "id": "c",
+      "label": "Learn",
+      "fromCol": 4,
+      "toCol": 5
+    }
+  ],
+  "mainPath": [
+    "when",
+    "post",
+    "link",
+    "numbers",
+    "compare",
+    "lessons",
+    "next"
+  ],
+  "nodes": [
+    {
+      "id": "when",
+      "lane": "drew",
+      "col": 0,
+      "width": 128,
+      "type": "security",
+      "label": "Post it, or a time",
+      "sublabel": "schedule"
+    },
+    {
+      "id": "post",
+      "lane": "blotato",
+      "col": 1,
+      "width": 128,
+      "type": "external",
+      "label": "Post to YouTube",
+      "sublabel": "title, text, cover",
+      "tag": "free"
+    },
+    {
+      "id": "link",
+      "lane": "skill",
+      "col": 2,
+      "width": 128,
+      "type": "database",
+      "label": "youtube.md",
+      "sublabel": "the link, saved"
+    },
+    {
+      "id": "numbers",
+      "lane": "drew",
+      "col": 3,
+      "width": 128,
+      "type": "frontend",
+      "label": "Paste the numbers",
+      "sublabel": "views, watch time, drop-off"
+    },
+    {
+      "id": "compare",
+      "lane": "skill",
+      "col": 4,
+      "width": 128,
+      "type": "backend",
+      "label": "Compare to the plan",
+      "sublabel": "hook? slow beat? ending?"
+    },
+    {
+      "id": "lessons",
+      "lane": "skill",
+      "col": 5,
+      "width": 128,
+      "type": "database",
+      "label": "1-3 lessons",
+      "sublabel": "into niche.md, style.md, assets"
+    },
+    {
+      "id": "next",
+      "lane": "drew",
+      "col": 5,
+      "width": 128,
+      "type": "frontend",
+      "label": "Next video",
+      "sublabel": "starts smarter"
+    }
+  ],
+  "edges": [
+    {
+      "from": "when",
+      "to": "post",
+      "label": "go",
+      "variant": "emphasis"
+    },
+    {
+      "from": "post",
+      "to": "link",
+      "label": "saves",
+      "variant": "emphasis"
+    },
+    {
+      "from": "link",
+      "to": "numbers",
+      "label": "days later",
+      "variant": "emphasis"
+    },
+    {
+      "from": "numbers",
+      "to": "compare",
+      "label": "pasted in",
+      "variant": "emphasis"
+    },
+    {
+      "from": "compare",
+      "to": "lessons",
+      "label": "writes",
+      "variant": "emphasis"
+    },
+    {
+      "from": "lessons",
+      "to": "next",
+      "label": "read by every skill",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Now",
+      "items": [
+        "Blotato posts or schedules; nothing posts before Gate 2",
+        "Blotato cannot read YouTube numbers, so Drew pastes them from Studio",
+        "Lessons are short and dated"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Later: analytics plugin",
+      "items": [
+        "Pulls the numbers itself",
+        "Feeds Phase 1 (niche picking) and Phase 3 (the grader)",
+        "Separate plugin, planned by Drew"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Also from Sollo",
+      "items": [
+        "Why it flopped check: this is it (Phase 6)",
+        "Digital-product builder: skipped for now"
+      ]
+    }
+  ]
+}

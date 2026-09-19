@@ -1,0 +1,214 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Phase 1: New niche (free, by talking)",
+    "output": "01-new-niche.html",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "drew",
+      "label": "Drew decides"
+    },
+    {
+      "id": "skill",
+      "label": "Skill does the work"
+    },
+    {
+      "id": "files",
+      "label": "Saved files"
+    }
+  ],
+  "phases": [
+    {
+      "id": "a",
+      "label": "Figure it out",
+      "fromCol": 0,
+      "toCol": 3
+    },
+    {
+      "id": "b",
+      "label": "Write it down",
+      "fromCol": 4,
+      "toCol": 5,
+      "variant": "emphasis"
+    }
+  ],
+  "mainPath": [
+    "idea",
+    "niche",
+    "angle",
+    "who",
+    "look",
+    "refs",
+    "card",
+    "ok",
+    "profiles"
+  ],
+  "nodes": [
+    {
+      "id": "idea",
+      "lane": "drew",
+      "col": 0,
+      "width": 128,
+      "type": "frontend",
+      "label": "Vague idea",
+      "sublabel": "or none at all"
+    },
+    {
+      "id": "niche",
+      "lane": "skill",
+      "col": 0,
+      "width": 128,
+      "type": "backend",
+      "label": "Narrow the niche",
+      "sublabel": "5 options, risky ones flagged",
+      "tag": "analytics plugin later"
+    },
+    {
+      "id": "angle",
+      "lane": "skill",
+      "col": 1,
+      "width": 128,
+      "type": "backend",
+      "label": "Find the angle",
+      "sublabel": "what makes it different"
+    },
+    {
+      "id": "who",
+      "lane": "drew",
+      "col": 1,
+      "width": 128,
+      "type": "security",
+      "label": "Pick",
+      "sublabel": "viewer, mood, Shorts"
+    },
+    {
+      "id": "look",
+      "lane": "skill",
+      "col": 2,
+      "width": 128,
+      "type": "backend",
+      "label": "Choose the look",
+      "sublabel": "stickman, painted, photo-real"
+    },
+    {
+      "id": "refs",
+      "lane": "drew",
+      "col": 3,
+      "width": 128,
+      "type": "security",
+      "label": "Pick",
+      "sublabel": "2-5 channels to learn from"
+    },
+    {
+      "id": "card",
+      "lane": "skill",
+      "col": 4,
+      "width": 128,
+      "type": "backend",
+      "label": "One-page card",
+      "sublabel": "everything in one place"
+    },
+    {
+      "id": "ok",
+      "lane": "drew",
+      "col": 4,
+      "width": 128,
+      "type": "security",
+      "label": "OK",
+      "sublabel": "or a fix in plain words"
+    },
+    {
+      "id": "profiles",
+      "lane": "files",
+      "col": 5,
+      "width": 128,
+      "type": "database",
+      "label": "niche.md + style.md",
+      "sublabel": "the two profiles"
+    }
+  ],
+  "edges": [
+    {
+      "from": "idea",
+      "to": "niche",
+      "label": "what you like",
+      "variant": "emphasis"
+    },
+    {
+      "from": "niche",
+      "to": "angle",
+      "label": "picked niche",
+      "variant": "emphasis"
+    },
+    {
+      "from": "angle",
+      "to": "who",
+      "label": "questions",
+      "variant": "emphasis"
+    },
+    {
+      "from": "who",
+      "to": "look",
+      "label": "answers",
+      "variant": "emphasis"
+    },
+    {
+      "from": "look",
+      "to": "refs",
+      "label": "samples",
+      "variant": "emphasis"
+    },
+    {
+      "from": "refs",
+      "to": "card",
+      "label": "channels kept",
+      "variant": "emphasis"
+    },
+    {
+      "from": "card",
+      "to": "ok",
+      "label": "shows",
+      "variant": "emphasis"
+    },
+    {
+      "from": "ok",
+      "to": "profiles",
+      "label": "saves",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Decided here",
+      "items": [
+        "Niche and angle",
+        "Viewer, mood, format (Shorts first)",
+        "Look, voice or silent, reference channels",
+        "How it makes money"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "No finance, health, legal or political AI channels (YouTube will not pay)",
+        "Every question is a lettered pick with a recommendation first",
+        "Skipped as a skill for now: done by talking until the analytics plugin exists"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Hands over",
+      "items": [
+        "niche.md: topic, audience, mood, money",
+        "style.md: look, ratio, clip length, words per scene, voice, captions, music",
+        "Read by every other skill",
+        "Edit later reopens any single item"
+      ]
+    }
+  ]
+}

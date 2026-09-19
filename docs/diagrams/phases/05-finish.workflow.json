@@ -1,0 +1,218 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Phase 5: Finish (combine, cover, watch)",
+    "output": "05-finish.html",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "drew",
+      "label": "Drew decides"
+    },
+    {
+      "id": "skill",
+      "label": "Skill does the work"
+    },
+    {
+      "id": "blotato",
+      "label": "Blotato / OpenCLI"
+    }
+  ],
+  "phases": [
+    {
+      "id": "a",
+      "label": "Combine",
+      "fromCol": 0,
+      "toCol": 2,
+      "variant": "emphasis"
+    },
+    {
+      "id": "b",
+      "label": "Cover",
+      "fromCol": 3,
+      "toCol": 4
+    },
+    {
+      "id": "c",
+      "label": "Gate 2",
+      "fromCol": 5,
+      "toCol": 5,
+      "variant": "security"
+    }
+  ],
+  "mainPath": [
+    "order",
+    "mood",
+    "combine",
+    "check",
+    "thumb",
+    "pickthumb",
+    "watch"
+  ],
+  "nodes": [
+    {
+      "id": "order",
+      "lane": "skill",
+      "col": 0,
+      "width": 128,
+      "type": "backend",
+      "label": "Order + gaps",
+      "sublabel": "in order, cut dead air"
+    },
+    {
+      "id": "mood",
+      "lane": "drew",
+      "col": 1,
+      "width": 128,
+      "type": "security",
+      "label": "Music mood",
+      "sublabel": "+ caption style"
+    },
+    {
+      "id": "combine",
+      "lane": "blotato",
+      "col": 1,
+      "width": 128,
+      "type": "cloud",
+      "label": "Combine Clips",
+      "sublabel": "music, fades, captions",
+      "tag": "free"
+    },
+    {
+      "id": "check",
+      "lane": "skill",
+      "col": 2,
+      "width": 128,
+      "type": "backend",
+      "label": "Check the file",
+      "sublabel": "length, sync, captions"
+    },
+    {
+      "id": "fallback",
+      "lane": "blotato",
+      "col": 2,
+      "width": 128,
+      "type": "backend",
+      "label": "Cinco Vid",
+      "sublabel": "free ffmpeg backup",
+      "tag": "if stitch fails"
+    },
+    {
+      "id": "thumb",
+      "lane": "skill",
+      "col": 3,
+      "width": 128,
+      "type": "backend",
+      "label": "5 thumbnail ideas",
+      "sublabel": "in words, room for text"
+    },
+    {
+      "id": "pickthumb",
+      "lane": "drew",
+      "col": 4,
+      "width": 128,
+      "type": "security",
+      "label": "Pick one",
+      "sublabel": "A to E"
+    },
+    {
+      "id": "render",
+      "lane": "blotato",
+      "col": 4,
+      "width": 128,
+      "type": "cloud",
+      "label": "Make thumbnail",
+      "sublabel": "+ end screen",
+      "tag": "credits"
+    },
+    {
+      "id": "watch",
+      "lane": "drew",
+      "col": 5,
+      "width": 128,
+      "type": "security",
+      "label": "Watch it",
+      "sublabel": "post it, or fix scene 14"
+    }
+  ],
+  "edges": [
+    {
+      "from": "order",
+      "to": "mood",
+      "label": "asks",
+      "variant": "emphasis"
+    },
+    {
+      "from": "mood",
+      "to": "combine",
+      "label": "choices",
+      "variant": "emphasis"
+    },
+    {
+      "from": "combine",
+      "to": "check",
+      "label": "final.mp4",
+      "variant": "emphasis"
+    },
+    {
+      "from": "combine",
+      "to": "fallback",
+      "label": "fails",
+      "variant": "dashed"
+    },
+    {
+      "from": "check",
+      "to": "thumb",
+      "label": "video OK",
+      "variant": "emphasis"
+    },
+    {
+      "from": "thumb",
+      "to": "pickthumb",
+      "label": "lettered list",
+      "variant": "emphasis"
+    },
+    {
+      "from": "pickthumb",
+      "to": "render",
+      "label": "the pick"
+    },
+    {
+      "from": "pickthumb",
+      "to": "watch",
+      "label": "video + cover",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "From the tutorial",
+      "items": [
+        "Cut gaps between clips or speed up slightly",
+        "Background music matching the mood, volume low, fade in and out",
+        "Captions in a storytelling style, placed off the action"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Fixes",
+      "items": [
+        "Scene 14 looks wrong: re-renders only that scene, then combines again",
+        "Never the whole video",
+        "Title + description come from the script"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Done when",
+      "items": [
+        "final.mp4, thumbnail.png, title and description saved",
+        "Drew's OK saved against the exact file he watched",
+        "Combine Clips has never been run live: first real test"
+      ]
+    }
+  ]
+}
