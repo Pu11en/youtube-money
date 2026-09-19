@@ -1,5 +1,7 @@
 # The exact flow from the Sollo videos
 
+> **Reference only.** We are not using Sollo. This records how their workflow goes so another session can learn from it.
+
 ## Where this comes from
 - **The Short you sent:** "EXPOSING How Much YouTube Pays in 2026" by One Person Business (1:44). It only lists the steps, so I also pulled the full tutorial it points to.
 - **The full tutorial:** "I Cloned a $54,227/Month Faceless Channel Only Using Claude + Sollo AI" (12 min, June 2026, about 82k views). The host is Dave, and he rebuilds a dinosaur channel called **Extinct Zoo** step by step.

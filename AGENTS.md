@@ -27,6 +27,8 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
 ## Map
 - `research/` — Sollo analysis, Blotato mapping, YouTube workflow, sources list
   (`youtube-money-sources.md`), and the proven prompt kit.
+- `research/sollo-video-exact-flow.md` — reference only (we don't use Sollo): the
+  exact 10-step flow from their Short and 12-min tutorial transcripts.
 - `docs/video-flow.md` — the 15-step flow for one video: what Drew says, what each
   step saves, and its "done when" check. Build skills to match it.
 - `docs/diagrams/` — archify maps of the planned pipeline (JSON source + HTML + PNG).
