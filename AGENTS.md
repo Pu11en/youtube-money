@@ -19,10 +19,15 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
   catalog. How it works and how to move it to another computer: `docs/generation-plumbing.md`.
 - **Route split:** one picture in (`image.from-image`) and upload work on the **API**; two pictures
   (style ref + likeness ref) and any named video model are **website via OpenCLI**.
-- **Measured so far:** upload free and proven; `image.from-image` 50 credits, and it **redraws** a
-  logo rather than keeping it — fine as a stylist, never for a likeness lock
-  (`tests/generation/images/logo-style-verdicts.md`). Every video technique is still unpriced and
-  unproven; `video.character` is the highest-value unknown.
+- **The big finding (2026-09-19):** a picture **uploaded** into `video.story` is reproduced
+  **pixel-perfect and costs nothing** — voice, synced captions and a slow zoom come free with it. A
+  picture **generated** costs 70 a scene, and a **regenerated** logo comes back wrong. So: pay to
+  make the right stills once, then assemble, narrate and caption for free.
+- **Measured prices** (never guessed, all from the live balance): upload 0 · `video.story` 0 with
+  uploaded media, ~70 per generated+animated scene · `image.from-image` 50 · `video.character` 400 a
+  scene — **avoid it**, it holds a character but ignores the one you describe. Full results:
+  `tests/generation/video/verdicts.md` and `tests/generation/images/logo-style-verdicts.md`.
+- **Build on `video.story`.** A 30-second Short of 8 generated scenes is roughly 560 credits (~$3.40).
 - **Two computers, one account.** The Blotato key and its credit pool are shared; the OpenCLI binary
   path and Chrome profile are per-machine and live in `config/machine.json` (git-ignored, example
   committed). Another agent pulls the repo, adds `.env` + `machine.json`, and continues.
@@ -80,7 +85,9 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
   ported from AgriciDaniel/youtubepro as on-demand file tools. `research <topic>`
   is verified live (needs a free `YOUTUBE_API_KEY` in `.env`); the other four are
   written, paper-tested only. Read its `SKILL.md` first; only `thumbnail` can spend.
-- `docs/handoff-other-computer.md` — what to do first on Drew's computer.
+- `docs/setup-new-computer.md` — **start here on a new machine:** repo, key, and the OpenCLI +
+  Blotato-logged-in Chrome setup, with the traps that already cost time.
+  `docs/handoff-other-computer.md` is the older, narrower version of the same thing.
 - On Windows the `.claude/skills` symlink checks out as a text file; read
   `.agents/skills/` directly.
 - Reuse from elsewhere, don't copy: Blotato API runner and brand-safety rules in

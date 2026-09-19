@@ -94,10 +94,10 @@
       ],
       "returns": "mp4",
       "inputs_builder": "story_video",
-      "cost_credits": null,
-      "cost_source": "unmeasured",
-      "reliability": "unproven",
-      "notes": "The backbone. Each scene's mediaSource is EITHER an uploaded image/video OR a text prompt, so this one call covers: picture-to-clip (upload + animate), words-to-clip (prompt + animate), voice, and captions. 1-20 scenes. animateAiImages turns stills into motion. trimToVoiceover fits the cut to the narration.",
+      "cost_credits": 0,
+      "cost_source": "measured 2026-09-19: 0 with uploaded media, 70 per GENERATED+animated scene",
+      "reliability": "proven",
+      "notes": "The backbone, and the thing to build on. Each scene's mediaSource is EITHER an uploaded image/video OR a text prompt, so one call covers picture-to-clip, words-to-clip, voice and captions. 1-20 scenes. animateAiImages only affects AI-generated images - an uploaded still gets the free zoom instead. trimToVoiceover fits the cut to the narration. Known flaw: generated stills come back wide and are letterboxed into a 9:16 frame.",
       "voices": [
         "Alice (British, confident)",
         "Aria (American, expressive)",
@@ -126,7 +126,9 @@
         "4:5",
         "9:16"
       ],
-      "voice_note": "Use the FULL string, e.g. 'Brian (American, deep)'. A bare 'Brian' is rejected with http 422 (free, caught before any spend)."
+      "voice_note": "Use the FULL string, e.g. 'Brian (American, deep)'. A bare 'Brian' is rejected with http 422 (free, caught before any spend).",
+      "cost_note": "Two very different prices in one template. A scene whose mediaSource is an UPLOADED picture costs 0 - voice, captions and the Ken Burns zoom all come free, and the picture is reproduced exactly. A scene generated from a text prompt and animated costs about 70. So: pay for stills once, assemble free.",
+      "verdicts": "tests/generation/video/verdicts.md"
     },
     {
       "id": "video.character",
@@ -141,10 +143,10 @@
       ],
       "returns": "mp4",
       "inputs_builder": "character_video",
-      "cost_credits": 800,
-      "cost_source": "measured 2026-09-19 from the live balance",
-      "reliability": "unproven",
-      "notes": "Takes characterDescription as EITHER text OR an imageReference, and promises a consistent character across up to 100 scenes. If the image reference is honoured this is the cheapest answer to the same-face problem, so it is the highest-value thing left to test.",
+      "cost_credits": 400,
+      "cost_source": "measured 2026-09-19: 800 for a 2-scene video = 400 per scene",
+      "reliability": "failed",
+      "notes": "AVOID. It does hold one character across scenes - same face, clothes and props indoors and outdoors - but it IGNORED the character described (asked for a weathered detective in his fifties in a brown overcoat, got a man in his twenties in fantasy gear) and wrote gibberish text into the frame. At 400 a scene it is 5.7x video.story for a worse match. The cheap, exact answer to the same-face problem is video.story with the character still UPLOADED.",
       "styles": [
         "realistic",
         "cartoon",
@@ -160,7 +162,8 @@
         "16:9",
         "9:16",
         "1:1"
-      ]
+      ],
+      "verdicts": "tests/generation/video/verdicts.md"
     },
     {
       "id": "video.combine",
