@@ -106,7 +106,9 @@ def fetch(query, max_results, order, published, duration, key):
         chs = ch.get("statistics", {})
         thumbs = sn.get("thumbnails", {})
         rows.append({
-            "id": vid, "title": sn.get("title"), "channelId": sn.get("channelId"), "channelTitle": sn.get("channelTitle"),
+            "id": vid, "url": f"https://www.youtube.com/watch?v={vid}", "title": sn.get("title"),
+            "channelId": sn.get("channelId"), "channelUrl": f"https://www.youtube.com/channel/{sn.get('channelId')}",
+            "channelTitle": sn.get("channelTitle"),
             "publishedAt": sn.get("publishedAt"), "description": (sn.get("description") or "")[:320],
             "tags": (sn.get("tags") or [])[:12], "categoryId": sn.get("categoryId"),
             "language": sn.get("defaultAudioLanguage") or sn.get("defaultLanguage"),
@@ -215,13 +217,15 @@ def write_md(path, snap, an):
          "- top channels: " + ", ".join(f"{c['channel']} ({c['videos']})" for c in an['channelConcentration']['top']),
          f"- coverage: {an['coverage']}", "",
          "## Source videos (YouTube result order)", "",
-         "| # | id | title | channel | published | dur(s) | views | likes | comments | subs |",
+         "| # | title | channel | published | dur(s) | views | likes | comments | subs | reach |",
          "|---|---|---|---|---|---|---|---|---|---|"]
     for i, v in enumerate(snap["videos"], 1):
         subs = (v.get("channel") or {}).get("subscriberCount")
-        title = (v["title"] or "").replace("|", "/")[:70]
-        L.append(f"| {i} | {v['id']} | {title} | {(v['channelTitle'] or '')[:30]} | {(v['publishedAt'] or '')[:10]} | "
-                 f"{fmt(v['durationSeconds'])} | {fmt(v['viewCount'])} | {fmt(v['likeCount'])} | {fmt(v['commentCount'])} | {fmt(subs)} |")
+        title = (v["title"] or "").replace("|", "/").replace("[", "(").replace("]", ")")[:70]
+        chan = (v["channelTitle"] or "").replace("|", "/").replace("[", "(").replace("]", ")")[:30]
+        reach = f"{v['viewCount'] / subs:.1f}x" if subs and v["viewCount"] else "n/a"
+        L.append(f"| {i} | [{title}]({v.get('url', '')}) | [{chan}]({v.get('channelUrl', '')}) | {(v['publishedAt'] or '')[:10]} | "
+                 f"{fmt(v['durationSeconds'])} | {fmt(v['viewCount'])} | {fmt(v['likeCount'])} | {fmt(v['commentCount'])} | {fmt(subs)} | {reach} |")
     L += ["", "## Caveats", *[f"- {c}" for c in an["caveats"]], ""]
     with open(path, "w", encoding="utf-8") as f:
         f.write("\n".join(L))
@@ -232,7 +236,8 @@ def selftest_snapshot():
 
     def mk(i, days, views, likes, comments, secs, subs, tags):
         return {
-            "id": f"vid{i}", "title": f"Sample video {i}", "channelId": f"c{i % 3}", "channelTitle": f"Channel {i % 3}",
+            "id": f"vid{i}", "url": f"https://www.youtube.com/watch?v=vid{i}", "title": f"Sample video {i}",
+            "channelId": f"c{i % 3}", "channelUrl": f"https://www.youtube.com/channel/c{i % 3}", "channelTitle": f"Channel {i % 3}",
             "publishedAt": (now - timedelta(days=days)).isoformat().replace("+00:00", "Z"), "description": "", "tags": tags,
             "categoryId": "24", "language": "en", "thumbnailUrl": None, "duration": None, "durationSeconds": secs,
             "definition": "hd", "hasCaptions": False, "viewCount": views, "likeCount": likes, "commentCount": comments,

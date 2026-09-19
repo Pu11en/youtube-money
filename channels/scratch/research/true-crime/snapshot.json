@@ -1,0 +1,869 @@
+{
+ "provider": "youtube-data-api-v3",
+ "query": "true crime",
+ "filters": {
+  "order": "viewCount",
+  "published": "year",
+  "duration": "short",
+  "maxResults": 15
+ },
+ "retrievedAt": "2026-09-19T21:45:46.792641Z",
+ "regionCode": "US",
+ "totalResultsApprox": 1000000,
+ "orderedVideoIds": [
+  "ABlJu-73A-Y",
+  "_Q0iWR79lAI",
+  "nvfP37Ym0yA",
+  "SXgwrt1Cu6U",
+  "D_UZYhvWGkA",
+  "XUePlCSexlE",
+  "1zCI5RPsu5k",
+  "Kl2AESWoicY",
+  "Tf6CdmtbALo",
+  "9w_9mny5n1Y",
+  "IdBHMt9wG5w",
+  "VLM5zCFeXyY",
+  "VUbSjDL_kSE",
+  "Vsdy_DCkudo",
+  "9k9SYlMy9qs"
+ ],
+ "warnings": [],
+ "videos": [
+  {
+   "id": "ABlJu-73A-Y",
+   "url": "https://www.youtube.com/watch?v=ABlJu-73A-Y",
+   "title": "Best Friend Stumbles Onto Moriah Wilson's Body",
+   "channelId": "UC1uHIFOkbxCtAG_OFQNA6JQ",
+   "channelUrl": "https://www.youtube.com/channel/UC1uHIFOkbxCtAG_OFQNA6JQ",
+   "channelTitle": "InOutNetwork",
+   "publishedAt": "2026-03-27T21:51:38Z",
+   "description": "Today\u2019s true-crime documentary examines the case of a best friend who stumbled onto her friend's crime scene.\n\nWe are an independent news platform committed to accurate, fact-based coverage of criminal investigations, policing practices, and matters affecting community safety.\n\nThis short documentary presents real body",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/ABlJu-73A-Y/hqdefault.jpg",
+   "duration": "PT16S",
+   "durationSeconds": 16,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 6084679,
+   "likeCount": 189311,
+   "commentCount": 1565,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment",
+    "https://en.wikipedia.org/wiki/Film"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 327000,
+    "videoCount": 158,
+    "viewCount": 60581310,
+    "country": "US",
+    "publishedAt": "2016-09-16T14:50:10Z",
+    "description": "Crime Stories / Documentaries / Real Cases\n\nInOutNetwork produces educational, fact-driven crime documentaries built on real criminal trials, authenticated bodycam footage, and verified case files. Our work examines both high-profile cases ",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Film",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "_Q0iWR79lAI",
+   "url": "https://www.youtube.com/watch?v=_Q0iWR79lAI",
+   "title": "Case of Patty Stallings: A Molecular Murder Mystery",
+   "channelId": "UCG9dpvZGXwH3juUUHykvR-Q",
+   "channelUrl": "https://www.youtube.com/channel/UCG9dpvZGXwH3juUUHykvR-Q",
+   "channelTitle": "Today I Learned Science",
+   "publishedAt": "2025-10-16T18:09:35Z",
+   "description": "Imagine your body creating its own crime scene. The human body is so nutty on so many levels. This is the molecular murder mystery of the Patty Stallings case.\n\nFollow me for more Spooky Science Series all October long & make sure you\u2019re subscribed to my YT channel for a very special Halloween episode at the end of the",
+   "tags": [],
+   "categoryId": "24",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/_Q0iWR79lAI/hqdefault.jpg",
+   "duration": "PT2M59S",
+   "durationSeconds": 179,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 4361480,
+   "likeCount": 267417,
+   "commentCount": 3443,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Health",
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 918000,
+    "videoCount": 492,
+    "viewCount": 191143043,
+    "country": "US",
+    "publishedAt": "2022-09-06T01:26:47.812551Z",
+    "description": "Today I Learned Science is a digital show that does deep dive science and history episodes from an investigative storytelling lens. At its core: science worth sharing.\n\nAbout:\nDr. Harini Bhat is a pharmacist turned science storyteller. She ",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Health",
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "nvfP37Ym0yA",
+   "url": "https://www.youtube.com/watch?v=nvfP37Ym0yA",
+   "title": "\ud83d\udd34 MojoTV True Crime - 24x7 Streaming Channel",
+   "channelId": "UCaWd5_7JhbQBe4dknZhsHJg",
+   "channelUrl": "https://www.youtube.com/channel/UCaWd5_7JhbQBe4dknZhsHJg",
+   "channelTitle": "WatchMojo.com",
+   "publishedAt": "2025-12-04T15:55:44Z",
+   "description": "Watch more WatchMojo True Crime content, including exclusive content and special features! Our newest  24x7 LIVE channel is programmed with all of our best True Crime and Mystery video content and is perfect for when you're not sure what to watch.  It's also a great way to discover videos you may have missed and you'll",
+   "tags": [],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/nvfP37Ym0yA/hqdefault_live.jpg",
+   "duration": "P0D",
+   "durationSeconds": 0,
+   "definition": "sd",
+   "hasCaptions": false,
+   "viewCount": 2420681,
+   "likeCount": 6370,
+   "commentCount": 0,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society",
+    "https://en.wikipedia.org/wiki/Television_program"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "live",
+   "channel": {
+    "subscriberCount": 25800000,
+    "videoCount": 33909,
+    "viewCount": 18094574444,
+    "country": "CA",
+    "publishedAt": "2007-01-25T16:19:35Z",
+    "description": "20 Years. Thousands of Lists. One Community. \ud83c\udfc6 Since 2006, WatchMojo has been the ranking authority on pop culture. Join us as we rank the best of 2026 and beyond.\n\nWe bring you top 10 lists across a variety of topics, including Music, TV, ",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Film"
+    ]
+   }
+  },
+  {
+   "id": "SXgwrt1Cu6U",
+   "url": "https://www.youtube.com/watch?v=SXgwrt1Cu6U",
+   "title": "Why are serial killers disappearing? #Science #Psychology #Crime",
+   "channelId": "UCR_kFbcwWy1cKLCkmcMf4lg",
+   "channelUrl": "https://www.youtube.com/channel/UCR_kFbcwWy1cKLCkmcMf4lg",
+   "channelTitle": "ABC Science",
+   "publishedAt": "2026-07-10T21:00:06Z",
+   "description": "Why are serial killers disappearing? #Science #Psychology #Crime\n\nSubscribe: https://ab.co/2YFO4Go\nLike: https://www.facebook.com/ABCScience\nFollow: https://www.instagram.com/ABCHealth\n---------------------------------------------------------------\nThis is an official Australian Broadcasting Corporation YouTube channel",
+   "tags": [
+    "science",
+    "Australian science",
+    "ABC",
+    "ABC TV",
+    "ABC iview",
+    "education",
+    "learn",
+    "abc science",
+    "Catalyst",
+    "true crime",
+    "true crime explained",
+    "unsolved mysteries"
+   ],
+   "categoryId": "24",
+   "language": "en-GB",
+   "thumbnailUrl": "https://i.ytimg.com/vi/SXgwrt1Cu6U/hqdefault.jpg",
+   "duration": "PT1M50S",
+   "durationSeconds": 110,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 2772715,
+   "likeCount": 142139,
+   "commentCount": 10304,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Health",
+    "https://en.wikipedia.org/wiki/Knowledge",
+    "https://en.wikipedia.org/wiki/Television_program"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 715000,
+    "videoCount": 1090,
+    "viewCount": 223619816,
+    "country": "AU",
+    "publishedAt": "2009-09-16T02:26:34Z",
+    "description": "We want to make you smarter. We make videos about nature, space and the human body.\n\nWatch our documentaries: https://ab.co/ABCScienceDocos\nRead our science stories: https://ab.co/NewsScience\n\nThis is an official Australian Broadcasting Cor",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Film"
+    ]
+   }
+  },
+  {
+   "id": "D_UZYhvWGkA",
+   "url": "https://www.youtube.com/watch?v=D_UZYhvWGkA",
+   "title": "The Day the Golden Gate Bridge Almost Collapsed \ud83d\ude31 #SFHistory #BayArea #TrueCrime",
+   "channelId": "UCOLRWdfgSx7xB91BP6o2rpw",
+   "channelUrl": "https://www.youtube.com/channel/UCOLRWdfgSx7xB91BP6o2rpw",
+   "channelTitle": "BayAreaUzi",
+   "publishedAt": "2026-06-17T17:00:18Z",
+   "description": "The terrifying true story of the 1987 Golden Gate Bridge 50th Anniversary disaster that almost happened. When over 800,000 people swarmed the event, 300,000 crowded tightly onto the span, completely flattening the bridge's iconic arch and forcing the middle to sag a devastating 7 feet.\n\nAs the structure groaned and swa",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/D_UZYhvWGkA/hqdefault.jpg",
+   "duration": "PT1M40S",
+   "durationSeconds": 100,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 3128065,
+   "likeCount": 61447,
+   "commentCount": 3102,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 7050,
+    "videoCount": 234,
+    "viewCount": 6066865,
+    "country": "US",
+    "publishedAt": "2014-01-15T07:02:19Z",
+    "description": "The ultimate guide to Bay Area history, hidden spots, food and local culture. New posts daily(hopefully) . Road to 10,000 subscribers. Please hit subscribe button if you\u2019re from the Bay \ud83d\udccd",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)",
+     "https://en.wikipedia.org/wiki/Tourism"
+    ]
+   }
+  },
+  {
+   "id": "XUePlCSexlE",
+   "url": "https://www.youtube.com/watch?v=XUePlCSexlE",
+   "title": "\u201cWelcome to the Family: The Murder of Dan Markel\u201d | Official Trailer | Hulu",
+   "channelId": "UCBi2mrWuNuyYy4gbM6fU18Q",
+   "channelUrl": "https://www.youtube.com/channel/UCBi2mrWuNuyYy4gbM6fU18Q",
+   "channelTitle": "ABC News",
+   "publishedAt": "2026-08-26T14:01:47Z",
+   "description": "\u201cFamily. Power. Money. Betrayal.\u201d The shocking all-new true crime docuseries, \u201cWelcome to the Family: The Murder of Dan Markel\u201d premieres Tuesday, September 1st\u00a0- streaming on Hulu and Hulu on Disney+.\n\n\u2013\u2013\u2013\n\nSubscribe to ABC News on YouTube: https://abcnews.visitlink.me/59aJ1G\n\nABC News is your daily source of breaking",
+   "tags": [
+    "news",
+    "breaking news",
+    "live news",
+    "daily news",
+    "world news",
+    "us news"
+   ],
+   "categoryId": "25",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/XUePlCSexlE/hqdefault.jpg",
+   "duration": "PT2M16S",
+   "durationSeconds": 136,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 2344196,
+   "likeCount": 1162,
+   "commentCount": 146,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment",
+    "https://en.wikipedia.org/wiki/Film",
+    "https://en.wikipedia.org/wiki/Television_program"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 19800000,
+    "videoCount": 120015,
+    "viewCount": 18967730176,
+    "country": "US",
+    "publishedAt": "2006-08-07T23:12:21Z",
+    "description": "ABC News is your daily source for breaking national and world news, exclusive interviews and 24/7 live streaming coverage that will help you stay up to date on the events shaping our world. https://abcnews.com",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Politics"
+    ]
+   }
+  },
+  {
+   "id": "1zCI5RPsu5k",
+   "url": "https://www.youtube.com/watch?v=1zCI5RPsu5k",
+   "title": "O caso bizarro da m\u00e3e enfermeira que parou os EUA - O caso Lindsay Clancy",
+   "channelId": "UCvpGyfQIzrghmPdm7KUDFmg",
+   "channelUrl": "https://www.youtube.com/channel/UCvpGyfQIzrghmPdm7KUDFmg",
+   "channelTitle": "Sev7n Games OFICIAL",
+   "publishedAt": "2026-09-07T21:04:37Z",
+   "description": "#lindsayclancy #truecrime #casosreais #curiosidades #shorts",
+   "tags": [
+    "games",
+    "jogos",
+    "curiosidades"
+   ],
+   "categoryId": "20",
+   "language": "pt-BR",
+   "thumbnailUrl": "https://i.ytimg.com/vi/1zCI5RPsu5k/hqdefault.jpg",
+   "duration": "PT2M30S",
+   "durationSeconds": 150,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 2170336,
+   "likeCount": 216843,
+   "commentCount": 11453,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 2070000,
+    "videoCount": 1145,
+    "viewCount": 2472918096,
+    "country": "BR",
+    "publishedAt": "2020-06-17T16:11:02.913862Z",
+    "description": "Meus v\u00eddeos curtos \ud83d\ude01 ",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Action_game",
+     "https://en.wikipedia.org/wiki/Video_game_culture",
+     "https://en.wikipedia.org/wiki/Action-adventure_game"
+    ]
+   }
+  },
+  {
+   "id": "Kl2AESWoicY",
+   "url": "https://www.youtube.com/watch?v=Kl2AESWoicY",
+   "title": "Based on a true story #Horror #Horrorstory #Horrorstories #Truecrime",
+   "channelId": "UCtJeJRkKITAoi4KnjWp_ydw",
+   "channelUrl": "https://www.youtube.com/channel/UCtJeJRkKITAoi4KnjWp_ydw",
+   "channelTitle": "Couple of horrorz",
+   "publishedAt": "2026-03-20T19:13:59Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/Kl2AESWoicY/hqdefault.jpg",
+   "duration": "PT59S",
+   "durationSeconds": 59,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 2053326,
+   "likeCount": 48959,
+   "commentCount": 958,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment",
+    "https://en.wikipedia.org/wiki/Film"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 443000,
+    "videoCount": 716,
+    "viewCount": 304598503,
+    "country": "GB",
+    "publishedAt": "2024-03-10T21:17:02.042309Z",
+    "description": "",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Film"
+    ]
+   }
+  },
+  {
+   "id": "Tf6CdmtbALo",
+   "url": "https://www.youtube.com/watch?v=Tf6CdmtbALo",
+   "title": "Almost Made It Home",
+   "channelId": "UC3_qYh4foNgVXI7NzcuxlCA",
+   "channelUrl": "https://www.youtube.com/channel/UC3_qYh4foNgVXI7NzcuxlCA",
+   "channelTitle": "Matthew Cox | Inside True Crime",
+   "publishedAt": "2026-06-22T12:00:12Z",
+   "description": "Do you want to be a guest? Fill out the form https://www.insidetruecrimepodcast.com/apply-to-be-a-guest\n\nShop my merch: https://www.etsy.com/shop/MatthewCoxCollection\n\nSend me an email here: insidetruecrime@gmail.com\n\nDo you extra clips and behind the scenes content?\nSubscribe to my Patreon: https://patreon.com/InsideT",
+   "tags": [
+    "Matt Cox",
+    "Matthew Cox",
+    "Koncrete",
+    "Con man",
+    "Valuetainment",
+    "Soft white underbelly",
+    "True crime",
+    "Soft White Underbelly",
+    "real estate",
+    "fraud",
+    "prison",
+    "true crime podcast"
+   ],
+   "categoryId": "24",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/Tf6CdmtbALo/hqdefault.jpg",
+   "duration": "PT1M36S",
+   "durationSeconds": 96,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1966870,
+   "likeCount": 67897,
+   "commentCount": 779,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 1210000,
+    "videoCount": 2911,
+    "viewCount": 1090021009,
+    "country": "US",
+    "publishedAt": "2019-01-17T00:52:04Z",
+    "description": "My name is Matthew B. Cox and I\u2019m a con man. I served 13 years in federal prison for a variety of bank fraud related charges, and I\u2019m 100 percent guilty of them all. As you can imagine, I have always been fascinated by true crime; ranging f",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  },
+  {
+   "id": "9w_9mny5n1Y",
+   "url": "https://www.youtube.com/watch?v=9w_9mny5n1Y",
+   "title": "POV:Watching scary movies with your girl vs true crime documentaries #relatable #typ #comedyshort",
+   "channelId": "UCpy_Co-X7Zb8lqiuCakPaWg",
+   "channelUrl": "https://www.youtube.com/channel/UCpy_Co-X7Zb8lqiuCakPaWg",
+   "channelTitle": "WillyDebbyFam",
+   "publishedAt": "2026-07-27T12:13:30Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/9w_9mny5n1Y/hqdefault.jpg",
+   "duration": "PT14S",
+   "durationSeconds": 14,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1989059,
+   "likeCount": 103775,
+   "commentCount": 503,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment",
+    "https://en.wikipedia.org/wiki/Film",
+    "https://en.wikipedia.org/wiki/Humour"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 3010,
+    "videoCount": 177,
+    "viewCount": 7398968,
+    "country": null,
+    "publishedAt": "2022-12-13T00:27:25.199936Z",
+    "description": "",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Humour",
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "IdBHMt9wG5w",
+   "url": "https://www.youtube.com/watch?v=IdBHMt9wG5w",
+   "title": "My friends talking about me in my true crime doco",
+   "channelId": "UCMn-zv1SE-2y6vyewscfFqw",
+   "channelUrl": "https://www.youtube.com/channel/UCMn-zv1SE-2y6vyewscfFqw",
+   "channelTitle": "CrackerMilk",
+   "publishedAt": "2026-03-24T02:14:00Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "23",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/IdBHMt9wG5w/hqdefault.jpg",
+   "duration": "PT2M2S",
+   "durationSeconds": 122,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1630950,
+   "likeCount": 93488,
+   "commentCount": 1011,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 1870000,
+    "videoCount": 1616,
+    "viewCount": 2051762076,
+    "country": "AU",
+    "publishedAt": "2008-11-18T06:02:58Z",
+    "description": "Voted #1 Funniest Australians by us ",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Film",
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+    ]
+   }
+  },
+  {
+   "id": "VLM5zCFeXyY",
+   "url": "https://www.youtube.com/watch?v=VLM5zCFeXyY",
+   "title": "Teenager's Encounter With A SERIAL Killer!",
+   "channelId": "UCtPrkXdtCM5DACLufB9jbsA",
+   "channelUrl": "https://www.youtube.com/channel/UCtPrkXdtCM5DACLufB9jbsA",
+   "channelTitle": "MrBallen",
+   "publishedAt": "2026-04-20T16:00:48Z",
+   "description": "",
+   "tags": [
+    "strange",
+    "dark",
+    "mysterious",
+    "true",
+    "story",
+    "scary",
+    "scary story",
+    "horror story",
+    "disturbing",
+    "narration",
+    "narrator",
+    "storyteller"
+   ],
+   "categoryId": "22",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/VLM5zCFeXyY/hqdefault.jpg",
+   "duration": "PT2M59S",
+   "durationSeconds": 179,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1600331,
+   "likeCount": 78960,
+   "commentCount": 1444,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 11300000,
+    "videoCount": 901,
+    "viewCount": 3014167843,
+    "country": "US",
+    "publishedAt": "2015-03-22T14:56:31Z",
+    "description": "I tell strange, dark & mysterious stories.\n\nListen to MrBallen's Podcast on SiriusXM Podcasts Plus, or anywhere you get your podcasts! \ud83d\udc49 https://lnk.to/mrballenSV\n\nFollow me on Instagram, Twitter and the rest of social media \ud83d\udc49 \"@MrBallen\"\n\n",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Film"
+    ]
+   }
+  },
+  {
+   "id": "VUbSjDL_kSE",
+   "url": "https://www.youtube.com/watch?v=VUbSjDL_kSE",
+   "title": "She Shot a Man She Found Under Her Daughter\u2019s Bed. Then She was Charged with Murder",
+   "channelId": "UCpLB7kBu9O5dbBKhaIOmqcQ",
+   "channelUrl": "https://www.youtube.com/channel/UCpLB7kBu9O5dbBKhaIOmqcQ",
+   "channelTitle": "DeFranco News Clips",
+   "publishedAt": "2026-07-20T20:30:11Z",
+   "description": "Watch the full Daily DeFranco Show: https://www.youtube.com/@PhilipDeFranco?sub_confirmation=1\nGet More News Clips: https://www.youtube.com/channel/UCpLB7kBu9O5dbBKhaIOmqcQ?sub_confirmation=1\n\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014    \nProduced by: Cory Ray, Philip DeFranco\nEdited by: James Girardier, Maxwell Enright, Julie Goldberg, Christian Me",
+   "tags": [
+    "Kendra scott",
+    "memphis mom",
+    "weird news",
+    "wtf",
+    "true crime",
+    "philip defranco",
+    "pds",
+    "news"
+   ],
+   "categoryId": "25",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/VUbSjDL_kSE/hqdefault.jpg",
+   "duration": "PT1M20S",
+   "durationSeconds": 80,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1078324,
+   "likeCount": 69866,
+   "commentCount": 8630,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 1530000,
+    "videoCount": 2265,
+    "viewCount": 1598923422,
+    "country": "US",
+    "publishedAt": "2017-04-13T19:17:39Z",
+    "description": "News You Need to Know. Fast. Every Day. Just For You. ",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Politics",
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  },
+  {
+   "id": "Vsdy_DCkudo",
+   "url": "https://www.youtube.com/watch?v=Vsdy_DCkudo",
+   "title": "\ud83d\udd34 LIVE: True Crime Cases That Will Shock You | 64 Full Episodes (8 Seasons) | BuzzFeed Unsolved",
+   "channelId": "UCKijjvu6bN1c-ZHVwR7-5WA",
+   "channelUrl": "https://www.youtube.com/channel/UCKijjvu6bN1c-ZHVwR7-5WA",
+   "channelTitle": "BuzzFeed Unsolved Network",
+   "publishedAt": "2026-01-10T07:46:58Z",
+   "description": "Conspiracy theory enthusiast Ryan Bergara deep-dives into mysteries surrounding notorious unsolved crimes, in order to convince his dubious friend Shane Madej that, sometimes, the evidence isn't always as it seems.\n\nTrue Crime Season 1:\n\nThe Mysterious Death Of The Somerton Man\nThe Horrifying Unsolved Slaughter At Hint",
+   "tags": [],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/Vsdy_DCkudo/hqdefault_live.jpg",
+   "duration": "P0D",
+   "durationSeconds": 0,
+   "definition": "sd",
+   "hasCaptions": false,
+   "viewCount": 754498,
+   "likeCount": 3441,
+   "commentCount": 0,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "live",
+   "channel": {
+    "subscriberCount": 5340000,
+    "videoCount": 795,
+    "viewCount": 2151702811,
+    "country": "US",
+    "publishedAt": "2018-05-14T21:00:36Z",
+    "description": "Welcome to BuzzFeed Unsolved Network! This is your one-stop destination for all things mystery, true crime, conspiracy, supernatural, and everything in between, including the hit series BuzzFeed Unsolved: Supernatural, BuzzFeed Unsolved: Tr",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "9k9SYlMy9qs",
+   "url": "https://www.youtube.com/watch?v=9k9SYlMy9qs",
+   "title": "A Toxic Love Story | Official Trailer | Netflix",
+   "channelId": "UCWOA1ZGywLbqmigxE4Qlvuw",
+   "channelUrl": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
+   "channelTitle": "Netflix",
+   "publishedAt": "2026-06-29T15:00:00Z",
+   "description": "In a glamorous California suburb, a young woman\u2019s arrest for a violent fantasy plot becomes a sensational scandal, but the truth remains hidden behind a sophisticated web of deception. As the investigation peels back layers of betrayal, it becomes unclear who is the true victim and who is the villain in a game where ev",
+   "tags": [
+    "A Toxic Love Story",
+    "Captivating",
+    "Deception",
+    "Documentary",
+    "Inquisitive",
+    "Marital Conflict",
+    "Media Circus",
+    "Mind Games",
+    "Netflix 2026",
+    "Obsession",
+    "Shocking",
+    "True Crime"
+   ],
+   "categoryId": "24",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/9k9SYlMy9qs/hqdefault.jpg",
+   "duration": "PT2M8S",
+   "durationSeconds": 128,
+   "definition": "hd",
+   "hasCaptions": true,
+   "viewCount": 744306,
+   "likeCount": 8657,
+   "commentCount": 784,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment",
+    "https://en.wikipedia.org/wiki/Film",
+    "https://en.wikipedia.org/wiki/Television_program"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 33700000,
+    "videoCount": 9370,
+    "viewCount": 11553968314,
+    "country": "US",
+    "publishedAt": "2012-07-17T20:45:36Z",
+    "description": "P4L 4EVER\n\n\n\nAbout Netflix:\nNetflix is one of the world\u2019s leading entertainment services offering TV series, films, games and live programming across a wide variety of genres and languages. Members can play, pause and resume watching as muc",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Film",
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Television_program"
+    ]
+   }
+  }
+ ],
+ "snapshotId": "e34fbc17f9e229d9",
+ "analytics": {
+  "sampleSize": 15,
+  "views": {
+   "median": 2053326,
+   "average": 2339988,
+   "max": 6084679,
+   "rows": 15
+  },
+  "viewsPerDay": {
+   "median": 17662.2,
+   "top": [
+    {
+     "id": "1zCI5RPsu5k",
+     "value": 180431.52
+    },
+    {
+     "id": "XUePlCSexlE",
+     "value": 96380.84
+    },
+    {
+     "id": "SXgwrt1Cu6U",
+     "value": 39034.88
+    },
+    {
+     "id": "9w_9mny5n1Y",
+     "value": 36565.32
+    },
+    {
+     "id": "ABlJu-73A-Y",
+     "value": 34572.84
+    }
+   ],
+   "note": "age-normalized public proxy, not real-time velocity"
+  },
+  "visibleInteractionRate": {
+   "median": 0.0349,
+   "rows": 15,
+   "note": "(likes+comments)/views on complete rows only; not engagement or satisfaction"
+  },
+  "reachVsSubscribers": {
+   "top": [
+    {
+     "id": "9w_9mny5n1Y",
+     "value": 660.82
+    },
+    {
+     "id": "D_UZYhvWGkA",
+     "value": 443.7
+    },
+    {
+     "id": "ABlJu-73A-Y",
+     "value": 18.61
+    },
+    {
+     "id": "_Q0iWR79lAI",
+     "value": 4.75
+    },
+    {
+     "id": "Kl2AESWoicY",
+     "value": 4.64
+    }
+   ],
+   "note": "views / current rounded subscriber count; subs are today's, not at publish time"
+  },
+  "durationMix": {
+   "under4min": 15
+  },
+  "recencyMix": {
+   "1y": 13,
+   "30d": 2
+  },
+  "recurringTags": [
+   {
+    "tag": "true crime",
+    "count": 4
+   },
+   {
+    "tag": "news",
+    "count": 2
+   },
+   {
+    "tag": "soft white underbelly",
+    "count": 2
+   }
+  ],
+  "channelConcentration": {
+   "uniqueChannels": 15,
+   "top": [
+    {
+     "channel": "InOutNetwork",
+     "videos": 1
+    },
+    {
+     "channel": "Today I Learned Science",
+     "videos": 1
+    },
+    {
+     "channel": "WatchMojo.com",
+     "videos": 1
+    },
+    {
+     "channel": "ABC Science",
+     "videos": 1
+    },
+    {
+     "channel": "BayAreaUzi",
+     "videos": 1
+    }
+   ]
+  },
+  "coverage": {
+   "viewCount": "15/15",
+   "likeCount": "15/15",
+   "commentCount": "15/15",
+   "durationSeconds": "15/15",
+   "language": "15/15",
+   "tags": "7/15",
+   "subscriberCount": "15/15"
+  },
+  "caveats": [
+   "totalResultsApprox is not search volume",
+   "one personalized, region-sensitive snapshot, not a trend",
+   "under4min is not necessarily a Short",
+   "thumbnail pixels were not inspected",
+   "missing fields stay unavailable, never zero"
+  ]
+ }
+}

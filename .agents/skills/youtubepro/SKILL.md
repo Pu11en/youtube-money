@@ -29,7 +29,9 @@ beside `research` here. No channel yet → `<name>` is `scratch`.
 
 ## How to run each tool
 
-**research** - run the script, then post the analytics block and ask: **A** insights ·
+**research** - run the script, then post: the analytics block and a compact table in one code
+block, then **outside the code block** a plain list `N. [title](videoUrl) - [channel](channelUrl)`
+for the rows shown (Discord only makes links clickable outside code). Ask: **A** insights ·
 **B** widen/narrow the query · **C** change filters.
 ```
 python .agents/skills/youtubepro/scripts/yt_research.py "<query>" --max 25 --order relevance --published any --duration any --channel <name>
