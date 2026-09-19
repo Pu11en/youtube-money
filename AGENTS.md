@@ -49,6 +49,10 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
 - `.agents/skills/blotato-image/` — the image skill (new / from / upload, dry-run,
   credit meter). `.agents/skills/blotato-web/` — the OpenCLI website route
   (unverified). Code in `scripts/blotato/`, tests in `tests/generation/images/`.
+- `.agents/skills/youtubepro/` — research → insights → ideas → script → thumbnail,
+  ported from AgriciDaniel/youtubepro as on-demand file tools. `research <topic>`
+  is verified live (needs a free `YOUTUBE_API_KEY` in `.env`); the other four are
+  written, paper-tested only. Read its `SKILL.md` first; only `thumbnail` can spend.
 - `docs/handoff-other-computer.md` — what to do first on Drew's computer.
 - On Windows the `.claude/skills` symlink checks out as a text file; read
   `.agents/skills/` directly.
