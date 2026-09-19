@@ -1,0 +1,252 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "One video, start to finish, inside a Discord thread",
+    "output": "youtube-pipeline.workflow.html",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You in Discord"
+    },
+    {
+      "id": "brain",
+      "label": "Claude session (the skill)"
+    },
+    {
+      "id": "blotato",
+      "label": "Blotato"
+    }
+  ],
+  "phases": [
+    {
+      "id": "learn",
+      "label": "Learn the style",
+      "fromCol": 0,
+      "toCol": 1
+    },
+    {
+      "id": "write",
+      "label": "Write + grade",
+      "fromCol": 2,
+      "toCol": 3,
+      "variant": "emphasis"
+    },
+    {
+      "id": "make",
+      "label": "Make + post",
+      "fromCol": 4,
+      "toCol": 5
+    }
+  ],
+  "groups": [
+    {
+      "id": "quality",
+      "label": "Quality loop",
+      "lane": "brain",
+      "fromCol": 2,
+      "toCol": 3,
+      "variant": "emphasis"
+    }
+  ],
+  "mainPath": [
+    "start",
+    "research",
+    "dna",
+    "script",
+    "grade",
+    "approve",
+    "scenes",
+    "render",
+    "review",
+    "post"
+  ],
+  "nodes": [
+    {
+      "id": "start",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Make a video",
+      "sublabel": "pick a channel",
+      "width": 132
+    },
+    {
+      "id": "approve",
+      "lane": "you",
+      "col": 3,
+      "type": "security",
+      "label": "Approve script",
+      "sublabel": "+ credit limit",
+      "tag": "your OK",
+      "width": 132
+    },
+    {
+      "id": "review",
+      "lane": "you",
+      "col": 5,
+      "type": "security",
+      "label": "Watch + approve",
+      "sublabel": "video in thread",
+      "tag": "your OK",
+      "width": 132
+    },
+    {
+      "id": "dna",
+      "lane": "brain",
+      "col": 1,
+      "type": "backend",
+      "label": "Style DNA",
+      "sublabel": "structure only",
+      "width": 132
+    },
+    {
+      "id": "script",
+      "lane": "brain",
+      "col": 2,
+      "type": "backend",
+      "label": "Script writer",
+      "sublabel": "idea + facts",
+      "width": 132
+    },
+    {
+      "id": "grade",
+      "lane": "brain",
+      "col": 3,
+      "type": "backend",
+      "label": "Grader",
+      "sublabel": "8 proven checks",
+      "width": 132
+    },
+    {
+      "id": "scenes",
+      "lane": "brain",
+      "col": 4,
+      "type": "backend",
+      "label": "Scene plan",
+      "sublabel": "locked style",
+      "width": 132
+    },
+    {
+      "id": "research",
+      "lane": "blotato",
+      "col": 0,
+      "type": "cloud",
+      "label": "Research",
+      "sublabel": "scripts + facts",
+      "tag": "no credits",
+      "width": 132
+    },
+    {
+      "id": "render",
+      "lane": "blotato",
+      "col": 4,
+      "type": "cloud",
+      "label": "Render + stitch",
+      "sublabel": "voice, captions",
+      "tag": "credits",
+      "width": 132
+    },
+    {
+      "id": "post",
+      "lane": "blotato",
+      "col": 5,
+      "type": "external",
+      "label": "Post to YouTube",
+      "sublabel": "with thumbnail",
+      "width": 132
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start",
+      "from": "start",
+      "to": "research",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e-dna",
+      "from": "research",
+      "to": "dna",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e-script",
+      "from": "dna",
+      "to": "script",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e-grade",
+      "from": "script",
+      "to": "grade",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e-rewrite",
+      "from": "grade",
+      "to": "script",
+      "label": "rewrite",
+      "variant": "dashed",
+      "role": "return"
+    },
+    {
+      "id": "e-approve",
+      "from": "grade",
+      "to": "approve",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e-scenes",
+      "from": "approve",
+      "to": "scenes",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e-render",
+      "from": "scenes",
+      "to": "render",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e-review",
+      "from": "render",
+      "to": "review",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e-fix",
+      "from": "review",
+      "to": "scenes",
+      "label": "fix",
+      "variant": "dashed",
+      "role": "return"
+    },
+    {
+      "id": "e-post",
+      "from": "review",
+      "to": "post",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Two OK points",
+      "items": [
+        "Script approval sets the credit limit",
+        "Nothing posts until you watch it"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Loops, not one shot",
+      "items": [
+        "Grader sends weak scripts back to rewrite",
+        "A fix request re-renders only the scenes"
+      ]
+    }
+  ]
+}

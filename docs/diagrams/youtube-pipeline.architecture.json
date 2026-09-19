@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Faceless YouTube pipeline: where everything lives",
+    "output": "youtube-pipeline.architecture.html",
+    "quality_profile": "showcase"
+  },
+  "components": [
+    {
+      "id": "drew",
+      "type": "frontend",
+      "label": "Drew",
+      "sublabel": "Discord thread",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        130,
+        64
+      ]
+    },
+    {
+      "id": "bot",
+      "type": "backend",
+      "label": "Discord bot",
+      "sublabel": "cards + letter picks",
+      "pos": [
+        250,
+        300
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "brain",
+      "type": "backend",
+      "label": "youtube-video skill",
+      "sublabel": "Claude session = brain",
+      "pos": [
+        470,
+        300
+      ],
+      "size": [
+        160,
+        64
+      ],
+      "tag": "stages + gates"
+    },
+    {
+      "id": "blotato",
+      "type": "cloud",
+      "label": "Blotato API / MCP",
+      "sublabel": "scenes, voice, stitch",
+      "pos": [
+        710,
+        300
+      ],
+      "size": [
+        150,
+        64
+      ],
+      "tag": "credits"
+    },
+    {
+      "id": "youtube",
+      "type": "external",
+      "label": "YouTube channel",
+      "sublabel": "posted via Blotato",
+      "pos": [
+        940,
+        300
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "kit",
+      "type": "database",
+      "label": "Prompt kit",
+      "sublabel": "sourced frameworks",
+      "pos": [
+        360,
+        120
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "library",
+      "type": "database",
+      "label": "Channel library",
+      "sublabel": "transcripts, DNA, scripts",
+      "pos": [
+        580,
+        120
+      ],
+      "size": [
+        160,
+        64
+      ]
+    },
+    {
+      "id": "research",
+      "type": "cloud",
+      "label": "Blotato research",
+      "sublabel": "transcripts + facts",
+      "pos": [
+        880,
+        120
+      ],
+      "size": [
+        150,
+        64
+      ],
+      "tag": "no credits"
+    },
+    {
+      "id": "gowork",
+      "type": "backend",
+      "label": "/gowork loop",
+      "sublabel": "Codex builds the skill",
+      "pos": [
+        250,
+        470
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "local",
+      "type": "backend",
+      "label": "Local assembler",
+      "sublabel": "ffmpeg fallback",
+      "pos": [
+        470,
+        470
+      ],
+      "size": [
+        160,
+        64
+      ]
+    },
+    {
+      "id": "opencli",
+      "type": "external",
+      "label": "OpenCLI",
+      "sublabel": "Blotato web editor",
+      "pos": [
+        710,
+        470
+      ],
+      "size": [
+        150,
+        64
+      ],
+      "tag": "hero clips"
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "This computer (blotato-automations repo)",
+      "wraps": [
+        "bot",
+        "brain",
+        "kit",
+        "library",
+        "gowork",
+        "local",
+        "opencli"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "ask",
+      "from": "drew",
+      "to": "bot",
+      "label": "make a video",
+      "variant": "emphasis"
+    },
+    {
+      "id": "run",
+      "from": "bot",
+      "to": "brain",
+      "variant": "emphasis"
+    },
+    {
+      "id": "render",
+      "from": "brain",
+      "to": "blotato",
+      "label": "approved scenes",
+      "variant": "emphasis"
+    },
+    {
+      "id": "publish",
+      "from": "blotato",
+      "to": "youtube",
+      "label": "after OK",
+      "variant": "emphasis"
+    },
+    {
+      "id": "rules",
+      "from": "kit",
+      "to": "brain",
+      "label": "rules",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "memory",
+      "from": "brain",
+      "to": "library",
+      "label": "save",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "variant": "dashed"
+    },
+    {
+      "id": "sources",
+      "from": "research",
+      "to": "library",
+      "label": "scripts"
+    },
+    {
+      "id": "builds",
+      "from": "gowork",
+      "to": "brain",
+      "label": "builds",
+      "variant": "dashed",
+      "fromSide": "right",
+      "toSide": "bottom"
+    },
+    {
+      "id": "fallback",
+      "from": "brain",
+      "to": "local",
+      "label": "fallback",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelAt": [
+        590,
+        417
+      ]
+    },
+    {
+      "id": "hero",
+      "from": "brain",
+      "to": "opencli",
+      "label": "model pick",
+      "variant": "dashed",
+      "fromSide": "right",
+      "toSide": "top"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "You only use Discord",
+      "items": [
+        "Every step is a card or a lettered question",
+        "Nothing spends credits or posts without your OK"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Blotato only",
+      "items": [
+        "Scenes, voice, captions, stitching and posting",
+        "OpenCLI only for hero clips and model choice; never Kie"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Quality lives in files",
+      "items": [
+        "Prompt kit: proven creator rules, never invented",
+        "Channel library: each channel's style DNA and past scripts"
+      ]
+    }
+  ]
+}

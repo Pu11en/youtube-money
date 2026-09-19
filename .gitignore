@@ -1,0 +1,5 @@
+.env
+*.log
+runs/
+# Verbatim copies of third-party prompts without an open license: local only.
+research/style-cloner-sources/prompts/private/
