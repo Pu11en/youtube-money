@@ -11,8 +11,11 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
   pipeline.** Each skill has one job, asks lettered questions, takes fixes in
   plain words, and reads a niche profile + a style profile so it's niche- and
   style-agnostic. Map and build order: `docs/skills-map.md`.
-- First niche for the no-credit paper run: true crime. Build here, verify on
-  Drew's other computer (the one with OpenCLI), then add OpenCLI here.
+- **Current focus (2026-09-19): image and video generation only.** Scripts,
+  narration and niche picking wait. The 7 generation types and their test
+  matrix: `docs/generation-types.md`. Build here, test on Drew's other computer
+  (the one with OpenCLI), then add OpenCLI here.
+- First niche for the no-credit paper run: true crime.
 - Prompts start from proven sources in `research/style-cloner-sources/`
   (`SUMMARY.md` first), never from invented prompts.
 
@@ -38,7 +41,9 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
   session builds or improves a skill, and the build order.
 - `docs/video-flow.md` — one example recipe for a video (15 steps). Reference,
   not the rulebook.
-- `docs/diagrams/` — archify maps of the planned pipeline (JSON source + HTML + PNG).
+- `docs/generation-types.md` — the 7 image/video generation types, what the
+  master prompt teaches about prompting, and the test plan.
+- `docs/diagrams/phases/` — archify maps: overview + one per phase (JSON, HTML, PNG).
 - `references/youtube/` — the library of channels and videos David/Drew find.
   Storage only; add rows when asked, fetch transcripts only when asked.
 - `.agents/skills/` — one skill per flow (to be built).
