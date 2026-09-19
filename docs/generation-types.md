@@ -13,16 +13,63 @@ list in `../blotato-automations/research/blotato-model-catalog.md`.
 - **Phase 5 Finish:** images only (thumbnail, end screen). Combining clips isn't generation.
 - Phases 1, 3 and 6 generate nothing.
 
-## Route decided (2026-09-19, checked live)
-- **I1 words -> picture: API.** The slideshow template `/base/v2/image-slideshow/5903b592-.../v1`
-  offers 13 text-to-image models (flux schnell/dev/1.1-pro/1.1-pro-ultra, recraft-v3, ideogram-v2,
-  photon, gpt-image-1, gpt-image-2, nano-banana, nano-banana-2, nano-banana-pro,
-  seedream v4.5 text-to-image). It renders a one-slide video, so a `.png` needs a frame grab.
-- **I2 picture + words -> picture: website via OpenCLI.** Confirmed by Drew. **No Edit model is
-  reachable through the API** — all 37 templates were listed and checked; only the slideshow and
-  the Instagram Carousel take an image model, and both enums are text-to-image only. So the `from`
-  move is built on `blotato-web`, not on the template endpoint. Both routes run on this machine.
-- **I3 own picture: API upload** (`POST /media`), no generation, free.
+## Route decided (2026-09-19, checked live — corrected twice, read this one)
+
+**Correction:** an earlier pass in this thread claimed no API template takes a reference picture.
+That was wrong. It searched model *enums* for Edit models instead of searching *inputs* for an
+image field. Re-scanned properly: of the 37 templates, **8 accept an image**, and exactly one of
+them turns an image into a new generated image.
+
+- **I1 words -> picture: API.** Slideshow template `/base/v2/image-slideshow/5903b592-.../v1`,
+  13 text-to-image models (flux schnell/dev/1.1-pro/1.1-pro-ultra, recraft-v3, ideogram-v2, photon,
+  gpt-image-1, gpt-image-2, nano-banana, nano-banana-2, nano-banana-pro, seedream v4.5). It renders
+  a one-slide video, so a `.png` needs a frame grab.
+- **I2 one picture + words -> picture: API, via `Product Scene Placement`**
+  (`f524614b-ba01-448c-967a-ce518c52a700`). Inputs are exactly `productImage` (a real image) and
+  `sceneDescription` (10-500 chars). Runner: `scripts/blotato/style.py`. Live-verified by the
+  `image-taste` project on 2026-09-08.
+  **Its known limitation is the whole problem:** it *regenerates* the reference rather than keeping
+  its pixels, shifting colour and edges. For a logo or a character that must look identical, that
+  may disqualify it — which is exactly what the first test measures.
+- **I2 two pictures (style ref + likeness ref) -> picture: website via OpenCLI.** No API template
+  takes two images for generation, and Drew confirmed the website does. This is the route the real
+  workflow needs (see below).
+- **I3 own picture: API upload** (`POST /media`), free. Verified 2026-09-19: the logo uploaded and
+  came back as a public URL on the first try.
+- Other image-taking templates, for reference, none of which generate from the image:
+  tweet-card x2 and tutorial-carousel x2 (`profileImage` only), `Video of Images and Text`
+  (`images[]`), and `AI Selfie Talking Video with Consistent Character`
+  (`characterDescription|imageReference` — a **character reference for video**, worth a look when
+  the video block starts).
+
+## The workflow Drew actually wants (2026-09-19, his words)
+
+Two pictures go into the model together, and they play different roles:
+
+1. **The style reference** — a Pinterest image he picks. This is the *starting point*, not the
+   destination. From there he edits: change, add, remove, adjust, endlessly.
+2. **The likeness reference** — his logo, or a character, or an object. This one is a **lock**.
+   It must come out looking exactly like the picture that went in, or as an exact element inside
+   the new picture.
+
+So every generation is "take the feel of A, keep the identity of B, then keep editing."
+
+The `image-taste` project at `../image-taste` is the proven foundation for the style-reference half:
+it keeps the originals as the real visual signal instead of flattening them into adjective soup, and
+it has a review rubric (palette, texture/materiality, lighting, imagery, composition/rhythm,
+originality) whose failures reveal targeted correction controls. That rubric *is* the "infinite
+edits" loop, already built and tested.
+
+Two things must be adapted rather than copied from it:
+- its originality rules forbid reproducing logos, because it was written for other people's mood
+  boards. Here the logo is Drew's own and exact reproduction is the goal, so the likeness reference
+  is carved out of that rule.
+- it sends one reference to Blotato because the shipped template takes one. Two references means
+  the website route.
+
+**First test (this is the small one):** the logo alone, 1:1, through `style.py` — Blotato used as
+nothing but a door. It answers the only question that matters before anything bigger gets built:
+*how much does Blotato distort a mark it was told to keep?*
 
 ## The 7 types
 
