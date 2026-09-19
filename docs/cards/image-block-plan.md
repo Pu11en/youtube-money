@@ -1,67 +1,56 @@
-# Pulled the new work — here's where the picture-making stands
+# You were right — and it's better news than that
 
-## ✅ What came down in the pull
+## ✅ Correction: image-to-image works, through OpenCLI
 
-**11 new commits** landed. Nothing was broken and nothing conflicted.
+You said Blotato can do picture-to-picture if we use OpenCLI. **That's now written into the project as the settled answer**, so no future session treats it as an open question.
 
-### What's now in the project
-- **The picture-maker skeleton** — code that talks to Blotato to make a picture, with a credit meter that's supposed to stop it overspending. **Written but never actually run.**
-- **A YouTube research tool** — types a topic, gets back the best-performing videos on it. This one is proven working live.
-- **Seven kinds of "make something"** written down plainly: picture from words, picture from a reference picture, your own upload, clip from words, clip from a picture, clip that morphs between two pictures, and voice.
-- **A map of twelve small skills** instead of one big assembly line, so you can run any step alone, in any order.
-- **Picture maps of all six phases** of making a video, plus a one-page cheat sheet as a PDF.
-- **A list of channels and videos David found** for reference.
+To be precise about what I found and what you corrected:
 
-## 🔑 The surprise: this computer can already spend
+- **Blotato's API genuinely cannot do it.** I listed all 37 of its templates. Only two accept an image model, and both only offer **text-to-picture** models. No "edit this picture" model is reachable that way.
+- **The website can**, and that's what OpenCLI drives. So picture-to-picture isn't missing — it just lives on the other road.
 
-The handoff note said this machine had **no Blotato key**, so all the real testing had to wait for your other computer.
+**Why this one matters more than the rest:** picture-to-picture is how a character keeps the same face across every scene of a video. Without it there's no consistent character, and no faceless channel.
 
-**That's wrong — there's a working key here.**
+## 🎉 The bigger surprise: this computer is the computer
 
-- Account: **kidquick360@gmail.com**, starter plan
-- **12,420 credits sitting there** — roughly **$74** worth
-- Blotato answers fine; it listed all 37 of its templates
+The old handoff note said the real testing had to wait for your other machine. **It doesn't. Both things it said were missing are here.**
 
-So the picture tests **do not have to wait**. Only the parts that need a logged-in browser still do, because that browser tool isn't installed here.
+### What I actually checked
+- **The Blotato key works here** — 12,420 credits, about $74.
+- **OpenCLI is installed here**, version 1.8.7. The reason nobody noticed: it isn't on the normal search path, so the usual "is it installed?" check comes back empty.
+- **Your browser is connected and logged into Blotato.** I opened it and looked around: the video editor has an **Image** tool right in the sidebar, which is where the picture-to-picture path starts.
 
-## ⚠️ Three real problems I found before spending anything
+**So there's no waiting step left.** Both roads run from this machine.
 
-### 1. A false alarm in the code
-The code checks it can find the right Blotato template, and says it can't. **It actually can** — Blotato just spells the template's name differently than the code expects. One line to fix. Harmless, but it would scare the next session off.
+### Two traps I wrote down so nobody trips again
+- ⚠️ OpenCLI's own health check **says the browser isn't connected when it is.** The other command tells the truth. Don't reinstall anything.
+- ⚠️ It drives whichever tab is in front, and it drifted away from Blotato twice while I was looking. Blotato should sit in its own window.
 
-### 2. Blotato hands back a video, not a picture
-There's only one way in through the door: the "make a video" route. So a "picture" today is really a **one-slide slideshow rendered as a video file**. To get an actual picture you can look at, we grab the first frame out of it. The tool that does that is already installed here.
+## ⏳ The corrected plan
 
-### 3. The "use my reference picture" move can't work yet
-This is the important one. **The whole point** of reference pictures is keeping the same character's face across every scene of a video.
+**The goal, now in two halves:** you say "make a character sheet" and the API makes it. Then you say "the same detective, in the alley" and the website makes it **with that sheet as the reference**. A real picture lands in the thread both times, and the credits match Blotato's bill.
 
-Blotato's API only offers **text-to-image** models — thirteen of them. None of the "edit this picture" models are reachable that way. I checked every one of the 37 templates.
-
-**So that whole block of tests belongs on your other computer**, driving the Blotato website by hand — or it needs a template nobody's found yet.
-
-## ⏳ What the plan actually is
-
-**The goal:** you say "make a character sheet", a real picture lands in the Discord thread, and the credits it cost match what Blotato's billing screen says.
-
-### Free first (no credits, zero risk)
-- ⬜ Fix the false alarm
-- ⬜ Make it save a real picture, not just a video
-- ⬜ Replace the guessed prices with the thirteen models Blotato really offers
-- ⬜ Write down the reference-picture answer so nobody re-checks it
+### Free first — no credits, no risk
+- ⬜ Fix a false alarm in the code (it thinks it can't find a Blotato template; it can)
+- ⬜ Make it save a real **picture**, not just a video — Blotato hands back a one-slide video, so we pull the first frame out
+- ⬜ Replace guessed prices with the thirteen models Blotato really offers
+- ⬜ Write down the road split and the OpenCLI path so no session re-discovers this
+- ⬜ **Walk the website picture-to-picture path by hand, spending nothing** — find the model list and the reference-upload control, screenshot every step
 - ⬜ Start a **true crime** channel profile with blanks the tests fill in
-- ⬜ Run every test on a **zero-spend dry run** to shake out breakages
+- ⬜ Run everything as a zero-spend rehearsal
 
-### Then the ones that cost money — each waits for a credit limit from you
-- ⬜ Character sheet on the cheap model, then on the good one → pick the winner
+### Then the paid tests — each waits for a credit limit from you
+- ⬜ Character sheet, cheap model then good model → pick the winner
 - ⬜ A world, an item, a thumbnail with room for a headline
-- ⬜ Upload one of your own pictures and confirm it comes back usable
-- ⬜ Check the credit log against Blotato's real bill
-- ⬜ Write the winning models into the channel profile so every later step inherits them
+- ⬜ Upload one of your own pictures, confirm it comes back usable
+- ⬜ **The face test:** the same character in a new pose, then in a second scene. If the face holds, the whole pipeline is real. This is the most important test in the project.
+- ⬜ Two more reference tests (a world, an item), then mixing two references
+- ⬜ Check the credit log against Blotato's real bill, and write the winning models into the channel profile
 
-**Rough cost of the whole spending half: about 220 credits — a bit over a dollar.**
+**Rough cost of the whole thing: around 300 credits — under two dollars.**
 
-## ⬜ What I have not done
+## ⬜ Where it stands
 
-No credits spent. No code changed yet. No pushing to GitHub.
+**No credits spent. No code changed yet. Nothing pushed to GitHub.**
 
-I wrote the plan down and stopped, because the next step is your call on how to run it.
+Saved locally as two save-points: the plan, and the correction to the routing.
