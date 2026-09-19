@@ -34,6 +34,15 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
   OpenCLI (Chrome profile `ets3mbsm`).
 - **No credits spent** until Drew approves the script and a credit limit for
   that video. **Nothing posts** until Drew has watched it and said OK.
+- **A credit limit is a budget, not a green light.** Drew naming a number answers
+  *how much*, not *whether now*. Before any paid call, both must be true: he said
+  go, **and** every input he named is actually in hand. Learned the hard way on
+  2026-09-19 — a ceiling was read as a trigger and 100 credits ran on invented
+  prompts (`tests/generation/images/logo-style-verdicts.md`).
+- **Never substitute your own taste for his reference.** If the style reference
+  hasn't arrived, stop and ask. A reference is the starting point of a picture;
+  inventing the scene yourself is the failure the prompt-kit rule below exists
+  to prevent.
 - **Copy structure, never wording.** YouTube's "inauthentic content" policy
   demonetizes interchangeable, mass-produced videos (see
   `research/style-cloner-sources/creators.md`).
