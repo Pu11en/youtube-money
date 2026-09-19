@@ -246,7 +246,11 @@ def cmd_run(args) -> None:
     print(f"technique: {tech['id']}  ({tech['name']})")
     print(f"reliability: {tech['reliability']} - {tech.get('notes', '')[:160]}")
     known = tech["cost_credits"]
-    print(f"expected cost: {known if known is not None else 'UNKNOWN - will be measured from the balance'}")
+    if known is None:
+        print(f"expected cost: UNKNOWN - never measured. It will be measured from the balance, but "
+              f"the ceiling CANNOT cap it (video.character turned out to be 800). Needs --unknown-cost-ok.")
+    else:
+        print(f"expected cost: {known} credits")
     print(f"run: {args.run} | ceiling: {args.limit} | already spent on this run: {meter.spent(args.run)}")
     print("inputs:", json.dumps(inputs, indent=2)[:1200])
 
@@ -262,6 +266,15 @@ def cmd_run(args) -> None:
         raise SystemExit(f"refusing: run {args.run!r} already spent {already} of its {args.limit}-credit ceiling")
     if known is not None and already + known > args.limit:
         raise SystemExit(f"refusing: {already} already spent + {known} for this call passes the {args.limit} ceiling")
+    if known is None and not args.unknown_cost_ok:
+        # Learned the hard way on 2026-09-19: video.character cost 800 credits on a run whose
+        # ceiling was 900 and which had already spent 210. A ceiling cannot stop a call whose
+        # price nobody knows, so an unpriced technique now needs saying so out loud.
+        raise SystemExit(
+            f"refusing: {tech['id']} has never been priced, so the {args.limit}-credit ceiling "
+            f"cannot protect this call - it could cost more than the whole ceiling by itself.\n"
+            f"Headroom left on this run: {args.limit - already}.\n"
+            f"If Drew has agreed to find the price, re-run with --unknown-cost-ok.")
 
     created = client.create_from_template(key_api, template_id=tech["template_id"], inputs=inputs,
                                           render=True, title=f"{args.run}: {args.what}")
@@ -304,6 +317,9 @@ def main(argv=None) -> None:
     r.add_argument("--limit", type=int, required=True, help="max credits this whole run may spend")
     r.add_argument("--what", default="out", help="short name for this call, used in the filename and ledger")
     r.add_argument("--go", action="store_true", help="actually spend")
+    r.add_argument("--unknown-cost-ok", action="store_true",
+                   help="allow a technique whose price has never been measured; a ceiling cannot "
+                        "protect a call whose cost nobody knows yet")
     r.add_argument("--timeout", type=int, default=1800, help="seconds to wait for a render")
     r.add_argument("--ref", help="a reference picture: URL or local file")
     r.add_argument("--scene", help="scene description for image.from-image (10-500 chars)")

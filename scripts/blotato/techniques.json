@@ -141,8 +141,8 @@
       ],
       "returns": "mp4",
       "inputs_builder": "character_video",
-      "cost_credits": null,
-      "cost_source": "unmeasured",
+      "cost_credits": 800,
+      "cost_source": "measured 2026-09-19 from the live balance",
       "reliability": "unproven",
       "notes": "Takes characterDescription as EITHER text OR an imageReference, and promises a consistent character across up to 100 scenes. If the image reference is honoured this is the cheapest answer to the same-face problem, so it is the highest-value thing left to test.",
       "styles": [

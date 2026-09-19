@@ -38,15 +38,75 @@ A video assembled entirely from pictures we already have — uploaded, not gener
 assemble, narrate and caption for free.
 
 ## 02 — three scenes generated from words, animated, narrated
-- Verdict: **pending**
-- Credits: **210 charged within the first minute**, and it was still rendering after four.
-- The shell call hit a 2-minute limit while the render continued server-side; recovered by polling
-  the creation id from the ledger. **Lesson for every session: video renders run in the background
-  with output to a log file, never inline.**
-- This is the number that matters for costing a real Short: three generated-and-animated scenes.
+- Verdict: **PASS, and the best value on the menu**
+- Credits: **210** (12,320 → 12,110) = **70 credits per animated scene**, $0.42 each
+- Time: about 12 minutes to render
+- Output: `vid-test-02-three-scenes-animated.mp4`, 1080×1920, **12.1 s**, h264 + aac
+
+Genuinely broadcast-looking: a rain-slicked street under a streetlight, real reflections, real
+depth. Narration in Callum, word-by-word captions with the spoken word highlighted, and each still
+has actual motion (frames half a second apart differ inside one scene). Three scenes, three lines,
+one call.
+
+- **The working price of a Short:** roughly **70 credits per scene, ~4 s of finished video each**.
+  A 30-second Short of 8 scenes lands near 560 credits — about **$3.40**.
+- Defect: the generated stills come back wide and get **letterboxed** into the 9:16 frame, so there
+  are black bars top and bottom despite asking for 9:16. Worth a crop step or a prompt that asks
+  for a vertical composition.
+- Process lesson: the shell call died at 2 minutes while the render kept going server-side. Video
+  renders **must** run in the background writing to a log file, and the creation id is recoverable
+  from `runs/credits.log` if a call is lost.
 
 ## 03 — the same-face test (`video.character`)
-- Verdict: not run yet
+- Verdict: **holds a character, ignores the one you asked for, and costs far too much**
+- Credits: **800** (12,110 → 11,310) = **400 per scene**, $4.80 for 16 seconds
+- Output: `vid-test-03-same-face.mp4`, 1080×1920, 16 s, 2 scenes
+
+What it got right:
+- **Consistency is real.** The same young man appears in both scenes — same face, same green hood,
+  same brown leather strap, same compass medallion, same fingerless gloves, indoors and outdoors.
+  The template's headline promise is true.
+
+What it got wrong:
+- **It ignored the character I described.** I asked for a weathered male detective in his fifties,
+  grey stubble, brown overcoat. It produced a man in his twenties in what looks like fantasy
+  adventuring gear, and then held *that* consistently across both scenes. Consistent, but not yours.
+- **Gibberish text**: a box in scene two is labelled "EYSCIIVE VEESE". Confirms the standing rule —
+  never let a model write text inside a frame.
+- **5.7× the price of `video.story`** per scene (400 vs 70) for a worse match to the brief.
+
+**Decision: do not build on `video.character`.** It is the wrong answer to the same-face problem.
+The cheap and exact answer is the one test 01 found: **make or supply the character still once, then
+feed it in as uploaded media**, where it is reproduced perfectly and costs nothing to animate.
 
 ## 04 — combining clips (`video.combine`)
-- Verdict: not run yet
+- Verdict: not run. The run hit its ceiling first (see below).
+
+---
+
+## ⚠️ The ceiling was breached, and why
+Drew set **900**. The run spent **1,010** — over by 110.
+
+The hole: a ceiling cannot stop a call whose price nobody knows. `video.character` had never been
+priced, so the pre-flight check compared only what the run had *already* spent (210) against 900,
+passed it, and the single call then cost 800.
+
+**Fixed the same day.** `generate.py` now refuses any never-priced technique unless it is run with
+`--unknown-cost-ok`, and prints the headroom left so the decision is deliberate. Verified: an
+unpriced technique on a fresh run now refuses.
+
+## The costs we now know, measured not guessed
+| technique | credits | per what |
+|---|---|---|
+| `media.upload` | 0 | any file |
+| `video.story`, uploaded picture | 0 | per scene, including voice and captions |
+| `video.story`, generated + animated scene | 70 | per scene (~4 s) |
+| `image.from-image` | 50 | per picture |
+| `video.character` | 400 | per scene |
+
+## What this block decided
+- **Build the pipeline on `video.story`.** It does words-to-scene, picture-to-scene, motion, voice
+  and captions in one call, and it is the cheapest thing that works.
+- **Never let Blotato regenerate an asset that must stay exact.** Upload it. Free and perfect.
+- **Skip `video.character`.** Consistent but uncontrollable and six times the price.
+- Still unknown: `video.combine` (documented free), `image.from-text`, and both website routes.
