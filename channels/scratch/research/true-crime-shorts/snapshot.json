@@ -1,0 +1,618 @@
+{
+ "provider": "youtube-data-api-v3",
+ "query": "true crime shorts",
+ "filters": {
+  "order": "relevance",
+  "published": "any",
+  "duration": "any",
+  "maxResults": 10
+ },
+ "retrievedAt": "2026-09-19T21:13:42.849688Z",
+ "regionCode": "US",
+ "totalResultsApprox": 1000000,
+ "orderedVideoIds": [
+  "PzFAv20hRyA",
+  "gQ8P32PBpZw",
+  "oYYRt7e0Z3o",
+  "-5t8wNj2BuU",
+  "sqUw44QIpiA",
+  "NhtJwhBsK2o",
+  "Emb3j-Q-BbY",
+  "KECHTe9QsPw",
+  "ZPcjD6Pp59E",
+  "dWXc9jD69-k"
+ ],
+ "warnings": [],
+ "videos": [
+  {
+   "id": "PzFAv20hRyA",
+   "title": "This Case Makes Me NOT Want To Have Any Friends!!   TIKTOK  @true.crime.babe",
+   "channelId": "UCg7z9txPA_DSZVnNuCkx1Ug",
+   "channelTitle": " Mysterious",
+   "publishedAt": "2022-06-15T19:59:33Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/PzFAv20hRyA/hqdefault.jpg",
+   "duration": "PT9S",
+   "durationSeconds": 9,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 819597,
+   "likeCount": 18569,
+   "commentCount": 329,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 69900,
+    "videoCount": 473,
+    "viewCount": 71410491,
+    "country": null,
+    "publishedAt": "2022-02-10T17:26:05.762459Z",
+    "description": "",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "gQ8P32PBpZw",
+   "title": "The MOST terrifying killer",
+   "channelId": "UCHpGOTBGfltnrLqxfJn6zog",
+   "channelTitle": "MrBallen Shorts",
+   "publishedAt": "2021-01-10T05:25:29Z",
+   "description": "Caution, distressing topic\n\nIf you liked this, check out my main channel @MrBallen for longer content!\n\n#shorts",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/gQ8P32PBpZw/hqdefault.jpg",
+   "duration": "PT1M",
+   "durationSeconds": 60,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 8325319,
+   "likeCount": 490853,
+   "commentCount": 5876,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment",
+    "https://en.wikipedia.org/wiki/Film"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 3220000,
+    "videoCount": 1305,
+    "viewCount": 1447282512,
+    "country": "US",
+    "publishedAt": "2021-01-10T03:05:49.087152Z",
+    "description": "MrBallen's official 2nd channel!",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "oYYRt7e0Z3o",
+   "title": "Cases With The Most INSANE Twists You've Ever Heard",
+   "channelId": "UCJWKjrrUh2KL1d3zXQW79cQ",
+   "channelTitle": "EXPLORE WITH US",
+   "publishedAt": "2021-04-19T21:37:43Z",
+   "description": "In today's true crime and murder documentary, we're covering 3 solved cases with unexpected twists. These true stories end like you NEVER would have expected, and it goes to show that in the realm of true crime, you have to keep an open mind to all possibilities. If it weren't for the persistent family members and dete",
+   "tags": [
+    "Explore With Us",
+    "EWU Crew",
+    "documentary",
+    "true crime documentary",
+    "murder documentary",
+    "crime documentary",
+    "murder",
+    "crime",
+    "true crime",
+    "true crime stories",
+    "unexpected twists",
+    "unexpected twist"
+   ],
+   "categoryId": "24",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/oYYRt7e0Z3o/hqdefault.jpg",
+   "duration": "PT25M47S",
+   "durationSeconds": 1547,
+   "definition": "hd",
+   "hasCaptions": true,
+   "viewCount": 2511090,
+   "likeCount": 43966,
+   "commentCount": 1942,
+   "madeForKids": false,
+   "embeddable": false,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment",
+    "https://en.wikipedia.org/wiki/Film"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 7580000,
+    "videoCount": 497,
+    "viewCount": 1901568125,
+    "country": "US",
+    "publishedAt": "2015-08-17T03:53:15Z",
+    "description": "Welcome to EXPLORE WITH US. We're a news agency committed to delivering factual information about police procedures and local news events. Our documentaries aim to educate the public without bias. Our goal is to empower viewers with a clear",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Film"
+    ]
+   }
+  },
+  {
+   "id": "-5t8wNj2BuU",
+   "title": "INSANE True Story \ud83e\udd2f #shorts #storytime #true",
+   "channelId": "UCTcAa3uYwneFMmp1JNUlumA",
+   "channelTitle": "Oddities on Elm Street",
+   "publishedAt": "2022-09-04T20:37:56Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/-5t8wNj2BuU/hqdefault.jpg",
+   "duration": "PT1M",
+   "durationSeconds": 60,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 9773970,
+   "likeCount": 591157,
+   "commentCount": 4608,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 292000,
+    "videoCount": 846,
+    "viewCount": 102467583,
+    "country": "US",
+    "publishedAt": "2020-01-22T20:40:24.415925Z",
+    "description": "Journey with me as I discover the treasure that has yet to be uncovered in my historic generational home. I am inviting you all into my life as I adventure through my incredibly special and almost 180 year old house. Love antiques, mysterie",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)",
+     "https://en.wikipedia.org/wiki/Film"
+    ]
+   }
+  },
+  {
+   "id": "sqUw44QIpiA",
+   "title": "CAUTION!!! This Case Made ME Question HUMANITY - True Crime Documentary",
+   "channelId": "UCrD9iL5Lkzio-llw6dXDw_w",
+   "channelTitle": "Unreal True Crime",
+   "publishedAt": "2026-06-20T02:00:05Z",
+   "description": "Unreal True Crime - Latin Edition\n\ud83d\uded2 Available on:\n\u2705 Amazon - https://shorturl.at/IWqb7\n\nSome links in this description are affiliate links, which means I may earn a commission at no extra cost to you.\n\n------------------------------------------------------------------------\n\nMichael Cochran had a life, two children, an",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/sqUw44QIpiA/hqdefault.jpg",
+   "duration": "PT27M3S",
+   "durationSeconds": 1623,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 779741,
+   "likeCount": 6973,
+   "commentCount": 414,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 146000,
+    "videoCount": 115,
+    "viewCount": 8834863,
+    "country": "CO",
+    "publishedAt": "2023-02-27T15:40:57.153008Z",
+    "description": "Unreal True Crime, where real cases are so shocking, they feel almost unbelievable - but they are all true. No fiction here, just the most astonishing true crime stories!\n\n\ud83d\ude80 Subscribe NOW to traverse with us through the shadowy alleyways of",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Film",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "NhtJwhBsK2o",
+   "title": "The strange murder of Steven Cozzi [True Crime Documentary]",
+   "channelId": "UCzhYQIZPJhiiBWQHMSX5MDQ",
+   "channelTitle": "JustThoughtLounge",
+   "publishedAt": "2023-04-09T16:45:01Z",
+   "description": "It was an otherwise uneventful Tuesday morning in Largo, Florida in March 2023, when lawyer Steven Cozzi left his desk to take a quick break.\n\nWith his documents still open on his computer screen, his phone still playing some background music, Steven left his office with obvious signs that he did not intend to be away ",
+   "tags": [
+    "True Crime",
+    "Just Thought Lounge",
+    "JTL",
+    "Coffeehouse Crime",
+    "That Chapter",
+    "MrBallen",
+    "twisted minds",
+    "true crime documentary",
+    "true crime youtubers",
+    "free crime documentary",
+    "true crime stories",
+    "murders documentary"
+   ],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/NhtJwhBsK2o/hqdefault.jpg",
+   "duration": "PT21M11S",
+   "durationSeconds": 1271,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 839336,
+   "likeCount": 18392,
+   "commentCount": 1445,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 739000,
+    "videoCount": 260,
+    "viewCount": 162830525,
+    "country": "GB",
+    "publishedAt": "2021-07-11T15:09:23.36079Z",
+    "description": "True crime with just the facts. No speculation or commentary; you make up your own mind. This is Just Thought Lounge: the true crime channel based on unbiased storytelling.\n\nEach week, Kevin takes viewers step-by-step through the evidence o",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Film",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "Emb3j-Q-BbY",
+   "title": "The most honest serial killer interview\ud83d\ude33 #scary #truecrime #shorts #serialkiller",
+   "channelId": "UCzcDo2LlUDBhC_qMHovwDnA",
+   "channelTitle": "The Truly Terrifying Show",
+   "publishedAt": "2023-02-02T23:38:45Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/Emb3j-Q-BbY/hqdefault.jpg",
+   "duration": "PT19S",
+   "durationSeconds": 19,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 4010726,
+   "likeCount": null,
+   "commentCount": 3724,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society",
+    "https://en.wikipedia.org/wiki/Television_program"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 6740,
+    "videoCount": 65,
+    "viewCount": 4385163,
+    "country": null,
+    "publishedAt": "2016-11-16T00:43:41Z",
+    "description": "A collection of the best true crime cases out there, adapted into engaging stories.\n [ Short term goal- tell good stories, Long term goal- help victims ]\n\nSubscribe for free to join the journey.\n",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  },
+  {
+   "id": "KECHTe9QsPw",
+   "title": "Family Who Disappeared Found Trapped Inside Secret Room Locked For 9 Years",
+   "channelId": "UCJWKjrrUh2KL1d3zXQW79cQ",
+   "channelTitle": "EXPLORE WITH US",
+   "publishedAt": "2021-03-31T22:03:55Z",
+   "description": "In today's mystery and true crime documentary, we're covering 3 solved missing persons cases. All of these missing people were eventually found, but in BIZARRE ways NO ONE saw coming. From the case of Sandile Sibiya, who entered a hospital with an broken leg and somehow ended up in an utterly impossible location, to th",
+   "tags": [
+    "Explore With Us",
+    "EWU Crew",
+    "missing persons case",
+    "missing persons cases",
+    "solved",
+    "solved missing persons case",
+    "solved missing persons cases",
+    "missing people",
+    "solved cases",
+    "missing people cases",
+    "disappeared",
+    "disappearance"
+   ],
+   "categoryId": "24",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/KECHTe9QsPw/hqdefault.jpg",
+   "duration": "PT29M40S",
+   "durationSeconds": 1780,
+   "definition": "hd",
+   "hasCaptions": true,
+   "viewCount": 7925923,
+   "likeCount": 119893,
+   "commentCount": 6163,
+   "madeForKids": false,
+   "embeddable": false,
+   "license": "youtube",
+   "topicCategories": [],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 7580000,
+    "videoCount": 497,
+    "viewCount": 1901568125,
+    "country": "US",
+    "publishedAt": "2015-08-17T03:53:15Z",
+    "description": "Welcome to EXPLORE WITH US. We're a news agency committed to delivering factual information about police procedures and local news events. Our documentaries aim to educate the public without bias. Our goal is to empower viewers with a clear",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Film"
+    ]
+   }
+  },
+  {
+   "id": "ZPcjD6Pp59E",
+   "title": "5 SCARIEST True Crime Cases YOU (the viewers) Requested!",
+   "channelId": "UCiE86yS_VM7qjiICqRPmwLQ",
+   "channelTitle": "Scary Mysteries",
+   "publishedAt": "2025-03-10T19:23:19Z",
+   "description": "Sometimes YOU guys reach out to me with requests to cover stories and I always write them down, but don\u2019t always get the chance to fit them in to an episode. So today I\u2019m taking 5 of the creepy and strange ones you\u2019ve asked about and bringing them to you right here. Thanks by the way for the suggestions and I hope you ",
+   "tags": [],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/ZPcjD6Pp59E/hqdefault.jpg",
+   "duration": "PT24M21S",
+   "durationSeconds": 1461,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 194985,
+   "likeCount": 5996,
+   "commentCount": 274,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 1030000,
+    "videoCount": 1323,
+    "viewCount": 225169875,
+    "country": "US",
+    "publishedAt": "2016-03-30T21:19:02Z",
+    "description": "Scary True Crime. Mysteries of All Kinds. Welcome friends to a one of a kind experience, the likes of which you will never forget.\n\ud83d\udc41 Scary Mysteries CLIPS: https://www.youtube.com/@scarymysteriesclips\n\ud83d\udc41 Check out our movie AN ANGRY BOY: htt",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "dWXc9jD69-k",
+   "title": "Small Town Baker Becomes Worst Mass Murderer in Alaska's History | First Blood | A&E",
+   "channelId": "UCNIFiHaLZkYASaWDdkC1njg",
+   "channelTitle": "A&E",
+   "publishedAt": "2022-11-16T20:00:28Z",
+   "description": "Before he hunted down his first victim in the wilds of Alaska, Robert Hansen was working at his father's bakery in a small town in Iowa, slowly developing an animosity for women, in this clip from Season 1, Episode 2.\n\nStay up to date on all of A&E's premieres at http://aetv.com/schedule.\n\n#FirstBlood\n\nSubscribe for mo",
+   "tags": [
+    "a&e",
+    "aetv",
+    "a&e tv",
+    "ae",
+    "a&e television",
+    "a&e shows",
+    "a and e",
+    "48 hours",
+    "crime",
+    "true crime",
+    "crime investigation",
+    "solving crime"
+   ],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/dWXc9jD69-k/hqdefault.jpg",
+   "duration": "PT10M19S",
+   "durationSeconds": 619,
+   "definition": "hd",
+   "hasCaptions": true,
+   "viewCount": 768361,
+   "likeCount": 7653,
+   "commentCount": 558,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society",
+    "https://en.wikipedia.org/wiki/Television_program"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 11800000,
+    "videoCount": 13894,
+    "viewCount": 7172441863,
+    "country": "US",
+    "publishedAt": "2006-09-20T09:31:22Z",
+    "description": "A&E leads the cultural conversation through high-quality, thought provoking original programming with a unique point of view. Whether it\u2019s the network\u2019s distinctive brand of award-winning disruptive reality or groundbreaking documentary, A&",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Television_program",
+     "https://en.wikipedia.org/wiki/Film",
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  }
+ ],
+ "snapshotId": "2db39ff40689dd97",
+ "analytics": {
+  "sampleSize": 10,
+  "views": {
+   "median": 1675213.0,
+   "average": 3594905,
+   "max": 9773970,
+   "rows": 10
+  },
+  "viewsPerDay": {
+   "median": 2148.0,
+   "top": [
+    {
+     "id": "sqUw44QIpiA",
+     "value": 8493.81
+    },
+    {
+     "id": "-5t8wNj2BuU",
+     "value": 6621.82
+    },
+    {
+     "id": "gQ8P32PBpZw",
+     "value": 4005.14
+    },
+    {
+     "id": "KECHTe9QsPw",
+     "value": 3967.0
+    },
+    {
+     "id": "Emb3j-Q-BbY",
+     "value": 3027.19
+    }
+   ],
+   "note": "age-normalized public proxy, not real-time velocity"
+  },
+  "visibleInteractionRate": {
+   "median": 0.0231,
+   "rows": 9,
+   "note": "(likes+comments)/views on complete rows only; not engagement or satisfaction"
+  },
+  "reachVsSubscribers": {
+   "top": [
+    {
+     "id": "Emb3j-Q-BbY",
+     "value": 595.06
+    },
+    {
+     "id": "-5t8wNj2BuU",
+     "value": 33.47
+    },
+    {
+     "id": "PzFAv20hRyA",
+     "value": 11.73
+    },
+    {
+     "id": "sqUw44QIpiA",
+     "value": 5.34
+    },
+    {
+     "id": "gQ8P32PBpZw",
+     "value": 2.59
+    }
+   ],
+   "note": "views / current rounded subscriber count; subs are today's, not at publish time"
+  },
+  "durationMix": {
+   "under4min": 4,
+   "over20min": 5,
+   "4to20min": 1
+  },
+  "recencyMix": {
+   "older": 9,
+   "1y": 1
+  },
+  "recurringTags": [
+   {
+    "tag": "true crime",
+    "count": 3
+   },
+   {
+    "tag": "explore with us",
+    "count": 2
+   },
+   {
+    "tag": "ewu crew",
+    "count": 2
+   },
+   {
+    "tag": "true crime documentary",
+    "count": 2
+   },
+   {
+    "tag": "crime",
+    "count": 2
+   },
+   {
+    "tag": "true crime stories",
+    "count": 2
+   }
+  ],
+  "channelConcentration": {
+   "uniqueChannels": 9,
+   "top": [
+    {
+     "channel": "EXPLORE WITH US",
+     "videos": 2
+    },
+    {
+     "channel": " Mysterious",
+     "videos": 1
+    },
+    {
+     "channel": "MrBallen Shorts",
+     "videos": 1
+    },
+    {
+     "channel": "Oddities on Elm Street",
+     "videos": 1
+    },
+    {
+     "channel": "Unreal True Crime",
+     "videos": 1
+    }
+   ]
+  },
+  "coverage": {
+   "viewCount": "10/10",
+   "likeCount": "9/10",
+   "commentCount": "10/10",
+   "durationSeconds": "10/10",
+   "language": "10/10",
+   "tags": "4/10",
+   "subscriberCount": "10/10"
+  },
+  "caveats": [
+   "totalResultsApprox is not search volume",
+   "one personalized, region-sensitive snapshot, not a trend",
+   "under4min is not necessarily a Short",
+   "thumbnail pixels were not inspected",
+   "missing fields stay unavailable, never zero"
+  ]
+ }
+}
