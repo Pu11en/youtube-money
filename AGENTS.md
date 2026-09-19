@@ -5,10 +5,15 @@ built on Drew's Blotato account. **This folder is the plugin:** every Discord
 session (Claude, Codex or DSH) that starts here reads this file and the skills
 in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
 
-## Status (2026-09-18)
+## Status (2026-09-19)
 - Research is done; nothing is built yet.
-- First build target: the **style cloner → script writer → script grader**,
-  started from proven sources in `research/style-cloner-sources/`
+- **Drew's direction: a toolbox of human-in-the-loop skills, not a fixed
+  pipeline.** Each skill has one job, asks lettered questions, takes fixes in
+  plain words, and reads a niche profile + a style profile so it's niche- and
+  style-agnostic. Map and build order: `docs/skills-map.md`.
+- First niche for the no-credit paper run: true crime. Build here, verify on
+  Drew's other computer (the one with OpenCLI), then add OpenCLI here.
+- Prompts start from proven sources in `research/style-cloner-sources/`
   (`SUMMARY.md` first), never from invented prompts.
 
 ## Hard rules
@@ -29,8 +34,10 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
   (`youtube-money-sources.md`), and the proven prompt kit.
 - `research/sollo-video-exact-flow.md` — reference only (we don't use Sollo): the
   exact 10-step flow from their Short and 12-min tutorial transcripts.
-- `docs/video-flow.md` — the 15-step flow for one video: what Drew says, what each
-  step saves, and its "done when" check. Build skills to match it.
+- `docs/skills-map.md` — **the spec:** the 12 skills, the two profiles, how a
+  session builds or improves a skill, and the build order.
+- `docs/video-flow.md` — one example recipe for a video (15 steps). Reference,
+  not the rulebook.
 - `docs/diagrams/` — archify maps of the planned pipeline (JSON source + HTML + PNG).
 - `.agents/skills/` — one skill per flow (to be built).
 - Reuse from elsewhere, don't copy: Blotato API runner and brand-safety rules in
