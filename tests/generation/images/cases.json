@@ -1,0 +1,107 @@
+[
+  {
+    "id": "I1-01",
+    "name": "Character sheet, cheap model",
+    "type": "I1 words -> picture",
+    "model": "flux-schnell",
+    "ratio": "9:16",
+    "prompt": "A single character reference sheet on a plain cream background, laid out in three rows. Top row: the same character in front view, side view, three-quarter view and back view, standing neutral. Middle row: five head-only expressions: calm, curious, surprised, worried, stern. Bottom row: five full-body poses: walking, pointing, holding a lantern, crouching, shrugging. Drawing style: a simple hand-drawn character with thick uniform black outlines, a round pale face, small dark eyes, a long dark Victorian coat and a flat cap, thin arms, drawn in flat muted colours with no shading or gradients in a clean 2D animation style. The same character in every panel, identical proportions and colours throughout. No text, no labels, no watermark, no extra limbs, no other characters.",
+    "pass": "three rows as asked; one consistent character; no text; no extra limbs. This is the cheap sanity check of the API path (1 credit)."
+  },
+  {
+    "id": "I1-02",
+    "name": "Character sheet, quality model",
+    "type": "I1 words -> picture",
+    "model": "nano-banana-2",
+    "ratio": "9:16",
+    "prompt": "A single character reference sheet on a plain cream background, laid out in three rows. Top row: the same character in front view, side view, three-quarter view and back view, standing neutral. Middle row: five head-only expressions: calm, curious, surprised, worried, stern. Bottom row: five full-body poses: walking, pointing, holding a lantern, crouching, shrugging. Drawing style: a simple hand-drawn character with thick uniform black outlines, a round pale face, small dark eyes, a long dark Victorian coat and a flat cap, thin arms, drawn in flat muted colours with no shading or gradients in a clean 2D animation style. The same character in every panel, identical proportions and colours throughout. No text, no labels, no watermark, no extra limbs, no other characters.",
+    "pass": "same as I1-01 but clean enough to lock as the channel's character. Compare against I1-01 to decide the default sheet model."
+  },
+  {
+    "id": "I1-03",
+    "name": "World: a place in the same style",
+    "type": "I1 words -> picture",
+    "model": "nano-banana-2",
+    "ratio": "9:16",
+    "prompt": "A hand-drawn background illustration of a narrow 1890s London alley at night, gas lamp glow, wet cobblestones, brick walls, a closed wooden door, fog. Simple flat 2D animation style with thick uniform black outlines and flat muted colours, no shading or gradients. No people, no text, no signage, no watermark.",
+    "pass": "reads as the same drawing style as the sheet; empty of people; usable as a world reference."
+  },
+  {
+    "id": "I1-04",
+    "name": "Item on a plain background",
+    "type": "I1 words -> picture",
+    "model": "nano-banana-2",
+    "ratio": "1:1",
+    "prompt": "A single brass hand lantern with a glass panel and a curved handle, centred on a plain cream background, drawn in a simple flat 2D animation style with thick uniform black outlines and flat colours, no shading or gradients. Nothing else in the frame. No text, no watermark.",
+    "pass": "one clear object, plain background, same line style; usable as an item reference."
+  },
+  {
+    "id": "I1-05",
+    "name": "Thumbnail with empty space for a headline",
+    "type": "I1 words -> picture",
+    "model": "nano-banana-2",
+    "ratio": "9:16",
+    "prompt": "A bold high-contrast illustration of the detective character (thick black outlines, round pale face, long dark Victorian coat, flat cap, flat muted colours, 2D animation style) shown from the chest up with a shocked expression, holding up a lantern, against a deep red background. The upper third of the image is empty flat colour reserved for a headline. No text anywhere in the image, no watermark.",
+    "pass": "upper third genuinely empty; face readable at phone size; no text baked in."
+  },
+  {
+    "id": "I2-01",
+    "name": "Character ref -> new pose and place",
+    "type": "I2 picture + words -> picture (character ref)",
+    "model": "fal-ai/nano-banana/edit",
+    "ratio": "9:16",
+    "refs": ["runs/tests/images/I1-02.png"],
+    "prompt": "Keep this exact character: same face, coat, cap, proportions, line style and colours. Show him crouched in a foggy 1890s London alley at night, looking over his shoulder toward the viewer, one hand on the wet cobblestones. Flat 2D animation style, no text, no other characters.",
+    "pass": "clearly the same character as the sheet; new pose and place; style unchanged. If the API ignores the reference, this is the test that says so: run the same through the website (blotato-web skill) and compare."
+  },
+  {
+    "id": "I2-02",
+    "name": "Character ref -> second scene (drift check)",
+    "type": "I2 picture + words -> picture (character ref)",
+    "model": "fal-ai/nano-banana/edit",
+    "ratio": "9:16",
+    "refs": ["runs/tests/images/I1-02.png"],
+    "prompt": "Keep this exact character: same face, coat, cap, proportions, line style and colours. Show him standing in a dim courthouse corridor, pointing at a closed door, worried expression. Flat 2D animation style, no text, no other characters.",
+    "pass": "put I2-01 and I2-02 side by side: same person. Note anything that drifted (hat shape, coat colour, face)."
+  },
+  {
+    "id": "I2-03",
+    "name": "World ref -> new subject in the same world",
+    "type": "I2 picture + words -> picture (world ref)",
+    "model": "fal-ai/nano-banana/edit",
+    "ratio": "9:16",
+    "refs": ["runs/tests/images/I1-03.png"],
+    "prompt": "Keep the exact drawing style, palette, lighting and era of this image. Show a different place in the same world: the inside of a cramped 1890s police station office with a wooden desk, an oil lamp and a wall of paper notices. No people, no readable text, no watermark.",
+    "pass": "new place, same look. Palette and line weight match the alley."
+  },
+  {
+    "id": "I2-04",
+    "name": "Item ref -> item in a new place",
+    "type": "I2 picture + words -> picture (item ref)",
+    "model": "fal-ai/nano-banana/edit",
+    "ratio": "9:16",
+    "refs": ["runs/tests/images/I1-04.png"],
+    "prompt": "Keep this exact lantern: same shape, handle, glass panel and colours. Place it lit on a wooden table in a dark 1890s room, warm light spilling onto the table. Same flat 2D animation style. No text, no people.",
+    "pass": "the lantern is recognisably the same object. Small colour drift is acceptable; a different lantern is a fail."
+  },
+  {
+    "id": "I2-05",
+    "name": "Mix: character + world (2 refs)",
+    "type": "I2 mix",
+    "model": "fal-ai/nano-banana/edit",
+    "ratio": "9:16",
+    "refs": ["runs/tests/images/I1-02.png", "runs/tests/images/I1-03.png"],
+    "prompt": "Put this exact character (first image) into this exact place (second image): he walks down the alley toward the viewer holding a lantern, fog around his boots. Keep both the character's design and the alley's style, palette and lighting unchanged. No text, no other characters.",
+    "pass": "both held. If the API only accepts one image, the second ref is dropped; note that and run this one on the website instead."
+  },
+  {
+    "id": "I3-01",
+    "name": "Your own picture as the reference",
+    "type": "I3 upload + I2",
+    "model": "fal-ai/nano-banana/edit",
+    "ratio": "9:16",
+    "refs": ["tests/generation/images/own/PUT-YOUR-DRAWING-HERE.png"],
+    "prompt": "Keep this exact character: same design, proportions, line style and colours. Show it sitting on a park bench at dusk, looking up at the sky. No text, no other characters.",
+    "pass": "Drew drops any drawing or photo into tests/generation/images/own/ and renames it in cases.json. The upload works (a public URL comes back) and the character survives the edit."
+  }
+]

@@ -6,7 +6,7 @@ session (Claude, Codex or DSH) that starts here reads this file and the skills
 in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
 
 ## Status (2026-09-19)
-- Research is done; nothing is built yet.
+- Research is done. Built so far: the image block scaffolding (untested, no key here).
 - **Drew's direction: a toolbox of human-in-the-loop skills, not a fixed
   pipeline.** Each skill has one job, asks lettered questions, takes fixes in
   plain words, and reads a niche profile + a style profile so it's niche- and
@@ -46,6 +46,11 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
 - `docs/diagrams/phases/` — archify maps: overview + one per phase (JSON, HTML, PNG).
 - `references/youtube/` — the library of channels and videos David/Drew find.
   Storage only; add rows when asked, fetch transcripts only when asked.
-- `.agents/skills/` — one skill per flow (to be built).
+- `.agents/skills/blotato-image/` — the image skill (new / from / upload, dry-run,
+  credit meter). `.agents/skills/blotato-web/` — the OpenCLI website route
+  (unverified). Code in `scripts/blotato/`, tests in `tests/generation/images/`.
+- `docs/handoff-other-computer.md` — what to do first on Drew's computer.
+- On Windows the `.claude/skills` symlink checks out as a text file; read
+  `.agents/skills/` directly.
 - Reuse from elsewhere, don't copy: Blotato API runner and brand-safety rules in
   `../blotato-automations`, the free ffmpeg assembler in `../cinco-vid`.
