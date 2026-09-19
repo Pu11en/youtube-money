@@ -8,14 +8,17 @@
     "reliability:  proven | partial | unproven | failed  (with a one-line note saying why)",
     "route:        api (works anywhere with the key) | web (needs OpenCLI + a logged-in Chrome)"
   ],
-
   "techniques": [
     {
       "id": "image.from-text",
       "name": "Words to a picture",
       "route": "api",
       "template_id": "/base/v2/image-slideshow/5903b592-1255-43b4-b9ac-f8ed7cbf6a5f/v1",
-      "takes": ["prompt", "model", "ratio"],
+      "takes": [
+        "prompt",
+        "model",
+        "ratio"
+      ],
       "returns": "image (rendered as a one-slide video; needs a frame grab)",
       "inputs_builder": "slideshow_one",
       "models": [
@@ -34,7 +37,12 @@
         "fal-ai/bytedance/seedream/v4.5/text-to-image"
       ],
       "default_model": "replicate/black-forest-labs/flux-schnell",
-      "ratios": ["16:9", "1:1", "4:5", "9:16"],
+      "ratios": [
+        "16:9",
+        "1:1",
+        "4:5",
+        "9:16"
+      ],
       "cost_credits": null,
       "cost_source": "unmeasured",
       "reliability": "unproven",
@@ -45,7 +53,10 @@
       "name": "A picture plus words to a new picture",
       "route": "api",
       "template_id": "f524614b-ba01-448c-967a-ce518c52a700",
-      "takes": ["ref", "scene"],
+      "takes": [
+        "ref",
+        "scene"
+      ],
       "returns": "image (4:5 JPEG, no ratio control)",
       "inputs_builder": "product_scene",
       "cost_credits": 50,
@@ -59,7 +70,9 @@
       "name": "Put my own file on Blotato",
       "route": "api",
       "template_id": null,
-      "takes": ["path"],
+      "takes": [
+        "path"
+      ],
       "returns": "public URL",
       "inputs_builder": "upload",
       "cost_credits": 0,
@@ -72,37 +85,95 @@
       "name": "Scenes to a finished video (pictures, motion, voice, captions)",
       "route": "api",
       "template_id": "/base/v2/ai-story-video/5903fe43-514d-40ee-a060-0d6628c5f8fd/v1",
-      "takes": ["scenes", "voice", "animate", "ratio", "captions"],
+      "takes": [
+        "scenes",
+        "voice",
+        "animate",
+        "ratio",
+        "captions"
+      ],
       "returns": "mp4",
       "inputs_builder": "story_video",
       "cost_credits": null,
       "cost_source": "unmeasured",
       "reliability": "unproven",
       "notes": "The backbone. Each scene's mediaSource is EITHER an uploaded image/video OR a text prompt, so this one call covers: picture-to-clip (upload + animate), words-to-clip (prompt + animate), voice, and captions. 1-20 scenes. animateAiImages turns stills into motion. trimToVoiceover fits the cut to the narration.",
-      "voices": ["Alice", "Aria", "Bill", "Brian", "Callum", "Charlie", "Charlotte", "Chris"],
-      "ratios": ["16:9", "1:1", "4:5", "9:16"]
+      "voices": [
+        "Alice (British, confident)",
+        "Aria (American, expressive)",
+        "Bill (American, trustworthy)",
+        "Brian (American, deep)",
+        "Callum (Transatlantic, intense)",
+        "Charlie (Australian, natural)",
+        "Charlotte (Swedish, seductive)",
+        "Chris (American, casual)",
+        "Daniel (British, authoritative)",
+        "Eric (American, friendly)",
+        "George (British, warm)",
+        "Jessica (American, expressive)",
+        "Laura (American, upbeat)",
+        "Liam (American, articulate)",
+        "Lily (British, warm)",
+        "Matilda (American, friendly)",
+        "River (American, confident)",
+        "Roger (American, confident)",
+        "Sarah (American, soft)",
+        "Will (American, friendly)"
+      ],
+      "ratios": [
+        "16:9",
+        "1:1",
+        "4:5",
+        "9:16"
+      ],
+      "voice_note": "Use the FULL string, e.g. 'Brian (American, deep)'. A bare 'Brian' is rejected with http 422 (free, caught before any spend)."
     },
     {
       "id": "video.character",
       "name": "Talking video with the same character throughout",
       "route": "api",
       "template_id": "/base/v2/ai-selfie-video/57f5a565-fd17-458b-be43-4a2d8ccaca75/v1",
-      "takes": ["scenes", "style", "character_ref", "ratio"],
+      "takes": [
+        "scenes",
+        "style",
+        "character_ref",
+        "ratio"
+      ],
       "returns": "mp4",
       "inputs_builder": "character_video",
       "cost_credits": null,
       "cost_source": "unmeasured",
       "reliability": "unproven",
       "notes": "Takes characterDescription as EITHER text OR an imageReference, and promises a consistent character across up to 100 scenes. If the image reference is honoured this is the cheapest answer to the same-face problem, so it is the highest-value thing left to test.",
-      "styles": ["realistic", "cartoon", "anime", "watercolor", "oil-painting", "sketch", "cyberpunk", "fantasy", "minimalist"],
-      "ratios": ["16:9", "9:16", "1:1"]
+      "styles": [
+        "realistic",
+        "cartoon",
+        "anime",
+        "watercolor",
+        "oil-painting",
+        "sketch",
+        "cyberpunk",
+        "fantasy",
+        "minimalist"
+      ],
+      "ratios": [
+        "16:9",
+        "9:16",
+        "1:1"
+      ]
     },
     {
       "id": "video.combine",
       "name": "Join clips, trim, caption, add music",
       "route": "api",
       "template_id": "/base/v2/combine-clips/c306ae43-1dcc-4f45-ac2b-88e75430ffd8/v1",
-      "takes": ["clips", "music", "captions", "title", "ratio"],
+      "takes": [
+        "clips",
+        "music",
+        "captions",
+        "title",
+        "ratio"
+      ],
       "returns": "mp4",
       "inputs_builder": "combine",
       "cost_credits": null,
@@ -115,7 +186,11 @@
       "name": "Style reference + likeness reference to a new picture",
       "route": "web",
       "template_id": null,
-      "takes": ["style_ref", "likeness_ref", "prompt"],
+      "takes": [
+        "style_ref",
+        "likeness_ref",
+        "prompt"
+      ],
       "returns": "image",
       "inputs_builder": null,
       "cost_credits": null,
@@ -128,7 +203,11 @@
       "name": "A clip from a specific named model (Kling, Veo, Runway...)",
       "route": "web",
       "template_id": null,
-      "takes": ["ref", "prompt", "model"],
+      "takes": [
+        "ref",
+        "prompt",
+        "model"
+      ],
       "returns": "mp4",
       "inputs_builder": null,
       "cost_credits": null,
