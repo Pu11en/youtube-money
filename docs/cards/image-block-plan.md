@@ -1,56 +1,53 @@
-# You were right — and it's better news than that
+# Your logo is loaded — and I found the missing piece
 
-## ✅ Correction: image-to-image works, through OpenCLI
+## ✅ Your logo is in, and the door works
 
-You said Blotato can do picture-to-picture if we use OpenCLI. **That's now written into the project as the settled answer**, so no future session treats it as an open question.
+The gold arch is saved into the project and **uploaded to Blotato successfully on the first try**, free.
 
-To be precise about what I found and what you corrected:
+That proves the in-point. Blotato took your picture and handed back a link to it.
 
-- **Blotato's API genuinely cannot do it.** I listed all 37 of its templates. Only two accept an image model, and both only offer **text-to-picture** models. No "edit this picture" model is reachable that way.
-- **The website can**, and that's what OpenCLI drives. So picture-to-picture isn't missing — it just lives on the other road.
+**It's 1024×1024, already square** — the 1:1 you asked for.
 
-**Why this one matters more than the rest:** picture-to-picture is how a character keeps the same face across every scene of a video. Without it there's no consistent character, and no faceless channel.
+## ⚠️ I was wrong earlier — and the correction is good news
 
-## 🎉 The bigger surprise: this computer is the computer
+Earlier I told you **no** part of Blotato's API could take a picture as input. **That was wrong**, and you should know why so you can trust the rest.
 
-The old handoff note said the real testing had to wait for your other machine. **It doesn't. Both things it said were missing are here.**
+I searched the wrong thing: I looked at which *models* each tool offered, instead of which tools *accept a picture at all*. When I searched properly, **8 of the 37 accept a picture**, and **one of them makes a new picture out of it**.
 
-### What I actually checked
-- **The Blotato key works here** — 12,420 credits, about $74.
-- **OpenCLI is installed here**, version 1.8.7. The reason nobody noticed: it isn't on the normal search path, so the usual "is it installed?" check comes back empty.
-- **Your browser is connected and logged into Blotato.** I opened it and looked around: the video editor has an **Image** tool right in the sidebar, which is where the picture-to-picture path starts.
+**And it's already been proven working** — your own `image-taste` project did a live Blotato test with it back on September 10th.
 
-**So there's no waiting step left.** Both roads run from this machine.
+### But there's a catch, and it's exactly your catch
+That tool **regenerates** your picture instead of keeping it. Your own notes from September 8th recorded it shifting a product's colours and edges.
 
-### Two traps I wrote down so nobody trips again
-- ⚠️ OpenCLI's own health check **says the browser isn't connected when it is.** The other command tells the truth. Don't reinstall anything.
-- ⚠️ It drives whichever tab is in front, and it drifted away from Blotato twice while I was looking. Blotato should sit in its own window.
+**You said the logo has to look exactly the same. This tool might not do that.** That's precisely what the first test measures — cheaply, before we build anything on top of it.
 
-## ⏳ The corrected plan
+## ⏳ What I built to run the test
 
-**The goal, now in two halves:** you say "make a character sheet" and the API makes it. Then you say "the same detective, in the alley" and the website makes it **with that sheet as the reference**. A real picture lands in the thread both times, and the credits match Blotato's bill.
+A small tool that takes **one picture plus a description** and returns a new picture.
 
-### Free first — no credits, no risk
-- ⬜ Fix a false alarm in the code (it thinks it can't find a Blotato template; it can)
-- ⬜ Make it save a real **picture**, not just a video — Blotato hands back a one-slide video, so we pull the first frame out
-- ⬜ Replace guessed prices with the thirteen models Blotato really offers
-- ⬜ Write down the road split and the OpenCLI path so no session re-discovers this
-- ⬜ **Walk the website picture-to-picture path by hand, spending nothing** — find the model list and the reference-upload control, screenshot every step
-- ⬜ Start a **true crime** channel profile with blanks the tests fill in
-- ⬜ Run everything as a zero-spend rehearsal
+- **It never spends without you saying a number.** Dry run is the default.
+- **It doesn't guess the price.** Blotato doesn't publish what this costs, so instead of inventing a number it reads your balance before and after and reports what actually got taken.
+- It refuses to run if your balance is under the ceiling you set.
 
-### Then the paid tests — each waits for a credit limit from you
-- ⬜ Character sheet, cheap model then good model → pick the winner
-- ⬜ A world, an item, a thumbnail with room for a headline
-- ⬜ Upload one of your own pictures, confirm it comes back usable
-- ⬜ **The face test:** the same character in a new pose, then in a second scene. If the face holds, the whole pipeline is real. This is the most important test in the project.
-- ⬜ Two more reference tests (a world, an item), then mixing two references
-- ⬜ Check the credit log against Blotato's real bill, and write the winning models into the channel profile
+**I dry-ran it on your logo already. It works, and it spent nothing.**
 
-**Rough cost of the whole thing: around 300 credits — under two dollars.**
+## 🎯 The workflow you described, written down
 
-## ⬜ Where it stands
+I recorded what you said so it doesn't get lost. **Two pictures go in together, doing two different jobs:**
 
-**No credits spent. No code changed yet. Nothing pushed to GitHub.**
+### The style reference
+A Pinterest image you pick. This is the **starting point, not the destination** — from there you change, add, remove and adjust, endlessly.
 
-Saved locally as two save-points: the plan, and the correction to the routing.
+### The likeness reference
+Your logo, a character, an object. **This one is locked.** It must come out looking exactly like it went in, or as an exact element inside the new picture.
+
+### The good news about the editing loop
+Your `image-taste` project **already has this half built and tested**. It keeps the real images as the signal instead of mashing them into adjectives, and it has a scoring pass — palette, texture, lighting, imagery, composition, originality — where each failure unlocks a specific fix. **That scoring loop is your "infinite edits."**
+
+Two things need adapting: it currently *forbids* reproducing logos (it was written for other people's mood boards, not your own brand), and it only sends one picture because the API only takes one. **Two pictures means the browser route.**
+
+## ⬜ What's not done
+
+**No credits spent. Nothing posted. Nothing pushed to GitHub.**
+
+Everything is saved locally. The test is loaded and waiting on one number from you.
