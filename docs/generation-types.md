@@ -13,6 +13,17 @@ list in `../blotato-automations/research/blotato-model-catalog.md`.
 - **Phase 5 Finish:** images only (thumbnail, end screen). Combining clips isn't generation.
 - Phases 1, 3 and 6 generate nothing.
 
+## Route decided (2026-09-19, checked live)
+- **I1 words -> picture: API.** The slideshow template `/base/v2/image-slideshow/5903b592-.../v1`
+  offers 13 text-to-image models (flux schnell/dev/1.1-pro/1.1-pro-ultra, recraft-v3, ideogram-v2,
+  photon, gpt-image-1, gpt-image-2, nano-banana, nano-banana-2, nano-banana-pro,
+  seedream v4.5 text-to-image). It renders a one-slide video, so a `.png` needs a frame grab.
+- **I2 picture + words -> picture: website via OpenCLI.** Confirmed by Drew. **No Edit model is
+  reachable through the API** — all 37 templates were listed and checked; only the slideshow and
+  the Instagram Carousel take an image model, and both enums are text-to-image only. So the `from`
+  move is built on `blotato-web`, not on the template endpoint. Both routes run on this machine.
+- **I3 own picture: API upload** (`POST /media`), no generation, free.
+
 ## The 7 types
 
 ### Images

@@ -5,9 +5,22 @@ description: Drive Blotato's website in Drew's logged-in Chrome with OpenCLI for
 
 # blotato-web (OpenCLI route)
 
-Status 2026-09-19: **not yet verified.** OpenCLI is set up on Drew's other computer only. This
-skill holds the verified facts about OpenCLI, the click path to check first, and the rule that every
-credit-spending click is gated the same way as the API.
+Status 2026-09-19 evening: **OpenCLI is set up on THIS machine and the bridge is live.** The click
+path itself is still unverified; everything below about attaching is now confirmed working.
+
+**Run it like this** (the binary is not on `PATH`, so `which opencli` finds nothing):
+```
+export OC=/home/drewp/.local/share/opencli-tool/node_modules/.bin/opencli
+$OC profile list        # ets3mbsm - connected v1.0.24
+```
+`$OC doctor` reports the extension as missing even when it is connected. **Trust `profile list`.**
+The session drives the **active tab** and drifted back to `/agent` twice during a check, so re-`open`
+the URL before each step, or keep Blotato in its own window.
+
+Verified so far: `my.blotato.com` is logged in, and the video editor's left rail has
+**Text / Caption / Image / Shapes / Video / Audio** - the `Image` tool is where the click path starts.
+This route owns **image-to-image (I2)**: no API template exposes an Edit model, and Drew confirmed
+the website does it.
 
 ## How OpenCLI actually attaches (verified from its docs, v1.8.8)
 - It does not launch Chrome. It talks to the **Browser Bridge extension** inside the Chrome that's

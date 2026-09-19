@@ -5,16 +5,23 @@ built on Drew's Blotato account. **This folder is the plugin:** every Discord
 session (Claude, Codex or DSH) that starts here reads this file and the skills
 in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
 
-## Status (2026-09-19)
-- Research is done. Built so far: the image block scaffolding (untested, no key here).
+## Status (2026-09-19, evening)
+- Research is done. Built so far: the image block scaffolding (written, still untested live).
+- **This machine has everything: the Blotato key works here (12,420 credits) and OpenCLI v1.8.7 is
+  installed with profile `ets3mbsm` connected.** There is no "wait for the other computer" step.
+  OpenCLI is not on `PATH`; the binary is
+  `/home/drewp/.local/share/opencli-tool/node_modules/.bin/opencli`. `opencli doctor` lies about the
+  extension — trust `opencli profile list`.
+- **Route split, settled:** text-to-picture (I1) and upload (I3) go through the **API**;
+  picture-to-picture (I2, same character across scenes) goes through the **website with OpenCLI** —
+  no API template exposes an Edit model (all 37 checked). Next steps: `docs/plan-image-block.md`.
 - **Drew's direction: a toolbox of human-in-the-loop skills, not a fixed
   pipeline.** Each skill has one job, asks lettered questions, takes fixes in
   plain words, and reads a niche profile + a style profile so it's niche- and
   style-agnostic. Map and build order: `docs/skills-map.md`.
 - **Current focus (2026-09-19): image and video generation only.** Scripts,
   narration and niche picking wait. The 7 generation types and their test
-  matrix: `docs/generation-types.md`. Build here, test on Drew's other computer
-  (the one with OpenCLI), then add OpenCLI here.
+  matrix: `docs/generation-types.md`. Build and test here — both routes work on this machine.
 - First niche for the no-credit paper run: true crime.
 - Prompts start from proven sources in `research/style-cloner-sources/`
   (`SUMMARY.md` first), never from invented prompts.
