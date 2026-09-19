@@ -39,6 +39,8 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
 - `docs/video-flow.md` — one example recipe for a video (15 steps). Reference,
   not the rulebook.
 - `docs/diagrams/` — archify maps of the planned pipeline (JSON source + HTML + PNG).
+- `references/youtube/` — the library of channels and videos David/Drew find.
+  Storage only; add rows when asked, fetch transcripts only when asked.
 - `.agents/skills/` — one skill per flow (to be built).
 - Reuse from elsewhere, don't copy: Blotato API runner and brand-safety rules in
   `../blotato-automations`, the free ffmpeg assembler in `../cinco-vid`.
