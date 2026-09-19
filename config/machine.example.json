@@ -1,0 +1,11 @@
+{
+  "_README": "Copy to config/machine.json (git-ignored) on each computer. Only machine-specific things belong here; everything else is in git and shared.",
+
+  "opencli_bin": "/home/drewp/.local/share/opencli-tool/node_modules/.bin/opencli",
+  "opencli_profile": "ets3mbsm",
+  "opencli_note": "The Chrome profile logged into Blotato ON THIS COMPUTER. It is different per machine - that is expected and fine. `opencli doctor` reports the extension as missing even when it is connected; trust `opencli profile list`.",
+
+  "blotato_note": "The Blotato ACCOUNT is the same everywhere (kidquick360@gmail.com) and its credit pool is shared. Put the key in .env, not here. Two computers spending at once draw from the same balance, so agree a ceiling per machine.",
+
+  "ffmpeg": "ffmpeg"
+}

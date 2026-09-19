@@ -6,3 +6,4 @@ research/style-cloner-sources/prompts/private/
 # Full transcripts of third-party videos: local only.
 research/private-transcripts/
 __pycache__/
+config/machine.json

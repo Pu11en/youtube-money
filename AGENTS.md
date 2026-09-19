@@ -12,9 +12,20 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
   OpenCLI is not on `PATH`; the binary is
   `/home/drewp/.local/share/opencli-tool/node_modules/.bin/opencli`. `opencli doctor` lies about the
   extension — trust `opencli profile list`.
-- **Route split, settled:** text-to-picture (I1) and upload (I3) go through the **API**;
-  picture-to-picture (I2, same character across scenes) goes through the **website with OpenCLI** —
-  no API template exposes an Edit model (all 37 checked). Next steps: `docs/plan-image-block.md`.
+- **The generation plumbing is the deliverable, not any one picture.** One front door
+  (`scripts/blotato/generate.py`) + a data catalog (`scripts/blotato/techniques.json`); every skill
+  calls it, no skill hardcodes a template id, and `--set key=value` overrides any input on the fly.
+  Dry run by default, ceiling required, costs **measured** from the balance and written back into the
+  catalog. How it works and how to move it to another computer: `docs/generation-plumbing.md`.
+- **Route split:** one picture in (`image.from-image`) and upload work on the **API**; two pictures
+  (style ref + likeness ref) and any named video model are **website via OpenCLI**.
+- **Measured so far:** upload free and proven; `image.from-image` 50 credits, and it **redraws** a
+  logo rather than keeping it — fine as a stylist, never for a likeness lock
+  (`tests/generation/images/logo-style-verdicts.md`). Every video technique is still unpriced and
+  unproven; `video.character` is the highest-value unknown.
+- **Two computers, one account.** The Blotato key and its credit pool are shared; the OpenCLI binary
+  path and Chrome profile are per-machine and live in `config/machine.json` (git-ignored, example
+  committed). Another agent pulls the repo, adds `.env` + `machine.json`, and continues.
 - **Drew's direction: a toolbox of human-in-the-loop skills, not a fixed
   pipeline.** Each skill has one job, asks lettered questions, takes fixes in
   plain words, and reads a niche profile + a style profile so it's niche- and
