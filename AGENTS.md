@@ -85,6 +85,9 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
 - `.agents/skills/blotato-image/` — the image skill (new / from / upload, dry-run,
   credit meter). `.agents/skills/blotato-web/` — the OpenCLI website route
   (unverified). Code in `scripts/blotato/`, tests in `tests/generation/images/`.
+- `.agents/skills/visual-picker/` — narration → 3 keyword sets → 20 reference pictures in the
+  thread (Pinterest via OpenCLI, Wikimedia, Openverse) → Drew picks one per scene. Free, links only.
+  Script: `scripts/refs/search.py`.
 - `.agents/skills/youtubepro/` — research → insights → ideas → script → thumbnail,
   ported from AgriciDaniel/youtubepro as on-demand file tools. `research <topic>`
   is verified live (needs a free `YOUTUBE_API_KEY` in `.env`); the other four are
