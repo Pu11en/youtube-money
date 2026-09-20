@@ -132,3 +132,9 @@ each step into `runs/web/`, and write the click path into `.agents/skills/blotat
   `scripts/blotato/techniques.json` automatically — commit that file so the other machine inherits it.
 - **Never-priced techniques refuse to run** unless given `--unknown-cost-ok`. That guard exists
   because an unpriced call cost 800 credits on a 900 ceiling that had already spent 210.
+
+## Windows notes (David's machine, done 2026-09-19)
+- No admin: Node is portable at `C:/Users/david/tools/node`, ffmpeg at `C:/Users/david/tools/ffmpeg/bin`. Prepend both to `PATH` in a session.
+- OpenCLI: `C:/Users/david/.local/share/opencli-tool/node_modules/.bin/opencli.cmd`. `profile list` says "Daemon is not running" until `doctor` has run once after Chrome opened; run `doctor` first.
+- The bridge extension lives in Chrome's **Default** profile here (id `ildkmabpimmkaediidaifkhjpohdnifk`); bridge profile id `x8cb8fc2`. Blotato is logged in as kidquick360.
+- All of this is in `config/machine.json` (git-ignored).
