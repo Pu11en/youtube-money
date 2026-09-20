@@ -1,0 +1,1368 @@
+{
+ "provider": "youtube-data-api-v3",
+ "query": "true crime shorts",
+ "filters": {
+  "order": "viewCount",
+  "published": "month",
+  "duration": "short",
+  "maxResults": 25
+ },
+ "retrievedAt": "2026-09-20T01:33:07.980067Z",
+ "regionCode": "US",
+ "totalResultsApprox": 87332,
+ "orderedVideoIds": [
+  "1zCI5RPsu5k",
+  "OixCD9ZxkFg",
+  "GoRWBakHG8Q",
+  "DcZ2us6W5vc",
+  "LUmw6kdX3dE",
+  "U9g1Jiqa4a8",
+  "tVoZ7--NLQE",
+  "gqgDYVgaCxU",
+  "jZXg0ypKYBg",
+  "dLVf1nPnMJE",
+  "hTpZvRj9uHM",
+  "8dA_nJLqAnw",
+  "tqei_pbnQhY",
+  "XJ07GRvzRzA",
+  "UMeFbK1MGJQ",
+  "J75buMdJa9U",
+  "e8CgEB4UAk4",
+  "0iFliCpM0CQ",
+  "BeoK8OsLlTs",
+  "Fi11dYZCp3c",
+  "XyPrcpVDIxw",
+  "XwWo-dzXZgQ",
+  "UKMjQiIdSkc",
+  "BbPTuJkOAaw",
+  "6dwytKG3x9g"
+ ],
+ "warnings": [],
+ "videos": [
+  {
+   "id": "1zCI5RPsu5k",
+   "url": "https://www.youtube.com/watch?v=1zCI5RPsu5k",
+   "title": "O caso bizarro da m\u00e3e enfermeira que parou os EUA - O caso Lindsay Clancy",
+   "channelId": "UCvpGyfQIzrghmPdm7KUDFmg",
+   "channelUrl": "https://www.youtube.com/channel/UCvpGyfQIzrghmPdm7KUDFmg",
+   "channelTitle": "Sev7n Games OFICIAL",
+   "publishedAt": "2026-09-07T21:04:37Z",
+   "description": "#lindsayclancy #truecrime #casosreais #curiosidades #shorts",
+   "tags": [
+    "games",
+    "jogos",
+    "curiosidades"
+   ],
+   "categoryId": "20",
+   "language": "pt-BR",
+   "thumbnailUrl": "https://i.ytimg.com/vi/1zCI5RPsu5k/hqdefault.jpg",
+   "duration": "PT2M30S",
+   "durationSeconds": 150,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 2172903,
+   "likeCount": 217029,
+   "commentCount": 11461,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 2050000,
+    "videoCount": 1145,
+    "viewCount": 2472918096,
+    "country": "BR",
+    "publishedAt": "2020-06-17T16:11:02.913862Z",
+    "description": "Meus v\u00eddeos curtos \ud83d\ude01 ",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Action-adventure_game",
+     "https://en.wikipedia.org/wiki/Video_game_culture",
+     "https://en.wikipedia.org/wiki/Action_game"
+    ]
+   }
+  },
+  {
+   "id": "OixCD9ZxkFg",
+   "url": "https://www.youtube.com/watch?v=OixCD9ZxkFg",
+   "title": "Lindsay Clancy is...NOT GUILTY??",
+   "channelId": "UCzk6l7UCIa6-dqv7Z7o44sg",
+   "channelUrl": "https://www.youtube.com/channel/UCzk6l7UCIa6-dqv7Z7o44sg",
+   "channelTitle": "Combs Waterkotte",
+   "publishedAt": "2026-08-24T17:26:39Z",
+   "description": "Could Lindsay Clancy be found NOT GUILTY based on the evidence?\n\n#shorts #shortsfeed #shortsvideo \n\nIn this video, a former police officer turned private investigator breaks down the Lindsay Clancy case from an investigative perspective. He examines the evidence, key details surrounding the case, and why the facts may ",
+   "tags": [
+    "reaction",
+    "shorts",
+    "short",
+    "lindsay clancy",
+    "lindsay clancy case",
+    "lindsay clancy guilty",
+    "lindsay clancy not guilty",
+    "case result",
+    "reaction video",
+    "police",
+    "crime",
+    "crime show"
+   ],
+   "categoryId": "27",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/OixCD9ZxkFg/hqdefault.jpg",
+   "duration": "PT2M56S",
+   "durationSeconds": 176,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1655072,
+   "likeCount": 43981,
+   "commentCount": 13474,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 16000,
+    "videoCount": 1491,
+    "viewCount": 4894838,
+    "country": "US",
+    "publishedAt": "2022-04-18T17:44:41.238727Z",
+    "description": "Missouri and Illinois Criminal Defense Attorneys. Helping those who are facing life-altering charges. If you have been charged with a serious crime or arrested, Combs Waterkotte is here to help you pursue justice. Our firm combines expert c",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  },
+  {
+   "id": "GoRWBakHG8Q",
+   "url": "https://www.youtube.com/watch?v=GoRWBakHG8Q",
+   "title": "He Owed the Cartel $3.2 Million \u2014 Then Got in Their Car \ud83d\ude33 | The Joint Venture Show",
+   "channelId": "UC06nciH5yRv75DTl5GDWc2A",
+   "channelUrl": "https://www.youtube.com/channel/UC06nciH5yRv75DTl5GDWc2A",
+   "channelTitle": "The Joint Venture Show",
+   "publishedAt": "2026-08-26T23:00:33Z",
+   "description": "Owen Hanson lost $3.2 million of the cartel's money. Then they called to collect. \ud83d\ude33\n\nRather than run, he drove from Los Angeles to Tijuana to face them in person \u2014 \"if I'm going to die, I'm going to die in person.\" On The Joint Venture Show, he takes Lil Wayne and Craig Carton through what happened when the bulletproof",
+   "tags": [
+    "Lil Wayne",
+    "celebrity interviews",
+    "Owen Hanson",
+    "true crime",
+    "cartel",
+    "cartel story",
+    "sicarios",
+    "Tijuana",
+    "drug trafficking",
+    "bookie",
+    "sports betting",
+    "crime stories"
+   ],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/GoRWBakHG8Q/hqdefault.jpg",
+   "duration": "PT42S",
+   "durationSeconds": 42,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 509174,
+   "likeCount": 6599,
+   "commentCount": 76,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 6310,
+    "videoCount": 76,
+    "viewCount": 2282577,
+    "country": "US",
+    "publishedAt": "2025-12-11T12:53:21.171517Z",
+    "description": "The Joint Venture brings together Grammy-winning rap icon Lil Wayne and Sports Talk Radio Hall of Famer Craig Carton for a lively, unfiltered conversation that blends their worlds. Built on genuine friendship, they explore sports, music, po",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Film",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "DcZ2us6W5vc",
+   "url": "https://www.youtube.com/watch?v=DcZ2us6W5vc",
+   "title": "\u00bbBaller-Liquids\u00ab: Mit 15 Jahren in die Sucht | SPIEGEL TV Shorts",
+   "channelId": "UC1w6pNGiiLdZgyNpXUnA4Zw",
+   "channelUrl": "https://www.youtube.com/channel/UC1w6pNGiiLdZgyNpXUnA4Zw",
+   "channelTitle": "DER SPIEGEL",
+   "publishedAt": "2026-08-26T08:00:13Z",
+   "description": "Sie sehen harmlos aus, machen aber schnell abh\u00e4ngig. Betroffene berichten nach Konsum von \u00bbBaller-Liquids\u00ab \u00fcber Kontrollverlust, \u00bbDeath Shots\u00ab und schweren Entzugserscheinungen.\n\n\ud83c\udf9e\ufe0f Den ganzen Beitrag gibt es hier: \u25ba https://youtu.be/K2Cza_Na5sg\n\ud83d\udea9 Minderj\u00e4hrige Dealer: Das Gesch\u00e4ft mit \u00bbBaller-Liquids\u00ab\n\n#BallerLiquids ",
+   "tags": [
+    "News",
+    "Nachrichten",
+    "DER SPIEGEL",
+    "SPIEGEL TV",
+    "SPIEGEL",
+    "Shorts",
+    "aktuell",
+    "Video",
+    "Kurzvideo",
+    "Reel",
+    "Short",
+    "Gesellschaft"
+   ],
+   "categoryId": "25",
+   "language": "de",
+   "thumbnailUrl": "https://i.ytimg.com/vi/DcZ2us6W5vc/hqdefault.jpg",
+   "duration": "PT1M38S",
+   "durationSeconds": 98,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 361908,
+   "likeCount": 4527,
+   "commentCount": 777,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Health",
+    "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 2330000,
+    "videoCount": 13801,
+    "viewCount": 2660007636,
+    "country": "DE",
+    "publishedAt": "2006-07-13T07:50:19Z",
+    "description": "Willkommen auf dem YouTube-Kanal von SPIEGEL TV und DER SPIEGEL. \nHier findest Du SPIEGEL TV-Reportagen und DER SPIEGEL-Videos zu aktuellen Themen aus den Bereichen Politik, Wirtschaft, Gesellschaft, Sport und Wissenschaft.\n\n\nIMPRESSUM:\nSPI",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Politics"
+    ]
+   }
+  },
+  {
+   "id": "LUmw6kdX3dE",
+   "url": "https://www.youtube.com/watch?v=LUmw6kdX3dE",
+   "title": "CAT IN THE HAT . #tiktok #trending #catinthehat #truecrime #tcc #tiktoker #creepy #viral #fyp #short",
+   "channelId": "UCUdQeruCu6YRwhskw1hsoQA",
+   "channelUrl": "https://www.youtube.com/channel/UCUdQeruCu6YRwhskw1hsoQA",
+   "channelTitle": "evil marinette ",
+   "publishedAt": "2026-08-22T20:59:04Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/LUmw6kdX3dE/hqdefault.jpg",
+   "duration": "PT9S",
+   "durationSeconds": 9,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 358095,
+   "likeCount": 3281,
+   "commentCount": 639,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 179,
+    "videoCount": 1,
+    "viewCount": 349670,
+    "country": null,
+    "publishedAt": "2026-08-13T07:59:38.496366Z",
+    "description": "\ud835\udc1c\ud835\udc25\ud835\udc22\ud835\udc1c\ud835\udc24 \ud835\udc26\ud835\udc1e \ud835\udf17\ud835\udf1a \n\nhihi ! mi name is toby \ud83e\udd84\ud83e\udeea\nstyle: Himu Gyaru ! :3\nage: \ud83e\udd2b ofc\n\nCapCut: @deervanilles\n",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Pet",
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+    ]
+   }
+  },
+  {
+   "id": "U9g1Jiqa4a8",
+   "url": "https://www.youtube.com/watch?v=U9g1Jiqa4a8",
+   "title": "You Should NEVER Do This Against The Police! (Instant Karma) | PoliceBodycam-Crime #shorts",
+   "channelId": "UCs5tON2oqeBYXu3PmcMUs8w",
+   "channelUrl": "https://www.youtube.com/channel/UCs5tON2oqeBYXu3PmcMUs8w",
+   "channelTitle": "Police Bodycam-Crime",
+   "publishedAt": "2026-08-27T11:55:32Z",
+   "description": "In this recording, we see a crazy moment: What happens when you rebel against the police?\n\nWhen the man tries to resist, he didn't reckon with the police! Because he didn't expect this: They deal out instant karma right away! At that point, he no longer stood a chance! What do you think about this?\n\nFor more videos lik",
+   "tags": [
+    "policebodycamcrime",
+    "foryou"
+   ],
+   "categoryId": "27",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/U9g1Jiqa4a8/hqdefault.jpg",
+   "duration": "PT16S",
+   "durationSeconds": 16,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 181081,
+   "likeCount": null,
+   "commentCount": 19,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 451,
+    "videoCount": 175,
+    "viewCount": 1574186,
+    "country": "US",
+    "publishedAt": "2025-11-29T15:39:58.375276Z",
+    "description": "\"Police Bodycam - Crime\" channel is made strictly for educational and news gathering purposes. Not affiliated with any law enforcement agency.\n\nThis channel explains crimes captured by police bodycams and street cameras, showing what happen",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  },
+  {
+   "id": "tVoZ7--NLQE",
+   "url": "https://www.youtube.com/watch?v=tVoZ7--NLQE",
+   "title": "The Evidence That Could Save Lindsay Clancy",
+   "channelId": "UCzk6l7UCIa6-dqv7Z7o44sg",
+   "channelUrl": "https://www.youtube.com/channel/UCzk6l7UCIa6-dqv7Z7o44sg",
+   "channelTitle": "Combs Waterkotte",
+   "publishedAt": "2026-09-01T23:30:20Z",
+   "description": "Could one piece of evidence completely change how a jury sees the Lindsay Clancy case?\n\n#shorts #shortsfeed #shortsvideo #LindsayClancy\n\nThe case against Lindsay Clancy has sparked intense debate over what happened inside her Duxbury, Massachusetts home and, more importantly, her mental state at the time of her childre",
+   "tags": [
+    "reaction",
+    "viral",
+    "shorts",
+    "short",
+    "lindsay clancy",
+    "lindsay clancy case",
+    "lindsay clancy guilty",
+    "lindsay clancy not guilty",
+    "case result",
+    "reaction video",
+    "police",
+    "crime"
+   ],
+   "categoryId": "27",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/tVoZ7--NLQE/hqdefault.jpg",
+   "duration": "PT1M1S",
+   "durationSeconds": 61,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 110731,
+   "likeCount": 2690,
+   "commentCount": 586,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 16000,
+    "videoCount": 1491,
+    "viewCount": 4894838,
+    "country": "US",
+    "publishedAt": "2022-04-18T17:44:41.238727Z",
+    "description": "Missouri and Illinois Criminal Defense Attorneys. Helping those who are facing life-altering charges. If you have been charged with a serious crime or arrested, Combs Waterkotte is here to help you pursue justice. Our firm combines expert c",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  },
+  {
+   "id": "gqgDYVgaCxU",
+   "url": "https://www.youtube.com/watch?v=gqgDYVgaCxU",
+   "title": "Wait, he really said that to the operator? \ud83d\ude2d #shorts #true crime  #viral",
+   "channelId": "UCf02v9X9qvGboNM-w9IMEjg",
+   "channelUrl": "https://www.youtube.com/channel/UCf02v9X9qvGboNM-w9IMEjg",
+   "channelTitle": "HEARTS & CRIMES TV",
+   "publishedAt": "2026-08-22T02:09:56Z",
+   "description": "Listen to the chilling 911 call from Brandon Dickerson after he confesses to the crime.\n\nThis audio recording captures the immediate aftermath of the incident and the suspect's disturbing statements to emergency dispatchers. Viewers interested in true crime analysis and emergency response protocols will find this docum",
+   "tags": [
+    "911 call audio",
+    "Brandon Dickerson",
+    "true crime",
+    "confession recording",
+    "emergency dispatch",
+    "crime investigation"
+   ],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/gqgDYVgaCxU/hqdefault.jpg",
+   "duration": "PT2M26S",
+   "durationSeconds": 146,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 72836,
+   "likeCount": 894,
+   "commentCount": 118,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 594,
+    "videoCount": 120,
+    "viewCount": 320253,
+    "country": "US",
+    "publishedAt": "2024-03-22T05:05:19.063242Z",
+    "description": "Welcome to Hearts & Crimes TV \u2014 where real stories, real people, and real conversations meet the darker side of love, trust, and betrayal.\n\nWe cover true-crime cases, chilling 911 calls, investigations, relationship crimes, case updates, an",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Film"
+    ]
+   }
+  },
+  {
+   "id": "jZXg0ypKYBg",
+   "url": "https://www.youtube.com/watch?v=jZXg0ypKYBg",
+   "title": "Is Lindsay Clancy's Husband Guilty?",
+   "channelId": "UCzk6l7UCIa6-dqv7Z7o44sg",
+   "channelUrl": "https://www.youtube.com/channel/UCzk6l7UCIa6-dqv7Z7o44sg",
+   "channelTitle": "Combs Waterkotte",
+   "publishedAt": "2026-09-01T15:52:54Z",
+   "description": "Lindsay Clancy's Husband is Guilty? \n\n#shorts #shortsfeed #shortsvideo \n\nIs Lindsay Clancy\u2019s husband guilty of something, or is the internet looking for someone else to blame?\n\nThe Lindsay Clancy case has raised incredibly difficult questions about responsibility, warning signs, mental health, and what happened in the ",
+   "tags": [
+    "reaction",
+    "viral",
+    "shorts",
+    "short",
+    "lindsay clancy",
+    "lindsay clancy case",
+    "lindsay clancy guilty",
+    "lindsay clancy not guilty",
+    "case result",
+    "reaction video",
+    "police",
+    "crime"
+   ],
+   "categoryId": "27",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/jZXg0ypKYBg/hqdefault.jpg",
+   "duration": "PT1M22S",
+   "durationSeconds": 82,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 97659,
+   "likeCount": 3577,
+   "commentCount": 812,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 16000,
+    "videoCount": 1491,
+    "viewCount": 4894838,
+    "country": "US",
+    "publishedAt": "2022-04-18T17:44:41.238727Z",
+    "description": "Missouri and Illinois Criminal Defense Attorneys. Helping those who are facing life-altering charges. If you have been charged with a serious crime or arrested, Combs Waterkotte is here to help you pursue justice. Our firm combines expert c",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  },
+  {
+   "id": "dLVf1nPnMJE",
+   "url": "https://www.youtube.com/watch?v=dLVf1nPnMJE",
+   "title": "Updates on their cases \ud83d\udcf0 #truecrime #hiphopnews #lildurk #yellabeezy #rap #truecrimeshorts",
+   "channelId": "UCMCN1C50R9IsDW7Jx8u1vUg",
+   "channelUrl": "https://www.youtube.com/channel/UCMCN1C50R9IsDW7Jx8u1vUg",
+   "channelTitle": "\ud835\ude73\ud835\ude8e\ud835\ude9c \ud835\ude70\ud835\ude8f\ud835\ude9d\ud835\ude8e\ud835\ude9b \ud835\ude77\ud835\ude98\ud835\ude9e\ud835\ude9b\ud835\ude9c",
+   "publishedAt": "2026-09-10T19:50:02Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/dLVf1nPnMJE/hqdefault.jpg",
+   "duration": "PT6S",
+   "durationSeconds": 6,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 100912,
+   "likeCount": 289,
+   "commentCount": 4,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Music"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 71,
+    "videoCount": 64,
+    "viewCount": 326678,
+    "country": null,
+    "publishedAt": "2023-11-23T21:32:59.988462Z",
+    "description": "I\u2019m Des \ud83d\udda4 | Des After Hours \ud83c\udf19\nTrue Crime Happens Every After Hours \ud83d\udd0e | News & Updates | Opinions are Welcomed\n\ud83c\udfa5 Summary Crime Sunday ",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  },
+  {
+   "id": "hTpZvRj9uHM",
+   "url": "https://www.youtube.com/watch?v=hTpZvRj9uHM",
+   "title": "Lindsay Clancy Case & Mental Health Defenses Explained \u2696\ufe0f #Shorts #TrueCrime #LegalNews",
+   "channelId": "UCDz7tBXpNtynrulhbb-UosQ",
+   "channelUrl": "https://www.youtube.com/channel/UCDz7tBXpNtynrulhbb-UosQ",
+   "channelTitle": "USA PULSE NEWS",
+   "publishedAt": "2026-09-07T21:14:23Z",
+   "description": "Viral posts comparing mental health defenses in high-profile criminal trials continue to generate intense debate regarding legal sanity, criminal intent, and accountability. How should the judicial system distinguish between severe medical illness and legal responsibility? Share your thoughts below! \ud83d\udc47 \u200b#LindsayClancy #",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/hTpZvRj9uHM/hqdefault.jpg",
+   "duration": "PT6S",
+   "durationSeconds": 6,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 88505,
+   "likeCount": 1238,
+   "commentCount": 106,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Health",
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 392,
+    "videoCount": 232,
+    "viewCount": 1581133,
+    "country": "US",
+    "publishedAt": "2026-08-31T15:46:46.353681Z",
+    "description": "\ud83c\uddfa\ud83c\uddf8 USA PULSE NEWS\n\nYour daily pulse on America. \ud83d\udcf0\n\nGet the latest USA news, breaking news, politics, business, technology, entertainment, and major stories \u2014 delivered in short, clear, and engaging videos.\n\nContent on this channel is creati",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Politics",
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  },
+  {
+   "id": "8dA_nJLqAnw",
+   "url": "https://www.youtube.com/watch?v=8dA_nJLqAnw",
+   "title": "La vera storia di Travis, lo scimpanz\u00e9. #Travis #TravisTheChimp #StorieVere #TrueCrime #Shorts",
+   "channelId": "UCI6gUB7bvrkxW_NFDjrHLSg",
+   "channelUrl": "https://www.youtube.com/channel/UCI6gUB7bvrkxW_NFDjrHLSg",
+   "channelTitle": "Occhio al Caso",
+   "publishedAt": "2026-09-16T15:51:29Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/8dA_nJLqAnw/hqdefault.jpg",
+   "duration": "PT52S",
+   "durationSeconds": 52,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 51100,
+   "likeCount": 516,
+   "commentCount": 88,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 647,
+    "videoCount": 30,
+    "viewCount": 678702,
+    "country": null,
+    "publishedAt": "2018-10-12T14:47:36Z",
+    "description": "\ud83d\udc41\ufe0f Storie, misteri e leggende.\nVere o inventate? Decidi tu.",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+    ]
+   }
+  },
+  {
+   "id": "tqei_pbnQhY",
+   "url": "https://www.youtube.com/watch?v=tqei_pbnQhY",
+   "title": "\"How Street Factions Secretly Took Over Atlanta...\" \ud83d\ude33 #shorts",
+   "channelId": "UCG2dqzVcgMZGIAzdBnDq-SQ",
+   "channelUrl": "https://www.youtube.com/channel/UCG2dqzVcgMZGIAzdBnDq-SQ",
+   "channelTitle": "Trend Cast Clips",
+   "publishedAt": "2026-09-14T16:03:32Z",
+   "description": "The emergence of organized street factions in major urban centers is rooted in complex socioeconomic shifts, territorial migration, and generational influence. Long before regional subcultures gained mainstream attention, local neighborhoods developed intricate informal codes and strict boundary enforcement systems. Ri",
+   "tags": [
+    "prison stories",
+    "prison interview",
+    "prison podcast",
+    "life behind bars",
+    "inmate interview",
+    "true crime podcast",
+    "prison survival",
+    "lockdown stories",
+    "jail interview",
+    "viral shorts",
+    "crime documentary",
+    "street stories"
+   ],
+   "categoryId": "24",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/tqei_pbnQhY/hqdefault.jpg",
+   "duration": "PT1M56S",
+   "durationSeconds": 116,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 43612,
+   "likeCount": 1351,
+   "commentCount": 154,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 78600,
+    "videoCount": 453,
+    "viewCount": 79345385,
+    "country": "US",
+    "publishedAt": "2026-05-25T23:27:04.816704Z",
+    "description": "Welcome to Trend Cast Clips! \ud83c\udf99\ufe0f\n\nLove podcasts but don't have time for full episodes? We've got you covered. Trend Cast Clips brings you the absolute best highlights, raw debates, and unfiltered stories from the biggest and most viral podca",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Health"
+    ]
+   }
+  },
+  {
+   "id": "XJ07GRvzRzA",
+   "url": "https://www.youtube.com/watch?v=XJ07GRvzRzA",
+   "title": "They Disappeared Without a Trace\u2026 What Happened Next will shock you#TrueCrime #MissingPerson.",
+   "channelId": "UC941xDM3BW4n2W5T1ccGuLQ",
+   "channelUrl": "https://www.youtube.com/channel/UC941xDM3BW4n2W5T1ccGuLQ",
+   "channelTitle": "Uncoverwithus",
+   "publishedAt": "2026-09-11T14:32:05Z",
+   "description": "They were here one moment\u2026 and then they were gone.\nNo answers. No clear explanation. Just unanswered questions.\nWatch until the end \u2014 the final detail may change how you see this case. \ud83d\udc40\n\ud83d\udd0e Follow Uncovered with Us for more disturbing true-crime and missing-person cases.\n\ud83d\udcac What do YOU think happened? Comment your theor",
+   "tags": [
+    "true crime, missing person, missing persons, missing person case, unsolved mystery, unsolved cases, true crime shorts, missing people, mysterious disappearance, disappeared without a trace, crime story, true crime story, cold case, unexplained disappearance, disturbing cases, mystery cases, American true crime, crime shorts, uncovered with us"
+   ],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/XJ07GRvzRzA/hqdefault.jpg",
+   "duration": "PT18S",
+   "durationSeconds": 18,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 45905,
+   "likeCount": 648,
+   "commentCount": 22,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 95,
+    "videoCount": 30,
+    "viewCount": 142425,
+    "country": null,
+    "publishedAt": "2026-08-17T15:59:56.525884Z",
+    "description": "Welcome to Uncover With Us \u2014 where real cases, hidden details, and unanswered questions come to light.\n\nWe explore real criminal cases, mysterious disappearances, major investigations, and courtroom stories through carefully researched, doc",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Film",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "UMeFbK1MGJQ",
+   "url": "https://www.youtube.com/watch?v=UMeFbK1MGJQ",
+   "title": "CANADA'S BIGGEST TRUE CRIME CASE \ud83d\ude31 #jumpersjump #podcast #shorts",
+   "channelId": "UCKQyUfaYK8_cazEkd49fxTw",
+   "channelUrl": "https://www.youtube.com/channel/UCKQyUfaYK8_cazEkd49fxTw",
+   "channelTitle": "Daily Shyam",
+   "publishedAt": "2026-09-06T18:03:14Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/UMeFbK1MGJQ/hqdefault.jpg",
+   "duration": "PT1M5S",
+   "durationSeconds": 65,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 34634,
+   "likeCount": 1162,
+   "commentCount": 108,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 254000,
+    "videoCount": 334,
+    "viewCount": 127288871,
+    "country": "US",
+    "publishedAt": "2025-08-20T04:44:30.393972Z",
+    "description": "Hey everyone!\nOur only goal here is to bring a little positivity to your day by sharing entertaining and creative shorts. Each video takes us 2\u20133 hours of effort where we polish the clips with unique subtitles, smooth transitions, fun sound",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "J75buMdJa9U",
+   "url": "https://www.youtube.com/watch?v=J75buMdJa9U",
+   "title": "Why Did This Mother Abandon Her Baby? \ud83d\ude33 #mystery #crime #shorts",
+   "channelId": "UCf02v9X9qvGboNM-w9IMEjg",
+   "channelUrl": "https://www.youtube.com/channel/UCf02v9X9qvGboNM-w9IMEjg",
+   "channelTitle": "HEARTS & CRIMES TV",
+   "publishedAt": "2026-08-23T03:45:13Z",
+   "description": "A Florida mother faces serious charges after abandoning her child in a car.\n\nThis footage captures the moment a witness discovered the one-year-old alone, the mother's return, and her eventual arrest. We break down the court proceedings and official police reports surrounding this child endangerment case.\n\nSubscribe fo",
+   "tags": [
+    "Florida mother arrest",
+    "abandoned child case",
+    "police bodycam footage",
+    "child endangerment news",
+    "court proceedings",
+    "true crime updates"
+   ],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/J75buMdJa9U/hqdefault.jpg",
+   "duration": "PT1M8S",
+   "durationSeconds": 68,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 32528,
+   "likeCount": 1640,
+   "commentCount": 162,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 594,
+    "videoCount": 120,
+    "viewCount": 320253,
+    "country": "US",
+    "publishedAt": "2024-03-22T05:05:19.063242Z",
+    "description": "Welcome to Hearts & Crimes TV \u2014 where real stories, real people, and real conversations meet the darker side of love, trust, and betrayal.\n\nWe cover true-crime cases, chilling 911 calls, investigations, relationship crimes, case updates, an",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Film"
+    ]
+   }
+  },
+  {
+   "id": "e8CgEB4UAk4",
+   "url": "https://www.youtube.com/watch?v=e8CgEB4UAk4",
+   "title": "K\u1ef3 \u00e1n l\u1ed3ng s\u1eaft d\u01b0\u1edbi \u0111\u00e1y h\u1ed3 #shorts #kyancothat #truecrime",
+   "channelId": "UCoVxRPMlyd3OggEE77W87zw",
+   "channelUrl": "https://www.youtube.com/channel/UCoVxRPMlyd3OggEE77W87zw",
+   "channelTitle": "K\u1ef3 \u00c1n C\u00f3 Th\u1eadt",
+   "publishedAt": "2026-09-16T02:36:23Z",
+   "description": "V\u1ee4 \u00c1N CHI\u1ebeC L\u1ed2NG S\u1eaeT R\u00daNG \u0110\u1ed8NG: \u0110\u1ea0I GIA B\u1eca NH\u1ed0T D\u01af\u1edaI \u0110\u00c1Y H\u1ed2! | K\u1ef2 \u00c1N C\u00d3 TH\u1eacT\n-----------------------------------\n\u25ba Fanpage: https://www.facebook.com/107179508871518\n\u25ba H\u00e3y like v\u00e0 subscribe (\u1ea5n chu\u00f4ng theo d\u00f5i) \u0111\u1ec3 nh\u1eadn th\u00f4ng b\u00e1o m\u1ed7i khi c\u00f3 video m\u1edbi c\u1ee7a K\u1ef3 \u00c1n C\u00f3 Th\u00e2t nh\u00e9!\n\n\u25ba LI\u00caN H\u1ec6 V\u1edaI K\u1ef2 \u00c1N C\u00d3 TH\u1eacT N\u1ebeU C\u00d3 V\u1ea4N \u0110\u1ec0 V\u1ec0 B\u1ea2",
+   "tags": [
+    "true crime",
+    "b\u00ed \u1ea9n",
+    "k\u1ef3 \u00e1n",
+    "k\u1ef3 \u00e1n th\u1ebf gi\u1edbi",
+    "ph\u00e1 \u00e1n",
+    "\u0111i\u1ec1u tra \u00e1n",
+    "v\u1ee5 \u00e1n c\u00f3 th\u1eadt",
+    "c\u00e2u chuy\u1ec7n k\u1ef3 \u00e1n",
+    "h\u00e0nh tr\u00ecnh ph\u00e1 \u00e1n",
+    "gi\u1ea3i m\u00e3 k\u1ef3 \u00e1n",
+    "v\u1ee5 \u00e1n b\u00ed \u1ea9n",
+    "k\u1ef3 \u00e1n c\u00f3 th\u1eadt"
+   ],
+   "categoryId": "22",
+   "language": "vi",
+   "thumbnailUrl": "https://i.ytimg.com/vi/e8CgEB4UAk4/hqdefault.jpg",
+   "duration": "PT1M50S",
+   "durationSeconds": 110,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 31073,
+   "likeCount": 844,
+   "commentCount": 10,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 176000,
+    "videoCount": 782,
+    "viewCount": 43091719,
+    "country": "US",
+    "publishedAt": "2024-02-18T07:01:00.66709Z",
+    "description": "M\u00ecnh l\u00e0 Mai Anh T\u00e0i! Ng\u01b0\u1eddi s\u1ebd \u0111em \u0111\u1ebfn c\u00e1c v\u1ee5 \u00e1n x\u1ea3y ra tr\u00ean to\u00e0n th\u1ebf gi\u1edbi theo 1 c\u00e1ch kh\u00e1ch quan v\u00e0 t\u1ed5ng th\u1ec3 nh\u1ea5t. K\u00eanh m\u00ecnh chuy\u00ean v\u1ec1 ph\u00e2n t\u00edch t\u1ed9i ph\u1ea1m!",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "0iFliCpM0CQ",
+   "url": "https://www.youtube.com/watch?v=0iFliCpM0CQ",
+   "title": "Decoding The Viral \"Lindsay Clancy Death Penalty\" Graphic! \ud83d\udea8\u2696\ufe0f. #shorts",
+   "channelId": "UCzahOIlAqj6Wc5T3VsnuIEw",
+   "channelUrl": "https://www.youtube.com/channel/UCzahOIlAqj6Wc5T3VsnuIEw",
+   "channelTitle": "GamePulse TV",
+   "publishedAt": "2026-09-10T22:00:13Z",
+   "description": "How do online political and true-crime commentary accounts leverage victim-versus-defendant split imagery, psychiatric defense rejections, and direct agreement prompts to maximize algorithm reach? \u2696\ufe0f\ud83d\udea8\ud83d\udcf1\ud83d\udc40\nA viral social media post published by account ragingamericans features a split graphic showing the three young Clanc",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/0iFliCpM0CQ/hqdefault.jpg",
+   "duration": "PT6S",
+   "durationSeconds": 6,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 73076,
+   "likeCount": 6432,
+   "commentCount": 517,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 9990,
+    "videoCount": 1045,
+    "viewCount": 45263575,
+    "country": "US",
+    "publishedAt": "2026-06-16T18:41:59.128864Z",
+    "description": "Welcome to GamePulse TV \u26bd\ud83c\udfc0\ud83d\udd25 \n\n\nThe home of fast, exciting, and powerful sports and USA politics content from around the world.\n\nContent on this channel is creatively edited and\ntransformed with commentary, narration, visuals,\nand storytelli",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Politics",
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  },
+  {
+   "id": "BeoK8OsLlTs",
+   "url": "https://www.youtube.com/watch?v=BeoK8OsLlTs",
+   "title": "\u0e06\u0e32\u0e15\u0e01\u0e23\u0e15\u0e31\u0e27\u0e08\u0e23\u0e34\u0e07... \u0e2d\u0e22\u0e39\u0e48\u0e43\u0e19\u0e04\u0e38\u0e01\u0e40\u0e14\u0e35\u0e22\u0e27\u0e01\u0e31\u0e1a\u0e40\u0e02\u0e32 \ud83d\ude33 #shorts #TrueCrime #KirkBloodsworth #\u0e04\u0e14\u0e35\u0e08\u0e23\u0e34\u0e07 #\u0e40\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e08\u0e23\u0e34\u0e07",
+   "channelId": "UC9hJw8aP75FRIB9N5LudQKQ",
+   "channelUrl": "https://www.youtube.com/channel/UC9hJw8aP75FRIB9N5LudQKQ",
+   "channelTitle": "Crime Scroll",
+   "publishedAt": "2026-08-27T09:55:21Z",
+   "description": "\u0e0a\u0e32\u0e22\u0e04\u0e19\u0e19\u0e35\u0e49\u0e16\u0e39\u0e01\u0e15\u0e31\u0e14\u0e2a\u0e34\u0e19\u0e1b\u0e23\u0e30\u0e2b\u0e32\u0e23\u0e0a\u0e35\u0e27\u0e34\u0e15\u0e43\u0e19\u0e04\u0e14\u0e35\u0e17\u0e35\u0e48\u0e40\u0e02\u0e32\u0e44\u0e21\u0e48\u0e44\u0e14\u0e49\u0e01\u0e48\u0e2d...\n\n\u0e1b\u0e35 1985 Kirk Bloodsworth \u0e16\u0e39\u0e01\u0e15\u0e31\u0e14\u0e2a\u0e34\u0e19\u0e27\u0e48\u0e32\u0e21\u0e35\u0e04\u0e27\u0e32\u0e21\u0e1c\u0e34\u0e14\u0e43\u0e19\u0e04\u0e14\u0e35\u0e06\u0e32\u0e15\u0e01\u0e23\u0e23\u0e21\u0e40\u0e14\u0e47\u0e01\u0e2b\u0e0d\u0e34\u0e07\u0e27\u0e31\u0e22 9 \u0e02\u0e27\u0e1a\u0e43\u0e19\u0e23\u0e31\u0e10\u0e41\u0e21\u0e23\u0e34\u0e41\u0e25\u0e19\u0e14\u0e4c \u0e41\u0e25\u0e30\u0e15\u0e49\u0e2d\u0e07\u0e43\u0e0a\u0e49\u0e0a\u0e35\u0e27\u0e34\u0e15\u0e2d\u0e22\u0e39\u0e48\u0e43\u0e19\u0e04\u0e38\u0e01\u0e40\u0e01\u0e37\u0e2d\u0e1a 9 \u0e1b\u0e35 \u0e01\u0e48\u0e2d\u0e19\u0e17\u0e35\u0e48\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08 DNA \u0e08\u0e30\u0e1e\u0e34\u0e2a\u0e39\u0e08\u0e19\u0e4c\u0e27\u0e48\u0e32\u0e40\u0e02\u0e32\u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e04\u0e19\u0e23\u0e49\u0e32\u0e22\n\n\u0e41\u0e15\u0e48\u0e40\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e17\u0e35\u0e48\u0e40\u0e2b\u0e25\u0e37\u0e2d\u0e40\u0e0a\u0e37\u0e48\u0e2d\u0e01\u0e27\u0e48\u0e32\u0e19\u0e31\u0e49\u0e19\u0e40\u0e01\u0e34\u0e14\u0e02\u0e36\u0e49\u0e19\u0e2d\u0e35\u0e01 10 \u0e1b\u0e35\u0e15\u0e48\u0e2d\u0e21\u0e32...\n\nDNA \u0e2a\u0e32\u0e21\u0e32\u0e23\u0e16\u0e23\u0e30\u0e1a\u0e38\u0e15\u0e31\u0e27\u0e06\u0e32\u0e15\u0e01\u0e23\u0e15\u0e31\u0e27\u0e08\u0e23\u0e34\u0e07\u0e44\u0e14\u0e49 \u0e41\u0e25\u0e30 ",
+   "tags": [],
+   "categoryId": "22",
+   "language": "th",
+   "thumbnailUrl": "https://i.ytimg.com/vi/BeoK8OsLlTs/hqdefault.jpg",
+   "duration": "PT1M2S",
+   "durationSeconds": 62,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 27039,
+   "likeCount": 760,
+   "commentCount": 3,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 4030,
+    "videoCount": 60,
+    "viewCount": 3160073,
+    "country": null,
+    "publishedAt": "2026-06-23T14:44:42.317689Z",
+    "description": "\u0e40\u0e25\u0e48\u0e32\u0e40\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e04\u0e14\u0e35\u0e08\u0e23\u0e34\u0e07\u0e43\u0e19\u0e41\u0e1a\u0e1a\u0e2a\u0e19\u0e38\u0e01 \u0e46 \u0e16\u0e49\u0e32\u0e0a\u0e2d\u0e1a \u0e2d\u0e22\u0e48\u0e32\u0e25\u0e37\u0e21\u0e01\u0e14\u0e15\u0e34\u0e14\u0e15\u0e32\u0e21\u0e44\u0e27\u0e49\u0e14\u0e49\u0e27\u0e22\u0e19\u0e30\u0e04\u0e23\u0e31\u0e1a \u2764\ufe0f",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Society"
+    ]
+   }
+  },
+  {
+   "id": "Fi11dYZCp3c",
+   "url": "https://www.youtube.com/watch?v=Fi11dYZCp3c",
+   "title": "\ud83d\udea8 YNW MELLY JUDGE ORDERS BOTH SIDES TO FINALLY IDENTIFY TRIAL EVIDENCE #ynwmelly #shorts",
+   "channelId": "UCx_YisH6585iq7ZYrd80tgA",
+   "channelUrl": "https://www.youtube.com/channel/UCx_YisH6585iq7ZYrd80tgA",
+   "channelTitle": "Lebexy_Press",
+   "publishedAt": "2026-08-30T21:30:22Z",
+   "description": "YNW Melly\u2019s judge has ordered both prosecutors and the defense to finally identify which evidence can and cannot be used at his upcoming retrial. \ud83d\udc40\u2696\ufe0f\n\nJudge Martin S. Fein reportedly noted that 982 days had passed without either side complying with a December 2023 court order concerning suppressed evidence.\n\nBoth sides",
+   "tags": [
+    "ynw melly",
+    "ynw melly trial",
+    "ynw melly retrial",
+    "ynw melly court",
+    "ynw melly case",
+    "ynw melly evidence",
+    "ynw melly judge",
+    "ynw melly latest",
+    "ynw melly news",
+    "ynw melly 2027",
+    "ynw melly january 2027",
+    "martin fein"
+   ],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/Fi11dYZCp3c/hqdefault.jpg",
+   "duration": "PT5S",
+   "durationSeconds": 5,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 62356,
+   "likeCount": 282,
+   "commentCount": 20,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Music"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 912,
+    "videoCount": 323,
+    "viewCount": 7704814,
+    "country": "US",
+    "publishedAt": "2026-07-24T08:36:53.621685Z",
+    "description": "Welcome to Lebexy_Press ! \ud83d\udd25\n\nYour source for viral news, celebrity updates, trending stories, internet culture, and the latest viral moments from around the world. We transform trending content through creative editing, original commentary,",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Hip_hop_music",
+     "https://en.wikipedia.org/wiki/Music",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "XyPrcpVDIxw",
+   "url": "https://www.youtube.com/watch?v=XyPrcpVDIxw",
+   "title": "18 Years Wrongly Imprisoned. His Sister Saved Him. #shorts #truecrime #endofsentence #crimpro #crim",
+   "channelId": "UC9h-PEn8GRy25sMdBfh71TQ",
+   "channelUrl": "https://www.youtube.com/channel/UC9h-PEn8GRy25sMdBfh71TQ",
+   "channelTitle": "Echoes of Hope:",
+   "publishedAt": "2026-09-15T22:30:11Z",
+   "description": "Betty Anne Waters proved that hope can break through prison walls. She became a lawyer for one reason only: to free her innocent brother, Kenneth. Welcome to Echoes of Hope, where we share incredible true stories of resilience.",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/XyPrcpVDIxw/hqdefault.jpg",
+   "duration": "PT4S",
+   "durationSeconds": 4,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 39650,
+   "likeCount": 555,
+   "commentCount": 14,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Society"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 290,
+    "videoCount": 39,
+    "viewCount": 712730,
+    "country": null,
+    "publishedAt": "2026-08-26T19:48:06.076627Z",
+    "description": "",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Health",
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+    ]
+   }
+  },
+  {
+   "id": "XwWo-dzXZgQ",
+   "url": "https://www.youtube.com/watch?v=XwWo-dzXZgQ",
+   "title": "Gina H. entschuldigt sich bei Fabians Mama und Dorina #fallfabian #truecrimeshorts #news",
+   "channelId": "UCiYOBuqZL3xvgeM6eedxofg",
+   "channelUrl": "https://www.youtube.com/channel/UCiYOBuqZL3xvgeM6eedxofg",
+   "channelTitle": "Sarah Kolumna",
+   "publishedAt": "2026-08-24T14:02:59Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "22",
+   "language": "de",
+   "thumbnailUrl": "https://i.ytimg.com/vi/XwWo-dzXZgQ/hqdefault.jpg",
+   "duration": "PT1M25S",
+   "durationSeconds": 85,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 26597,
+   "likeCount": 294,
+   "commentCount": 27,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 44200,
+    "videoCount": 346,
+    "viewCount": 8886661,
+    "country": "DE",
+    "publishedAt": "2014-02-03T20:10:59Z",
+    "description": "TrueCrime",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Television_program",
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "UKMjQiIdSkc",
+   "url": "https://www.youtube.com/watch?v=UKMjQiIdSkc",
+   "title": "Missing 8 Months, Then She Texted Me #textingstory #truecrime #horror #shorts",
+   "channelId": "UCnULptvY_F2jwlQnQErJ-YA",
+   "channelUrl": "https://www.youtube.com/channel/UCnULptvY_F2jwlQnQErJ-YA",
+   "channelTitle": "Story Tales ",
+   "publishedAt": "2026-09-16T20:09:55Z",
+   "description": "",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/UKMjQiIdSkc/hqdefault.jpg",
+   "duration": "PT1M24S",
+   "durationSeconds": 84,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 21179,
+   "likeCount": 901,
+   "commentCount": 6,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 8740,
+    "videoCount": 260,
+    "viewCount": 10461145,
+    "country": null,
+    "publishedAt": "2025-05-31T10:44:18.067936Z",
+    "description": "0hadr5oh",
+    "topicCategories": []
+   }
+  },
+  {
+   "id": "BbPTuJkOAaw",
+   "url": "https://www.youtube.com/watch?v=BbPTuJkOAaw",
+   "title": "\u201c\u0b95\u0bc1\u0bb4\u0ba8\u0bcd\u0ba4\u0bc8\u0b95\u0bb3\u0bc8 \u0b95\u0bca\u0ba9\u0bcd\u0bb1\u0bc1 \u0b8e\u0bb0\u0bbf\u0ba4\u0bcd\u0ba4 \u0ba4\u0bbe\u0baf\u0bcd\u2026 \ud83d\ude28\ud83d\udd25\u201d#shorts ##trending  #truecrime",
+   "channelId": "UC8af5v4wGNO2iTv1c3SYwbA",
+   "channelUrl": "https://www.youtube.com/channel/UC8af5v4wGNO2iTv1c3SYwbA",
+   "channelTitle": "\ud835\udd75\ud835\udd83 \ud835\udd78\ud835\udd9e\ud835\udd98\ud835\udd99\ud835\udd8a\ud835\udd97\ud835\udd8e\ud835\udd8a\ud835\udd98 \u2620\ufe0f",
+   "publishedAt": "2026-09-11T08:25:14Z",
+   "description": "Description:\n\u0b92\u0bb0\u0bc1 \u0ba4\u0bbe\u0baf\u0bc7 \u0ba4\u0ba9\u0ba4\u0bc1 \u0b95\u0bc1\u0bb4\u0ba8\u0bcd\u0ba4\u0bc8\u0b95\u0bb3\u0bc8 \u0b95\u0bca\u0ba9\u0bcd\u0bb1\u0bc1, \u0b89\u0b9f\u0bb2\u0bcd\u0b95\u0bb3\u0bc8 \u0ba4\u0bc0\u0baf\u0bbf\u0bb2\u0bcd \u0b8e\u0bb0\u0bbf\u0ba4\u0bcd\u0ba4\u0ba4\u0bbe\u0b95 \u0b95\u0bc1\u0bb1\u0bcd\u0bb1\u0bae\u0bcd \u0b9a\u0bbe\u0b9f\u0bcd\u0b9f\u0baa\u0bcd\u0baa\u0b9f\u0bcd\u0b9f \u0b85\u0ba4\u0bbf\u0bb0\u0bcd\u0b9a\u0bcd\u0b9a\u0bbf\u0b95\u0bb0\u0bae\u0bbe\u0ba9 \u0bb5\u0bb4\u0b95\u0bcd\u0b95\u0bc1\u2026 \u0b89\u0ba3\u0bcd\u0bae\u0bc8\u0baf\u0bbf\u0bb2\u0bcd \u0b85\u0ba8\u0bcd\u0ba4 \u0bb5\u0bc0\u0b9f\u0bcd\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0bb3\u0bcd \u0b8e\u0ba9\u0bcd\u0ba9 \u0ba8\u0b9f\u0ba8\u0bcd\u0ba4\u0ba4\u0bc1? \ud83d\ude28\ud83d\udd25\n\nHashtags:\n#NakiraGriner #TrueCrime #TrueCrimeTamil #CrimeCase #CrimeStory #TamilCrime #CrimeReels #Mystery #HorrifyingCase #RealCrime #TrueCrimeStories #TamilRe",
+   "tags": [],
+   "categoryId": "22",
+   "language": "ta",
+   "thumbnailUrl": "https://i.ytimg.com/vi/BbPTuJkOAaw/hqdefault.jpg",
+   "duration": "PT49S",
+   "durationSeconds": 49,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 17106,
+   "likeCount": 316,
+   "commentCount": 4,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 261,
+    "videoCount": 72,
+    "viewCount": 77300,
+    "country": null,
+    "publishedAt": "2020-12-03T05:44:36.706928Z",
+    "description": "\ud83d\udd25 Welcome to the world of mysteries.\n\nEvery mystery has a story... but not every story has an answer.\n\nThis channel explores real unsolved mysteries, eerie incidents, strange disappearances, haunted legends, mysterious broadcasts, unexplain",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "6dwytKG3x9g",
+   "url": "https://www.youtube.com/watch?v=6dwytKG3x9g",
+   "title": "Dark Mystery Behind Premananda\ud83d\ude31 #CrimeStory #MysteryStory #TrueCrime #TamilShorts #Mystery",
+   "channelId": "UCQRrr1FLkeGOK5ekGQJN5iA",
+   "channelUrl": "https://www.youtube.com/channel/UCQRrr1FLkeGOK5ekGQJN5iA",
+   "channelTitle": "Stereo File",
+   "publishedAt": "2026-09-11T15:30:27Z",
+   "description": "Who was Premananda Swamigal, and what really happened behind the controversies surrounding him? In this short, discover the shocking events and mysterious story connected to Premananda Swamigal.\n\nWatch till the end to know the story! \ud83d\udd0d\n\n#Premananda #PremanandaSwamigal #CrimeStory #MysteryStory #TrueCrime #TamilShorts #",
+   "tags": [
+    "crime",
+    "Mistry",
+    "casefile",
+    "crimecase",
+    "mistry story",
+    "storytelling",
+    "store time"
+   ],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/6dwytKG3x9g/hqdefault.jpg",
+   "duration": "PT58S",
+   "durationSeconds": 58,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 18371,
+   "likeCount": 526,
+   "commentCount": 10,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Entertainment"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 6750,
+    "videoCount": 31,
+    "viewCount": 2490878,
+    "country": null,
+    "publishedAt": "2026-07-25T11:37:56.333362Z",
+    "description": "\ud83d\udd0e Welcome \n\nInteresting real-world stories explained in Tamil\n\n\u0b87\u0ba8\u0bcd\u0ba4 channel-\u0bb2\u0bcd \u0b89\u0ba3\u0bcd\u0bae\u0bc8 \u0b9a\u0bae\u0bcd\u0baa\u0bb5\u0b99\u0bcd\u0b95\u0bb3\u0bc8 \u0b85\u0b9f\u0bbf\u0baa\u0bcd\u0baa\u0b9f\u0bc8\u0baf\u0bbe\u0b95\u0b95\u0bcd \u0b95\u0bca\u0ba3\u0bcd\u0b9f Crime Stories, Crime Files, Unsolved Mysteries, Real Horror Incidents, Missing Cases, Dark History , documentary , education",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  }
+ ],
+ "snapshotId": "fb8696dc7dd27705",
+ "analytics": {
+  "sampleSize": 25,
+  "views": {
+   "median": 62356,
+   "average": 249324,
+   "max": 2172903,
+   "rows": 25
+  },
+  "viewsPerDay": {
+   "median": 7266.6,
+   "top": [
+    {
+     "id": "1zCI5RPsu5k",
+     "value": 178304.55
+    },
+    {
+     "id": "OixCD9ZxkFg",
+     "value": 62840.09
+    },
+    {
+     "id": "GoRWBakHG8Q",
+     "value": 21122.33
+    },
+    {
+     "id": "8dA_nJLqAnw",
+     "value": 15012.09
+    },
+    {
+     "id": "DcZ2us6W5vc",
+     "value": 14633.67
+    }
+   ],
+   "note": "age-normalized public proxy, not real-time velocity"
+  },
+  "visibleInteractionRate": {
+   "median": 0.0231,
+   "rows": 24,
+   "note": "(likes+comments)/views on complete rows only; not engagement or satisfaction"
+  },
+  "reachVsSubscribers": {
+   "top": [
+    {
+     "id": "LUmw6kdX3dE",
+     "value": 2000.53
+    },
+    {
+     "id": "dLVf1nPnMJE",
+     "value": 1421.3
+    },
+    {
+     "id": "XJ07GRvzRzA",
+     "value": 483.21
+    },
+    {
+     "id": "U9g1Jiqa4a8",
+     "value": 401.51
+    },
+    {
+     "id": "hTpZvRj9uHM",
+     "value": 225.78
+    }
+   ],
+   "note": "views / current rounded subscriber count; subs are today's, not at publish time"
+  },
+  "durationMix": {
+   "under4min": 25
+  },
+  "recencyMix": {
+   "30d": 20,
+   "7d": 5
+  },
+  "recurringTags": [
+   {
+    "tag": "shorts",
+    "count": 4
+   },
+   {
+    "tag": "short",
+    "count": 4
+   },
+   {
+    "tag": "crime",
+    "count": 4
+   },
+   {
+    "tag": "reaction",
+    "count": 3
+   },
+   {
+    "tag": "lindsay clancy",
+    "count": 3
+   },
+   {
+    "tag": "lindsay clancy case",
+    "count": 3
+   },
+   {
+    "tag": "lindsay clancy guilty",
+    "count": 3
+   },
+   {
+    "tag": "lindsay clancy not guilty",
+    "count": 3
+   },
+   {
+    "tag": "case result",
+    "count": 3
+   },
+   {
+    "tag": "reaction video",
+    "count": 3
+   },
+   {
+    "tag": "police",
+    "count": 3
+   },
+   {
+    "tag": "true crime",
+    "count": 3
+   },
+   {
+    "tag": "viral",
+    "count": 2
+   }
+  ],
+  "channelConcentration": {
+   "uniqueChannels": 22,
+   "top": [
+    {
+     "channel": "Combs Waterkotte",
+     "videos": 3
+    },
+    {
+     "channel": "HEARTS & CRIMES TV",
+     "videos": 2
+    },
+    {
+     "channel": "Sev7n Games OFICIAL",
+     "videos": 1
+    },
+    {
+     "channel": "The Joint Venture Show",
+     "videos": 1
+    },
+    {
+     "channel": "DER SPIEGEL",
+     "videos": 1
+    }
+   ]
+  },
+  "coverage": {
+   "viewCount": "25/25",
+   "likeCount": "24/25",
+   "commentCount": "25/25",
+   "durationSeconds": "25/25",
+   "language": "25/25",
+   "tags": "14/25",
+   "subscriberCount": "25/25"
+  },
+  "caveats": [
+   "totalResultsApprox is not search volume",
+   "one personalized, region-sensitive snapshot, not a trend",
+   "under4min is not necessarily a Short",
+   "thumbnail pixels were not inspected",
+   "missing fields stay unavailable, never zero"
+  ]
+ }
+}

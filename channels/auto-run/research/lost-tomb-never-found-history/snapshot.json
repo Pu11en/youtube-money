@@ -1,0 +1,1392 @@
+{
+ "provider": "youtube-data-api-v3",
+ "query": "lost tomb never found history",
+ "filters": {
+  "order": "viewCount",
+  "published": "year",
+  "duration": "short",
+  "maxResults": 25
+ },
+ "retrievedAt": "2026-09-20T01:33:32.773426Z",
+ "regionCode": "US",
+ "totalResultsApprox": 66875,
+ "orderedVideoIds": [
+  "phACtUDwSbI",
+  "DszSif0SOOo",
+  "lSKM-5Sh2dw",
+  "EpAHt6WcmcI",
+  "bPXqFM73kUI",
+  "nRSoOxp3qRg",
+  "iDCxT18ra2s",
+  "OSl-QWCVJr0",
+  "gmFb1AJr0GQ",
+  "3suFiCwHMX8",
+  "M18svWXFGrc",
+  "zn4IvCSNVvg",
+  "80PjYGwF-zI",
+  "tJL7LFDqUkA",
+  "QME6LMjTi_M",
+  "0L0znljj94w",
+  "oYSN0j7x8GY",
+  "3j-hVVZaAAY",
+  "DqmAHjefM9o",
+  "s4BcnTL4n1M",
+  "w2Nns4LlTaM",
+  "vUBKxKyJqSY",
+  "3ljDzXLq4hE",
+  "6C682kmZQ6g",
+  "hr0W0KEAN9E"
+ ],
+ "warnings": [],
+ "videos": [
+  {
+   "id": "phACtUDwSbI",
+   "url": "https://www.youtube.com/watch?v=phACtUDwSbI",
+   "title": "Untold Story of Cleopatra\u2019s Lost Tomb \ud83d\ude33",
+   "channelId": "UCknWLvc1rouEPA7-_3l6cPA",
+   "channelUrl": "https://www.youtube.com/channel/UCknWLvc1rouEPA7-_3l6cPA",
+   "channelTitle": "Poonam Sihag ",
+   "publishedAt": "2026-08-22T14:28:26Z",
+   "description": "Untold Story of Cleopatra\u2019s Lost Tomb \ud83d\ude33\n\n\n\n\n\n\n#Facts #Viral #CleopatraMystery #LostTomb #QueenCleopatra #EgyptianHistory #AncientMysteries #UntoldHistory #Cleopatra",
+   "tags": [
+    "shorts",
+    "yt shorts",
+    "history",
+    "facts",
+    "history facts"
+   ],
+   "categoryId": "22",
+   "language": "hi",
+   "thumbnailUrl": "https://i.ytimg.com/vi/phACtUDwSbI/hqdefault.jpg",
+   "duration": "PT1M17S",
+   "durationSeconds": 77,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 473922,
+   "likeCount": null,
+   "commentCount": 29,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 144000,
+    "videoCount": 73,
+    "viewCount": 54265212,
+    "country": "IN",
+    "publishedAt": "2022-06-02T11:35:30.434496Z",
+    "description": "",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+    ]
+   }
+  },
+  {
+   "id": "DszSif0SOOo",
+   "url": "https://www.youtube.com/watch?v=DszSif0SOOo",
+   "title": "Cleopatra\u2019s Final Secret - Is This Where Her Tomb Is?",
+   "channelId": "UCG9dpvZGXwH3juUUHykvR-Q",
+   "channelUrl": "https://www.youtube.com/channel/UCG9dpvZGXwH3juUUHykvR-Q",
+   "channelTitle": "Today I Learned Science",
+   "publishedAt": "2025-09-26T21:50:05Z",
+   "description": "#sponsored This is NOT a drill, thank you @NatGeo  for sponsoring this video, we finally have a Dr. Kathleen Martinez Cleopatra\u2019s Lost Tomb UPDATE #CleopatrasFinalSecret is now streaming on @disneyplus  and @hulu",
+   "tags": [],
+   "categoryId": "24",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/DszSif0SOOo/hqdefault.jpg",
+   "duration": "PT2M59S",
+   "durationSeconds": 179,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 495276,
+   "likeCount": 44603,
+   "commentCount": 523,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+   ],
+   "hasPaidProductPlacement": true,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 912000,
+    "videoCount": 492,
+    "viewCount": 191143043,
+    "country": "US",
+    "publishedAt": "2022-09-06T01:26:47.812551Z",
+    "description": "Today I Learned Science is a digital show that does deep dive science and history episodes from an investigative storytelling lens. At its core: science worth sharing.\n\nAbout:\nDr. Harini Bhat is a pharmacist turned science storyteller. She ",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Health",
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "lSKM-5Sh2dw",
+   "url": "https://www.youtube.com/watch?v=lSKM-5Sh2dw",
+   "title": "The Mystery of Cleopatra's Lost Tomb! #history",
+   "channelId": "UCv3zC2xsa87tAA-QtuQQSWA",
+   "channelUrl": "https://www.youtube.com/channel/UCv3zC2xsa87tAA-QtuQQSWA",
+   "channelTitle": "History with Asly ",
+   "publishedAt": "2026-06-10T20:08:11Z",
+   "description": "Did Cleopatra actually predict that her final resting place would never be found by a man? While the location of her burial site remains one of history\u2019s greatest unsolved mysteries, archaeologist Dr. Kathleen Martinez is on a passionate mission to uncover it. Could she be the one to break the ancient queen's curse? Wa",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/lSKM-5Sh2dw/hqdefault.jpg",
+   "duration": "PT15S",
+   "durationSeconds": 15,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 95391,
+   "likeCount": 1731,
+   "commentCount": 51,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 27500,
+    "videoCount": 314,
+    "viewCount": 87824160,
+    "country": "US",
+    "publishedAt": "2025-12-28T21:43:36.84497Z",
+    "description": "Dive into the forgotten corners of the past where the stories are stranger than fiction. This channel is dedicated to the most unusual, eccentric, and compelling characters history tried to forget.\n\nOur Shorts are quick, fact-packed dives i",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)"
+    ]
+   }
+  },
+  {
+   "id": "EpAHt6WcmcI",
+   "url": "https://www.youtube.com/watch?v=EpAHt6WcmcI",
+   "title": "Cleopatra's Lost Tomb: The Search That Has Lasted 2,000 Years",
+   "channelId": "UCdVJp9KpmgAflt07cEFY94g",
+   "channelUrl": "https://www.youtube.com/channel/UCdVJp9KpmgAflt07cEFY94g",
+   "channelTitle": "Ghostsandhistory",
+   "publishedAt": "2026-04-03T16:08:48Z",
+   "description": "Cleopatra VII died in Alexandria in 30BC following the Roman conquest of Egypt. She was the last active ruler of the Ptolemaic Kingdom. Despite two thousand years of searching her tomb has never been located. In 2024 archaeologist Kathleen Martinez announced her team at Taposiris Magna near Alexandria had found a tunne",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/EpAHt6WcmcI/hqdefault.jpg",
+   "duration": "PT6S",
+   "durationSeconds": 6,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 45113,
+   "likeCount": 256,
+   "commentCount": 24,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 3710,
+    "videoCount": 1492,
+    "viewCount": 21553853,
+    "country": "GB",
+    "publishedAt": "2024-06-16T14:16:56.549506Z",
+    "description": "The darkest corners of history. Botched executions. Defiant last words. Deaths that history tried to bury.\n\nNew Shorts drop daily at 4pm, 7pm and 9pm \u2014 plus one long-form deep dive every week.\n\n\ud83d\udd0e Explore our series:\n\u2022 Botched Executions\n\u2022 D",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Religion",
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "bPXqFM73kUI",
+   "url": "https://www.youtube.com/watch?v=bPXqFM73kUI",
+   "title": "Genghis Khan\u2019s Lost Tomb #History #Shorts",
+   "channelId": "UC1IHsH2pwTGxpaqVYZd2JjA",
+   "channelUrl": "https://www.youtube.com/channel/UC1IHsH2pwTGxpaqVYZd2JjA",
+   "channelTitle": "Forgotten Ages",
+   "publishedAt": "2026-08-05T00:00:19Z",
+   "description": "The final resting place of Genghis Khan remains one of history\u2019s great mysteries.\nAccording to popular historical accounts, extraordinary measures were allegedly taken to keep the location of his burial secret. Some stories claim that thousands of people involved in the funeral were killed, followed by the guards thems",
+   "tags": [
+    "Genghis Khan",
+    "Genghis Khan tomb",
+    "lost tomb",
+    "Mongol Empire",
+    "Mongolian history",
+    "ancient history",
+    "historical mysteries",
+    "history facts",
+    "mystery history",
+    "ancient mysteries"
+   ],
+   "categoryId": "24",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/bPXqFM73kUI/hqdefault.jpg",
+   "duration": "PT6S",
+   "durationSeconds": 6,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 41294,
+   "likeCount": 121,
+   "commentCount": 4,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 1500,
+    "videoCount": 233,
+    "viewCount": 2674715,
+    "country": "ID",
+    "publishedAt": "2024-06-29T19:05:03.639221Z",
+    "description": "Welcome to Forgotten Ages, where we explore unique facts, fascinating stories, and extraordinary events from around the world.\nThe world is full of stories waiting to be discovered.",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Society",
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "nRSoOxp3qRg",
+   "url": "https://www.youtube.com/watch?v=nRSoOxp3qRg",
+   "title": "The Lost Tomb of Cleopatra #history #art #painting",
+   "channelId": "UCN1Fy1eJW1y5EqlJ6Zh9d8g",
+   "channelUrl": "https://www.youtube.com/channel/UCN1Fy1eJW1y5EqlJ6Zh9d8g",
+   "channelTitle": "Mr Sketch Vault",
+   "publishedAt": "2026-08-03T23:30:18Z",
+   "description": "For more than 2,000 years, the location of Cleopatra VII's tomb has remained one of history's greatest unsolved mysteries. After the deaths of Cleopatra and Mark Antony in 30 BC, ancient writers claimed they were buried together, but the exact location has never been confirmed. Archaeologists continue to search for clu",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/nRSoOxp3qRg/hqdefault.jpg",
+   "duration": "PT30S",
+   "durationSeconds": 30,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 23556,
+   "likeCount": null,
+   "commentCount": 11,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 24300,
+    "videoCount": 1121,
+    "viewCount": 102481141,
+    "country": "US",
+    "publishedAt": "2024-11-04T18:53:07.244309Z",
+    "description": "Welcome to Mr Sketch Vault \u2013 Where History Comes to Life Through Art.\n\nAt Mr Sketch Vault, we dive deep into the world of historical paintings and uncover the powerful stories behind them. Every brushstroke tells a story \u2014 of war, revolutio",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)",
+     "https://en.wikipedia.org/wiki/Hobby"
+    ]
+   }
+  },
+  {
+   "id": "iDCxT18ra2s",
+   "url": "https://www.youtube.com/watch?v=iDCxT18ra2s",
+   "title": "Genghis Khan's Lost Tomb \ud83e\udd2f",
+   "channelId": "UCFIOyeO-HU-rhRC9xSi5QWQ",
+   "channelUrl": "https://www.youtube.com/channel/UCFIOyeO-HU-rhRC9xSi5QWQ",
+   "channelTitle": "Stick Man Clips",
+   "publishedAt": "2026-06-28T23:39:52Z",
+   "description": "Genghis Khan built the largest land empire in human history \u2014 and when he died in 1227, he made sure no one would ever find his grave. According to legend, the soldiers escorting his body killed everyone they passed on the way to the burial site to keep its location secret. Then, after the burial, those soldiers were k",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/iDCxT18ra2s/hqdefault.jpg",
+   "duration": "PT28S",
+   "durationSeconds": 28,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 9790,
+   "likeCount": 234,
+   "commentCount": 2,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 97,
+    "videoCount": 63,
+    "viewCount": 83588,
+    "country": null,
+    "publishedAt": "2026-06-12T18:13:22.044391Z",
+    "description": "Bizarre true stories and curiosity-driven facts, explained in under 60 seconds. New shorts daily.",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Film",
+     "https://en.wikipedia.org/wiki/Entertainment",
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "OSl-QWCVJr0",
+   "url": "https://www.youtube.com/watch?v=OSl-QWCVJr0",
+   "title": "Cleopatra\u2019s Tomb Lost for 2,000 Years\u2026 Where Could She Be?",
+   "channelId": "UCfTH68NcIRkwdJvP_eiCTnQ",
+   "channelUrl": "https://www.youtube.com/channel/UCfTH68NcIRkwdJvP_eiCTnQ",
+   "channelTitle": "Time Travel Talez",
+   "publishedAt": "2025-12-22T21:30:11Z",
+   "description": "Cleopatra, Egypt\u2019s most famous queen, vanished from history\u2026 and her tomb has never been found! \ud83c\udffa\nDid it sink beneath Alexandria\u2019s waters? Or is it hidden in a secret desert temple like Taposiris Magna? Discover  shocking facts about Cleopatra\u2019s lost tomb in this short\u2014facts you probably didn\u2019t know!\n\ud83d\udcac Comment below: W",
+   "tags": [],
+   "categoryId": "27",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/OSl-QWCVJr0/hqdefault.jpg",
+   "duration": "PT40S",
+   "durationSeconds": 40,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 5272,
+   "likeCount": null,
+   "commentCount": 25,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 2760,
+    "videoCount": 199,
+    "viewCount": 2526652,
+    "country": "NG",
+    "publishedAt": "2025-09-03T11:25:03.363379Z",
+    "description": "Welcome to Time Travel Talez\u2014 where history and artifacts come alive for the world to see! \ud83c\udf0d We uncover the untold stories of ancient civilizations, legendary leaders, lost treasures, and rare artifacts that shaped humanity across every con",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "gmFb1AJr0GQ",
+   "url": "https://www.youtube.com/watch?v=gmFb1AJr0GQ",
+   "title": "The Mystery of Genghis Khan\u2019s Missing Tomb |  #history #shorts#trending#genghiskhan",
+   "channelId": "UCoKtWkJR-uey3C38l9Y4l0g",
+   "channelUrl": "https://www.youtube.com/channel/UCoKtWkJR-uey3C38l9Y4l0g",
+   "channelTitle": "Brainfade Stories ",
+   "publishedAt": "2026-03-19T16:22:13Z",
+   "description": "He conquered half the world\u2026 and then disappeared without a trace.\nGenghis Khan died in 1227,He conquered half the world\u2026 and then disappeared without a trace.\nGenghis Khan died in 1227, but his burial site has never been found. No tomb, no grave, no marker.\nAccording to historical accounts and legends, his funeral pro",
+   "tags": [
+    "Ai",
+    "history",
+    "viral",
+    "genghis khan",
+    "trending"
+   ],
+   "categoryId": "24",
+   "language": "hi",
+   "thumbnailUrl": "https://i.ytimg.com/vi/gmFb1AJr0GQ/hqdefault.jpg",
+   "duration": "PT1M15S",
+   "durationSeconds": 75,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 3170,
+   "likeCount": 91,
+   "commentCount": 0,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 3330,
+    "videoCount": 43,
+    "viewCount": 1299126,
+    "country": "IN",
+    "publishedAt": "2017-06-16T03:57:29Z",
+    "description": "Welcome to Brainfade  Stories Suno! \ud83c\udfa7\ud83d\udcd6\u2728\n\nYahan aapko milengi mazedaar aur dilchasp kahaniyan jo aapko hamesha yaad rahengi! \ud83c\udff0\ud83d\udc7b\ud83d\udc96\nHum laaye hain cartoon stories, moral stories, emotional kahaniyan, fairy tales aur horror stories jo bachon aur",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Film",
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "3suFiCwHMX8",
+   "url": "https://www.youtube.com/watch?v=3suFiCwHMX8",
+   "title": "Genghis Khan\u2019s tomb was never found \u2014 and here\u2019s why",
+   "channelId": "UC_NdCD0ryaAaJyHlaslu0Jg",
+   "channelUrl": "https://www.youtube.com/channel/UC_NdCD0ryaAaJyHlaslu0Jg",
+   "channelTitle": "EPIC EPOCH",
+   "publishedAt": "2025-12-02T12:24:41Z",
+   "description": "Where is Genghis Khan really buried?\nHis tomb has been one of history\u2019s greatest mysteries for 800 years \u2014 and according to legend, only one creature on Earth knew the exact location.\n\nThis video reveals the unbelievable burial ritual of the Mongol Empire:\n\u2022 why Genghis Khan demanded an unmarked secret grave\n\u2022 why hund",
+   "tags": [],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/3suFiCwHMX8/hqdefault.jpg",
+   "duration": "PT43S",
+   "durationSeconds": 43,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 3819,
+   "likeCount": 98,
+   "commentCount": 0,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 140,
+    "videoCount": 48,
+    "viewCount": 128757,
+    "country": "US",
+    "publishedAt": "2025-11-16T17:01:18.360329Z",
+    "description": "Welcome to Epic Epoch \u2014 the channel where every 30\u201360 seconds reveals a story that truly changed the world.\n\nHere you\u2019ll find:\n\u2022\tancient civilizations colliding with modern giants like Apple, Tesla, and SpaceX\n\u2022\tforgotten facts brought to l",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "M18svWXFGrc",
+   "url": "https://www.youtube.com/watch?v=M18svWXFGrc",
+   "title": "\u201cThe Lost Tomb of Cleopatra: The Queen Who Vanished\u201d",
+   "channelId": "UCpDT-qVxwIHlenE36_fx10g",
+   "channelUrl": "https://www.youtube.com/channel/UCpDT-qVxwIHlenE36_fx10g",
+   "channelTitle": "Gab's Epic Age stories",
+   "publishedAt": "2025-11-16T03:33:07Z",
+   "description": "Cleopatra ruled one of the greatest empires in ancient history\u2026\nyet her final resting place has never been found.\nFor over 2,000 years, archaeologists have searched deserts, ruins, temples, and even underwater sites.\nBut the tomb of Cleopatra and Mark Antony remains one of the most enduring mysteries of the ancient wor",
+   "tags": [
+    "cleopatra tomb",
+    "lost tomb cleopatra",
+    "ancient egypt mysteries",
+    "egypt secrets",
+    "mysterious history",
+    "history shorts",
+    "weird history",
+    "lost tomb mystery",
+    "epic age stories",
+    "unsolved mysteries",
+    "ancient queen cleopatra",
+    "mark antony tomb"
+   ],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/M18svWXFGrc/hqdefault.jpg",
+   "duration": "PT1M6S",
+   "durationSeconds": 66,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 2594,
+   "likeCount": 110,
+   "commentCount": 2,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 589,
+    "videoCount": 125,
+    "viewCount": 126882,
+    "country": "PH",
+    "publishedAt": "2025-11-14T00:10:32.319765Z",
+    "description": "\u201cAn ancient story that still affects us today.\u201d\n\nDive into the myths, legends, and true histories that shaped civilizations. From the mighty gods of Greece and Egypt to the overlooked tales of forgotten empires, we explore the epic stories ",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "zn4IvCSNVvg",
+   "url": "https://www.youtube.com/watch?v=zn4IvCSNVvg",
+   "title": "Why Genghis Khan\u2019s Grave Was Never Found \ud83e\udd2f #history #genghiskhan #shorts",
+   "channelId": "UCdNxXgnwmT7NS5IKhlOdv5w",
+   "channelUrl": "https://www.youtube.com/channel/UCdNxXgnwmT7NS5IKhlOdv5w",
+   "channelTitle": "factsnhistory",
+   "publishedAt": "2025-12-05T17:13:49Z",
+   "description": "Genghis Khan ruled the biggest land empire in history, yet no one knows where he\u2019s buried. \ud83d\ude28 Legends say his tomb was hidden forever, and the truth gets stranger the deeper you go.\n\nWhat do YOU think happened to him? \ud83d\udc47\ud83e\udd14\n\n#history #genghiskhan #genghiskhanstory #genghiskhantomb #genghiskhanmovie #genghiskhandocumentary ",
+   "tags": [
+    "history facts",
+    "genghis khan",
+    "genghis khan mystery",
+    "genghis khan tomb",
+    "missing tomb",
+    "ancient history",
+    "world history",
+    "weird history",
+    "mystery explained",
+    "unsolved mysteries",
+    "ancient secrets",
+    "did you know"
+   ],
+   "categoryId": "22",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/zn4IvCSNVvg/hqdefault.jpg",
+   "duration": "PT57S",
+   "durationSeconds": 57,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 2350,
+   "likeCount": 58,
+   "commentCount": 0,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 8,
+    "videoCount": 5,
+    "viewCount": 5805,
+    "country": "PH",
+    "publishedAt": "2025-12-02T16:16:06.368085Z",
+    "description": "Hey there! Explore the most fascinating, mind-blowing, and sometimes downright crazy facts from history and the world around us. From ancient secrets and epic battles to strange inventions and untold stories, we uncover the stories that tex",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)",
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Food"
+    ]
+   }
+  },
+  {
+   "id": "80PjYGwF-zI",
+   "url": "https://www.youtube.com/watch?v=80PjYGwF-zI",
+   "title": "The Lost Tomb of Cleopatra \ud83d\udc51",
+   "channelId": "UCoxpIOsxGlkhAofdMBR9WRQ",
+   "channelUrl": "https://www.youtube.com/channel/UCoxpIOsxGlkhAofdMBR9WRQ",
+   "channelTitle": "Brain Atlas Official ",
+   "publishedAt": "2025-10-25T19:38:13Z",
+   "description": "For over 2,000 years, the final resting place of Cleopatra \u2014 Egypt\u2019s last pharaoh \u2014 has remained a mystery.\n\nAncient texts claim she was buried beside Mark Antony in a golden tomb, but its location has never been found.\n\nWas it destroyed by earthquakes, buried beneath the Nile, or hidden forever by her loyal followers?",
+   "tags": [],
+   "categoryId": "27",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/80PjYGwF-zI/hqdefault.jpg",
+   "duration": "PT48S",
+   "durationSeconds": 48,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 2112,
+   "likeCount": 53,
+   "commentCount": 2,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 4900,
+    "videoCount": 111,
+    "viewCount": 1139431,
+    "country": "US",
+    "publishedAt": "2025-10-20T00:52:18.613436Z",
+    "description": "Welcome to Brain Atlas \u2014 the archive of everything ancient, mysterious, and unexplained.\nIf you\u2019re obsessed with powerful civilizations, lost knowledge, ancient gods, forbidden history, and the secrets humanity was never meant to forget\u2026 yo",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "tJL7LFDqUkA",
+   "url": "https://www.youtube.com/watch?v=tJL7LFDqUkA",
+   "title": "WHAT IF CLEOPATRA NEVER DIED?\ud83e\udd2f | The Lost Tomb Mystery #shorts #viral #trending #cleopatra #explore",
+   "channelId": "UCp_fy_7NRDFWVCz7NirfdgQ",
+   "channelUrl": "https://www.youtube.com/channel/UCp_fy_7NRDFWVCz7NirfdgQ",
+   "channelTitle": "The Universe Andhera",
+   "publishedAt": "2025-11-14T13:30:58Z",
+   "description": "WHAT IF CLEOPATRA NEVER DIED?\ud83e\udd2f | The Lost Tomb Mystery #shorts #viral #trending #cleopatra #explore \nCleopatra \u0915\u0940 \u0915\u092c\u094d\u0930 \u0915\u093e \u0905\u0938\u0932\u0940 \u0930\u093e\u091c\u093c! \ud83e\udd2b\n\n\nCleopatra\u2026 \u0907\u0924\u093f\u0939\u093e\u0938 \u0915\u0940 \u0938\u092c\u0938\u0947 \u0930\u0939\u0938\u094d\u092f\u092e\u092f\u0940 \u0930\u093e\u0928\u0940\u0964\n\u0926\u0941\u0928\u093f\u092f\u093e \u0926\u094b \u0939\u091c\u093c\u093e\u0930 \u0938\u093e\u0932\u094b\u0902 \u0938\u0947 \u092e\u093e\u0928\u0924\u0940 \u0930\u0939\u0940 \u0915\u093f \u0935\u094b Alexandria \u092e\u0947\u0902 \u0926\u092b\u093c\u0928 \u0939\u0948\u2014\n\u0932\u0947\u0915\u093f\u0928 \u0928\u0908 \u0916\u094b\u091c\u094b\u0902 \u0928\u0947 \u0907\u0938 \u0915\u0939\u093e\u0928\u0940 \u0915\u094b \u092a\u0942\u0930\u0940 \u0924\u0930\u0939 \u0939\u093f\u0932\u093e \u0926\u093f\u092f\u093e \u0939\u0948\u0964\n\nTaposiris Magna \u0915\u0947 \u0928\u0940\u091a\u0947",
+   "tags": [
+    "cleopatra",
+    "cleopatra mystery",
+    "cleopatra death",
+    "cleopatra tomb",
+    "history shorts",
+    "alternate history",
+    "what if",
+    "kathleen martinez",
+    "taposiris magna",
+    "ancient egypt mystery",
+    "history facts hindi",
+    "viral shorts"
+   ],
+   "categoryId": "27",
+   "language": "hi",
+   "thumbnailUrl": "https://i.ytimg.com/vi/tJL7LFDqUkA/hqdefault.jpg",
+   "duration": "PT1M",
+   "durationSeconds": 60,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 4521,
+   "likeCount": 188,
+   "commentCount": 13,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 3290,
+    "videoCount": 88,
+    "viewCount": 136336,
+    "country": "IN",
+    "publishedAt": "2025-03-01T05:07:02.537381Z",
+    "description": "Namaste Doston, Welcome to THE UNIVERSE ANDHERA. \ud83c\udf11\n\nUniverse Andhera sirf ek channel nahi, ek investigation hai. Hum yahan sirf kahani nahi sunate, hum us kahani ke piche chupe Human Behavior, Psychological Triggers, aur Societal Flaws ko d",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "QME6LMjTi_M",
+   "url": "https://www.youtube.com/watch?v=QME6LMjTi_M",
+   "title": "\u201cThe King Whose Dead Body Has Never Been Found\u201d",
+   "channelId": "UCe7gekQ6SWqoGDnb09wvpyg",
+   "channelUrl": "https://www.youtube.com/channel/UCe7gekQ6SWqoGDnb09wvpyg",
+   "channelTitle": "  Rise & Win ",
+   "publishedAt": "2025-12-19T10:57:05Z",
+   "description": "One of history\u2019s greatest rulers vanished even after death. Alexander the Great conquered the ancient world, but his body was never found. Ancient records, missing tombs, and strange theories have turned his death into one of history\u2019s greatest unsolved mysteries.\n\n\n---\n\nAlexander the Great, missing body, lost tomb, an",
+   "tags": [],
+   "categoryId": "27",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/QME6LMjTi_M/hqdefault.jpg",
+   "duration": "PT1M11S",
+   "durationSeconds": 71,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 2209,
+   "likeCount": null,
+   "commentCount": 0,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 724,
+    "videoCount": 100,
+    "viewCount": 123617,
+    "country": "US",
+    "publishedAt": "2025-09-06T18:24:44.448345Z",
+    "description": "Rise & Win is a motivation-focused channel dedicated to helping you unlock your true potential.\nHere you\u2019ll find powerful motivational videos, success mindset content, life-changing quotes, and daily inspiration to push you forward.\nOur mis",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "0L0znljj94w",
+   "url": "https://www.youtube.com/watch?v=0L0znljj94w",
+   "title": "The Lost Tomb of Spartacus: Where Was He Buried? #spartacus #gladiators #ancientrome #shorts",
+   "channelId": "UCGcPEQprWpMzgJH0sUnYSEQ",
+   "channelUrl": "https://www.youtube.com/channel/UCGcPEQprWpMzgJH0sUnYSEQ",
+   "channelTitle": "StoryWoven",
+   "publishedAt": "2025-10-04T19:00:00Z",
+   "description": "\ud83d\udcdc Video Description\n\nSpartacus died fighting Rome in 71 BC\u2014but his body was never found. Was he buried in a mass grave, erased by the Romans, or did his story grow into legend?\n\nUncover the mystery of the lost tomb of Spartacus\u2014the gladiator who became a symbol of freedom.\n\nNeck and Shoulder Massager: https://amzn.to/4",
+   "tags": [
+    "Spartacus",
+    "Gladiators",
+    "AncientRome",
+    "RomanHistory",
+    "LostTomb",
+    "HistoryShorts",
+    "EpicHistory",
+    "Where is Spartacus buried",
+    "Spartacus tomb mystery",
+    "Spartacus death explained",
+    "Did Spartacus really die",
+    "Spartacus lost body history"
+   ],
+   "categoryId": "24",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/0L0znljj94w/hqdefault.jpg",
+   "duration": "PT1M13S",
+   "durationSeconds": 73,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1564,
+   "likeCount": 86,
+   "commentCount": 8,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 461,
+    "videoCount": 448,
+    "viewCount": 182983,
+    "country": "US",
+    "publishedAt": "2025-07-22T14:13:39.056987Z",
+    "description": "Hi, I'm Faisal Saleem. welcome to My YouTube Channel On this , I create and share informative like American Rewind and educational, Peoples Profiles,  story videos, as well as soothing bedtime stories to help you relax and sleep better.\n\nWh",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "oYSN0j7x8GY",
+   "url": "https://www.youtube.com/watch?v=oYSN0j7x8GY",
+   "title": "\u2694\ufe0f THE MYSTERY OF GENGHIS KHAN'S LOST TOMB! \ud83e\udd2f |FACTMATRIX11 #SHORTS",
+   "channelId": "UCG3b72RwI6wmDVcH0uKZU8Q",
+   "channelUrl": "https://www.youtube.com/channel/UCG3b72RwI6wmDVcH0uKZU8Q",
+   "channelTitle": "FactMatrix11",
+   "publishedAt": "2026-06-17T04:37:08Z",
+   "description": "\u2694\ufe0f THE MYSTERY OF GENGHIS KHAN'S LOST TOMB! \ud83e\udd2f |FACTMATRIX11 #SHORTS \n\n\ud83d\ude33 You've probably heard the name Genghis Khan at least once.\n\n\ud83c\udf0d He built one of the largest empires in human history and was feared across continents.\n\n\u2694\ufe0f During his conquests, millions of peopthis armies expanded across Asia and Europe.\n\n\ud83e\udd2f But the m",
+   "tags": [
+    "AmazingFacts",
+    "DidYouKnow",
+    "AncientHistory",
+    "MongolEmpire",
+    "GenghisKhan",
+    "HistoricalFacts",
+    "shorts"
+   ],
+   "categoryId": "27",
+   "language": "hi",
+   "thumbnailUrl": "https://i.ytimg.com/vi/oYSN0j7x8GY/hqdefault.jpg",
+   "duration": "PT37S",
+   "durationSeconds": 37,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1553,
+   "likeCount": null,
+   "commentCount": 2,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 11900,
+    "videoCount": 159,
+    "viewCount": 2998036,
+    "country": null,
+    "publishedAt": "2026-01-13T11:34:36.759687Z",
+    "description": "Welcome to [FactMatrix11] YouTube Channel Par :-\n\n\n\nYahan tumhe milenge duniya ke sabse shocking, amazing aur mind-blowing facts jo tumne kabhi imagine bhi nahi kiye honge!\n\n\n\n\n\ud83d\udca5 Tech Facts\n\ud83c\udf0d World Facts\n\ud83e\udde0 Psychology Facts\n\ud83d\udcb0 Business & Mone",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Lifestyle_(sociology)",
+     "https://en.wikipedia.org/wiki/Entertainment"
+    ]
+   }
+  },
+  {
+   "id": "3j-hVVZaAAY",
+   "url": "https://www.youtube.com/watch?v=3j-hVVZaAAY",
+   "title": "Genghis Khan\u2019s Lost Tomb \ud83e\udd2f | The Greatest Mystery in History (Never Found!)",
+   "channelId": "UCr0iK-Jnt6_bI-YouiAZWyA",
+   "channelUrl": "https://www.youtube.com/channel/UCr0iK-Jnt6_bI-YouiAZWyA",
+   "channelTitle": "Mr Z Nain ",
+   "publishedAt": "2026-07-11T14:47:39Z",
+   "description": "Genghis Khan, the most powerful conqueror in history, ruled a massive empire\u2014but his tomb remains one of the greatest unsolved mysteries. \ud83e\udd2f\nEven after centuries, no one knows where he was buried. No monument, no grave, no sign\u2026 just a hidden secret beneath the earth. \ud83c\udf0d\nSome believe his burial site was kept hidden to pr",
+   "tags": [
+    "genghis khan",
+    "genghis khan tomb",
+    "genghis khan grave mystery",
+    "lost tomb",
+    "unsolved mystery",
+    "dark history",
+    "history facts",
+    "mongol empire",
+    "ancient history",
+    "mystery video",
+    "scary history",
+    "hidden secrets"
+   ],
+   "categoryId": "27",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/3j-hVVZaAAY/hqdefault.jpg",
+   "duration": "PT3M56S",
+   "durationSeconds": 236,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 938,
+   "likeCount": null,
+   "commentCount": 4,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 1500,
+    "videoCount": 46,
+    "viewCount": 29412,
+    "country": "PK",
+    "publishedAt": "2026-05-10T09:37:34.369002Z",
+    "description": "\ud83c\udfa5 Welcome to Mr Z Nain \ud83c\udf0d\nHere you will discover all kinds of documentaries \u2014 history, mysteries, real stories, crime cases, science, technology, Islamic facts, hidden truths, and amazing facts from around the world.\nEvery video is created w",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "DqmAHjefM9o",
+   "url": "https://www.youtube.com/watch?v=DqmAHjefM9o",
+   "title": "What If Genghis Khan\u2019s Tomb Is Found #genghiskhan #hiddenhistory #losttomb #ancientsecrets #history",
+   "channelId": "UC6tIGe-7i0Nr_GPnQ8-T9ow",
+   "channelUrl": "https://www.youtube.com/channel/UC6tIGe-7i0Nr_GPnQ8-T9ow",
+   "channelTitle": "HistoryBites",
+   "publishedAt": "2026-01-16T23:30:06Z",
+   "description": "Genghis Khan\u2019s tomb has never been found.\nSome believe its discovery could shift global power.\nOthers say certain countries already know where it is.\n\nShould it be opened \u2014 or left hidden forever?\n\ud83d\udc47 Comment your opinion.",
+   "tags": [],
+   "categoryId": "28",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/DqmAHjefM9o/hqdefault.jpg",
+   "duration": "PT12S",
+   "durationSeconds": 12,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 2267,
+   "likeCount": 7,
+   "commentCount": 1,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 35,
+    "videoCount": 44,
+    "viewCount": 37353,
+    "country": "DE",
+    "publishedAt": "2025-12-14T10:13:20.766588Z",
+    "description": "Welcome to HistoryBites \u2013 your go-to channel for bite-sized history and general culture content! Explore fascinating stories from ancient civilizations, legendary leaders, historic battles, and hidden cultural gems from around the world. Ou",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "s4BcnTL4n1M",
+   "url": "https://www.youtube.com/watch?v=s4BcnTL4n1M",
+   "title": "Genghis Khan's Lost Tomb. #shorts #facts #history #mystery #education #genghiskhan #entertainment",
+   "channelId": "UCacLWufY8uGO7OIkupg1Ymg",
+   "channelUrl": "https://www.youtube.com/channel/UCacLWufY8uGO7OIkupg1Ymg",
+   "channelTitle": "Facts' Realm",
+   "publishedAt": "2026-07-10T13:08:08Z",
+   "description": "Genghis Khan, the founder of the Mongol Empire, died in 1227, but nearly 800 years later, his tomb has never been found. Legends claim his burial was kept so secret that anyone who witnessed the funeral procession was killed, though historians regard many of these stories as unverified folklore. Today, many researchers",
+   "tags": [
+    "#shorts",
+    "#facts",
+    "# history",
+    "#mystery",
+    "#education",
+    "#educational",
+    "#knowledge",
+    "#genghiskhan",
+    "#news",
+    "#amazingfacts",
+    "#didyouknow"
+   ],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/s4BcnTL4n1M/hqdefault.jpg",
+   "duration": "PT43S",
+   "durationSeconds": 43,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1618,
+   "likeCount": 60,
+   "commentCount": 9,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 213,
+    "videoCount": 70,
+    "viewCount": 128984,
+    "country": null,
+    "publishedAt": "2025-05-08T19:36:33.490762Z",
+    "description": "Facts Realm \u2013 Where History Meets Mystery\nWelcome to Facts Realm, your go-to channel for jaw-dropping facts, untold history, and unsolved mysteries from around the world! \ud83c\udf0d\u2728\n\nEvery week, we dive deep into ancient civilizations, historical e",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "w2Nns4LlTaM",
+   "url": "https://www.youtube.com/watch?v=w2Nns4LlTaM",
+   "title": "The Most Searched Tom in History \u2014 Never Found",
+   "channelId": "UC65uQJ2fS84h3baOBe-JNWw",
+   "channelUrl": "https://www.youtube.com/channel/UC65uQJ2fS84h3baOBe-JNWw",
+   "channelTitle": "The Shadow Archive",
+   "publishedAt": "2026-04-21T19:00:48Z",
+   "description": "Genghis Khan conquered half the world.\n\nWhen he died, 800 soldiers were executed to keep the location secret.\n\nHis tomb has never been found. Satellites, archaeologists, AI \u2014 nothing.\n\nSomeone doesn't want it found.\n\nFollow The Shadow Archive for more hidden history. \ud83d\udd0d\n\n#Shorts #GenghisKhan #MongolEmpire #LostTomb #Anc",
+   "tags": [
+    "shorts"
+   ],
+   "categoryId": "24",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/w2Nns4LlTaM/hqdefault.jpg",
+   "duration": "PT42S",
+   "durationSeconds": 42,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 2262,
+   "likeCount": 36,
+   "commentCount": 1,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 3090,
+    "videoCount": 124,
+    "viewCount": 902318,
+    "country": "US",
+    "publishedAt": "2025-07-10T08:06:12.213361Z",
+    "description": "Every few weeks, history reveals a secret it was never meant to share.\n\nThe Shadow Archive uncovers hidden stories behind ancient civilizations, mysterious artifacts, and unexplained events that mainstream history ignores.\n\nFrom the Antikyt",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "vUBKxKyJqSY",
+   "url": "https://www.youtube.com/watch?v=vUBKxKyJqSY",
+   "title": "The Pharaoh\u2019s Curse That Never Died | Real Ancient Mystery of Egypt\u2019s Lost Tomb",
+   "channelId": "UCkcqMOGUvAlpVt3b3orRaSA",
+   "channelUrl": "https://www.youtube.com/channel/UCkcqMOGUvAlpVt3b3orRaSA",
+   "channelTitle": "Secrets of History",
+   "publishedAt": "2025-10-27T16:51:21Z",
+   "description": "Deep beneath the sands of Egypt lies a mystery that refuses to rest.\nIn 1923, Howard Carter uncovered the tomb of Tutankhamun \u2014 but what he unleashed would haunt the world for a century. From sudden deaths to chilling whispers in the Cairo Museum, this is the true story of the Pharaoh\u2019s Curse that never died. The Phara",
+   "tags": [
+    "pharaoh\u2019s curse",
+    "the pharaohs curse",
+    "tutankhamun curse",
+    "egypt mystery",
+    "real pharaoh curse",
+    "dark history egypt",
+    "ancient egypt story",
+    "haunted artifacts",
+    "cairo museum mystery",
+    "howard carter discovery",
+    "ancient tomb curse",
+    "true ancient mystery"
+   ],
+   "categoryId": "22",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/vUBKxKyJqSY/hqdefault.jpg",
+   "duration": "PT1M19S",
+   "durationSeconds": 79,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1555,
+   "likeCount": 39,
+   "commentCount": 0,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 90,
+    "videoCount": 53,
+    "viewCount": 58587,
+    "country": "US",
+    "publishedAt": "2025-05-17T14:07:04.080993Z",
+    "description": "Welcome to Secrets of History \u2014 the channel where hidden truths, forgotten legends, and epic moments from the past come alive with the power of AI.\n\nFrom untold stories of ancient empires to secret battles that shaped our world, we use AI-g",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "3ljDzXLq4hE",
+   "url": "https://www.youtube.com/watch?v=3ljDzXLq4hE",
+   "title": "The Lost Tomb of Alexander the Great.",
+   "channelId": "UClrWZt-5mPZoKkvJVgtsUew",
+   "channelUrl": "https://www.youtube.com/channel/UClrWZt-5mPZoKkvJVgtsUew",
+   "channelTitle": "Drop Of Water",
+   "publishedAt": "2025-10-12T18:00:02Z",
+   "description": "The lost tomb of Alexander the Great is one of the greatest archaeological mysteries in human history. After two millennia, why has the burial site of the world's greatest conqueror never been found, and what secrets does its disappearance hide?\n\nIn this in-depth historical investigation, we dive into the facts surroun",
+   "tags": [
+    "Alexander the Great",
+    "tomb of Alexander the Great",
+    "Alexander the Great burial site",
+    "archaeological mystery",
+    "ancient history",
+    "history documentary",
+    "unsolved history",
+    "secrets of Alexander's tomb",
+    "Alexandria history",
+    "ancient Greece",
+    "Hellenistic world",
+    "historical investigation"
+   ],
+   "categoryId": "24",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/3ljDzXLq4hE/hqdefault.jpg",
+   "duration": "PT54S",
+   "durationSeconds": 54,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1508,
+   "likeCount": 69,
+   "commentCount": 4,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 141,
+    "videoCount": 61,
+    "viewCount": 51205,
+    "country": "US",
+    "publishedAt": "2025-09-21T19:10:18.667612Z",
+    "description": "Drop of Water is your gateway to the mysteries of the past. We create cinematic, story-driven mini-documentaries that explore prehistoric life, ancient worlds, lost civilizations, and hidden history, bringing the past vividly to life. Our v",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "6C682kmZQ6g",
+   "url": "https://www.youtube.com/watch?v=6C682kmZQ6g",
+   "title": "Was the Lost Tomb of Gilgamesh Found in Iraq?",
+   "channelId": "UCpxeeUuvI3CYNK7DELdkRxg",
+   "channelUrl": "https://www.youtube.com/channel/UCpxeeUuvI3CYNK7DELdkRxg",
+   "channelTitle": "Who Let Bro Talk?",
+   "publishedAt": "2026-08-24T03:18:51Z",
+   "description": "Was Gilgamesh simply a legendary king\u2014or could his story preserve humanity\u2019s forgotten history?\n\nThe Epic of Gilgamesh follows the powerful ruler of ancient Uruk as he transforms from an oppressive king into a wiser protector. After losing his closest friend, Enkidu, Gilgamesh searches for immortality, encounters a sur",
+   "tags": [
+    "#Gilgamesh",
+    "#EpicOfGilgamesh",
+    "#KingGilgamesh",
+    "#GilgameshTomb",
+    "#Uruk",
+    "#Sumerians",
+    "#Mesopotamia",
+    "#AncientHistory",
+    "#AncientMysteries",
+    "#GreatFlood",
+    "#Immortality",
+    "#IraqWar"
+   ],
+   "categoryId": "24",
+   "language": "en",
+   "thumbnailUrl": "https://i.ytimg.com/vi/6C682kmZQ6g/hqdefault.jpg",
+   "duration": "PT1M19S",
+   "durationSeconds": 79,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1483,
+   "likeCount": 50,
+   "commentCount": 4,
+   "madeForKids": false,
+   "embeddable": true,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 232,
+    "videoCount": 118,
+    "viewCount": 35712,
+    "country": "US",
+    "publishedAt": "2026-08-16T15:32:24.009159Z",
+    "description": "Welcome to **WHO LET BRO TALK?**\n\nOne Gen X guy. One microphone. Way too many questions.\n\nWe explore \u201980s nostalgia, pop culture, technology, bizarre history, conspiracies, government mysteries, declassified documents, and stories once call",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  },
+  {
+   "id": "hr0W0KEAN9E",
+   "url": "https://www.youtube.com/watch?v=hr0W0KEAN9E",
+   "title": "The Lost Tomb of Cleopatra: Where Is She Buried? #history",
+   "channelId": "UC-g-gCvT_4onNDPIhOc583A",
+   "channelUrl": "https://www.youtube.com/channel/UC-g-gCvT_4onNDPIhOc583A",
+   "channelTitle": "Veil of History",
+   "publishedAt": "2026-09-17T11:48:34Z",
+   "description": "The lost tomb of Cleopatra VII remains one of archaeology\u2019s most famous unsolved mysteries. After Cleopatra and Mark Antony died in 30 BC, ancient accounts indicate that they were buried together\u2014but the location of their tomb has never been conclusively identified.\n\nResearchers have explored several possibilities, inc",
+   "tags": [
+    "cleopatra",
+    "cleopatra tomb",
+    "cleopatra lost tomb",
+    "lost tomb of cleopatra",
+    "tomb of cleopatra",
+    "where is cleopatra buried",
+    "where is cleopatra tomb",
+    "cleopatra burial",
+    "cleopatra grave",
+    "cleopatra tomb mystery",
+    "cleopatra and mark antony",
+    "mark antony"
+   ],
+   "categoryId": "22",
+   "language": "en-US",
+   "thumbnailUrl": "https://i.ytimg.com/vi/hr0W0KEAN9E/hqdefault.jpg",
+   "duration": "PT1M18S",
+   "durationSeconds": 78,
+   "definition": "hd",
+   "hasCaptions": false,
+   "viewCount": 1753,
+   "likeCount": 50,
+   "commentCount": 0,
+   "madeForKids": false,
+   "embeddable": false,
+   "license": "youtube",
+   "topicCategories": [
+    "https://en.wikipedia.org/wiki/Knowledge"
+   ],
+   "hasPaidProductPlacement": false,
+   "liveBroadcastContent": "none",
+   "channel": {
+    "subscriberCount": 575,
+    "videoCount": 77,
+    "viewCount": 311317,
+    "country": "BD",
+    "publishedAt": "2025-04-27T17:23:37.847995Z",
+    "description": "The world you know was built by civilizations you've almost forgotten.\n\nAt Veil of History, we create cinematic documentaries that bring the ancient world back to life. Journey through legendary cities, forgotten empires, groundbreaking dis",
+    "topicCategories": [
+     "https://en.wikipedia.org/wiki/Knowledge"
+    ]
+   }
+  }
+ ],
+ "snapshotId": "fd8660a0600745a2",
+ "analytics": {
+  "sampleSize": 25,
+  "views": {
+   "median": 2350,
+   "average": 49076,
+   "max": 495276,
+   "rows": 25
+  },
+  "viewsPerDay": {
+   "median": 16.4,
+   "top": [
+    {
+     "id": "phACtUDwSbI",
+     "value": 16651.11
+    },
+    {
+     "id": "DszSif0SOOo",
+     "value": 1382.85
+    },
+    {
+     "id": "lSKM-5Sh2dw",
+     "value": 942.36
+    },
+    {
+     "id": "bPXqFM73kUI",
+     "value": 896.43
+    },
+    {
+     "id": "hr0W0KEAN9E",
+     "value": 681.33
+    }
+   ],
+   "note": "age-normalized public proxy, not real-time velocity"
+  },
+  "visibleInteractionRate": {
+   "median": 0.026,
+   "rows": 19,
+   "note": "(likes+comments)/views on complete rows only; not engagement or satisfaction"
+  },
+  "reachVsSubscribers": {
+   "top": [
+    {
+     "id": "zn4IvCSNVvg",
+     "value": 293.75
+    },
+    {
+     "id": "iDCxT18ra2s",
+     "value": 100.93
+    },
+    {
+     "id": "DqmAHjefM9o",
+     "value": 64.77
+    },
+    {
+     "id": "bPXqFM73kUI",
+     "value": 27.53
+    },
+    {
+     "id": "3suFiCwHMX8",
+     "value": 27.28
+    }
+   ],
+   "note": "views / current rounded subscriber count; subs are today's, not at publish time"
+  },
+  "durationMix": {
+   "under4min": 25
+  },
+  "recencyMix": {
+   "30d": 2,
+   "1y": 22,
+   "7d": 1
+  },
+  "recurringTags": [
+   {
+    "tag": "history facts",
+    "count": 4
+   },
+   {
+    "tag": "genghis khan",
+    "count": 4
+   },
+   {
+    "tag": "ancient history",
+    "count": 4
+   },
+   {
+    "tag": "shorts",
+    "count": 3
+   },
+   {
+    "tag": "genghis khan tomb",
+    "count": 3
+   },
+   {
+    "tag": "cleopatra tomb",
+    "count": 3
+   },
+   {
+    "tag": "history",
+    "count": 2
+   },
+   {
+    "tag": "lost tomb",
+    "count": 2
+   },
+   {
+    "tag": "mongol empire",
+    "count": 2
+   },
+   {
+    "tag": "history shorts",
+    "count": 2
+   },
+   {
+    "tag": "weird history",
+    "count": 2
+   },
+   {
+    "tag": "unsolved mysteries",
+    "count": 2
+   },
+   {
+    "tag": "cleopatra",
+    "count": 2
+   }
+  ],
+  "channelConcentration": {
+   "uniqueChannels": 25,
+   "top": [
+    {
+     "channel": "Poonam Sihag ",
+     "videos": 1
+    },
+    {
+     "channel": "Today I Learned Science",
+     "videos": 1
+    },
+    {
+     "channel": "History with Asly ",
+     "videos": 1
+    },
+    {
+     "channel": "Ghostsandhistory",
+     "videos": 1
+    },
+    {
+     "channel": "Forgotten Ages",
+     "videos": 1
+    }
+   ]
+  },
+  "coverage": {
+   "viewCount": "25/25",
+   "likeCount": "19/25",
+   "commentCount": "25/25",
+   "durationSeconds": "25/25",
+   "language": "25/25",
+   "tags": "15/25",
+   "subscriberCount": "25/25"
+  },
+  "caveats": [
+   "totalResultsApprox is not search volume",
+   "one personalized, region-sensitive snapshot, not a trend",
+   "under4min is not necessarily a Short",
+   "thumbnail pixels were not inspected",
+   "missing fields stay unavailable, never zero"
+  ]
+ }
+}
