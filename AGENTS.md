@@ -19,6 +19,10 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
   catalog. How it works and how to move it to another computer: `docs/generation-plumbing.md`.
 - **Route split:** one picture in (`image.from-image`) and upload work on the **API**; two pictures
   (style ref + likeness ref) and any named video model are **website via OpenCLI**.
+- **Website abilities mapped and tested (2026-09-19, David's machine):** two-reference images
+  (30, logo exact), Framepack animate (55), Veo 3.1 Fast text-to-video with baked voice (200 per
+  4 s). Full catalog with click paths, prices and OpenCLI traps: `docs/web-abilities.md`.
+  Driver: `scripts/blotato/web.py`.
 - **The big finding (2026-09-19):** a picture **uploaded** into `video.story` is reproduced
   **pixel-perfect and costs nothing** — voice, synced captions and a slow zoom come free with it. A
   picture **generated** costs 70 a scene, and a **regenerated** logo comes back wrong. So: pay to

@@ -5,8 +5,12 @@ description: Drive Blotato's website in Drew's logged-in Chrome with OpenCLI for
 
 # blotato-web (OpenCLI route)
 
-Status 2026-09-19 evening: **OpenCLI is set up on THIS machine and the bridge is live.** The click
-path itself is still unverified; everything below about attaching is now confirmed working.
+Status 2026-09-19 night: **proven on David's Windows machine too.** Two-reference image (30),
+Framepack animate (55) and Veo 3.1 Fast baked-voice clip (200) all ran through OpenCLI. The click
+paths, the model/price tables and the OpenCLI traps (stale refs, React selects, the native file
+input) are in `docs/web-abilities.md`; the driver is `scripts/blotato/web.py`. Per-machine paths
+live in `config/machine.json` (Windows: opencli.cmd under ~/.local/share/opencli-tool, portable
+Node in ~/tools/node).
 
 **Run it like this** (the binary is not on `PATH`, so `which opencli` finds nothing):
 ```

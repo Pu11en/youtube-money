@@ -196,10 +196,18 @@
       ],
       "returns": "image",
       "inputs_builder": null,
-      "cost_credits": null,
-      "cost_source": "unmeasured",
-      "reliability": "unproven",
-      "notes": "The workflow Drew actually wants: depart from a Pinterest style reference, hold a logo/character/object exactly. No API template takes two images, so this is the OpenCLI website route. Click path not yet mapped - see .agents/skills/blotato-web/SKILL.md."
+      "cost_credits": 30,
+      "cost_source": "measured 2026-09-19 on the website: nano-banana-2/edit, 30 from the live balance",
+      "reliability": "proven",
+      "notes": "PROVEN. Editor > Image > Generate > pick an Edit model > Reference Images > Pick images (up to 14, from the video's scene images or an upload). Style from the alley frame + Drew's logo as likeness -> wooden sign in the alley with the logo EXACT. A single-ref neon test redrew the logo as a double tube, so name the likeness image explicitly in the prompt and say 'exact shape, proportions and color unchanged'. Click path and OpenCLI traps: docs/web-abilities.md.",
+      "models": [
+        "nano-banana/edit (15)",
+        "nano-banana-2/edit (30)",
+        "nano-banana-pro/edit (50)",
+        "bytedance/seedream/v4.5/edit (15)"
+      ],
+      "max_refs": 14,
+      "verdicts": "docs/web-abilities.md"
     },
     {
       "id": "video.named-model",
@@ -213,10 +221,50 @@
       ],
       "returns": "mp4",
       "inputs_builder": null,
-      "cost_credits": null,
-      "cost_source": "unmeasured",
-      "reliability": "unproven",
-      "notes": "The API never lets you name the video model. Website only, through OpenCLI."
+      "cost_credits": 55,
+      "cost_source": "measured 2026-09-19: framepack 55 (image-to-video); site prices for the rest listed in models",
+      "reliability": "proven",
+      "notes": "PROVEN with Framepack: Editor > click a generated image > Create Animated Image > Animate tab > model + motion prompt. 5 s at 480x848 (soft). Kling adds End Image = morph. Output is videogen2-anim-*.mp4 on the timeline.",
+      "models": [
+        "framepack (55)",
+        "runway-gen3/turbo (85)",
+        "hunyuan (135)",
+        "luma-dream-machine (170)",
+        "minimax-video (170)",
+        "minimax/video-01-director (170)",
+        "kling-video/v1.5/pro (210, optional end image)",
+        "kling-video/v1.6/pro (210, optional end image)",
+        "veo2 (835)"
+      ]
+    },
+    {
+      "id": "video.from-text-web",
+      "name": "Words to a clip with voice baked in (Veo 3.1 Fast on the website)",
+      "route": "web",
+      "template_id": null,
+      "takes": [
+        "prompt",
+        "model",
+        "duration",
+        "audio",
+        "ratio",
+        "resolution",
+        "negative_prompt"
+      ],
+      "returns": "mp4 with audio",
+      "inputs_builder": null,
+      "cost_credits": 200,
+      "cost_source": "measured 2026-09-19: veo3.1/fast 4 s with audio = 200; site shows 50/sec with audio, 35/sec without; veo3 flat 1250; mochi-v1 135",
+      "reliability": "proven",
+      "models": [
+        "fal-ai/mochi-v1 (135)",
+        "fal-ai/veo3 (1250)",
+        "fal-ai/veo3.1/fast (50/s audio, 35/s silent; 4/6/8 s; 720p/1080p)",
+        "fal-ai/veo3.1/fast/image-to-video (same, + one image)",
+        "fal-ai/veo3.1/fast/first-last-frame-to-video (same, + first and last image)"
+      ],
+      "notes": "PROVEN. Editor > Video > Generate. One-paragraph prompt with the spoken line in quotes -> hand-drawn detective in a gaslit alley, mouth moving, real audio track, 720x1280, 4.0 s. This is the tutorial's baked-voice method. Dear per scene (200 per 4 s) versus video.story at ~70, so hero scenes only unless lip-sync matters. Output is videogen2-vid-*.mp4 on the timeline.",
+      "verdicts": "docs/web-abilities.md"
     }
   ]
 }
