@@ -6,7 +6,7 @@ they pay for it (blood, coffins, killings, a river) → it worked → still hold
 
 | # | Spoken line | Words | Beat | Still | Motion | s |
 |---|---|---|---|---|---|---|
-| 1 | The most feared man in Europe has no grave. | 9 | claim | — | — | 3 |
+| 1 | The most feared man in Europe has no grave. | 9 | claim | LOCKED stills/01-final.png (ref: sun-disc silhouette poster) | walk toward camera | 3 |
 | 2 | Fifteen hundred years ago, Attila the Hun choked to death in his sleep on his wedding night. | 17 | what happened | — | — | 5 |
 | 3 | His warriors had one fear bigger than his death: his enemies digging him up. | 14 | the WHY | — | — | 4 |
 | 4 | So they decided the world would never find him. | 9 | the decision | — | — | 3 |

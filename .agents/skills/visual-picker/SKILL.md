@@ -11,11 +11,26 @@ Nothing is downloaded; the pick is a link + a note. Zero credits.
 ## Run it
 1. Read the scene: its spoken line, its role (hook / why / decision / price / result / ending), and the
    channel bible look (`channels/<channel>/bible.md`).
-2. Write **3 keyword sets**, each 5–8 words, each a different angle:
-   - **subject** — who/what is in frame (e.g. `hun warrior alone endless steppe sunset illustration`)
-   - **composition** — the shot idea (e.g. `lone rider silhouette vast plain dusk graphic novel vertical`)
-   - **mood/theme** — the feeling or the metaphor (e.g. `empty grassland horizon unmarked grave concept art moody`)
-   Show the three sets in one line each **before** searching only if Drew asked to see them; otherwise search.
+2. Write **3 keyword sets**. Pinterest is tuned to how pinners tag, so the rule is:
+   **3-5 plain words that name the EVENT of the line + at most one style word.** Long descriptive
+   sentences return decor and mood boards, not the story. Build from the narration's own nouns, never
+   from the character sheet.
+   - **event** - what literally happens: `king dead in bed illustration`
+   - **place** - where, as a look: `candlelit tent interior concept art`
+   - **poster** - the graphic/iconic version: `dead king minimalist poster`
+   Style words that work: `illustration`, `graphic novel`, `poster`, `concept art`, `painting dark`,
+   `storyboard`. Avoid: names nobody pins (`Attila the Hun ...`), long adjective chains, "moody vertical".
+
+   Worked example (scene 2 of attila-no-grave, 2026-09-20, all three run for free):
+   - long sentences (`Attila the Hun dead in bed wedding night tent illustration`, `dark royal tent
+     interior candlelight furs bed shadow moody painting`) -> generic bedrooms and king posters, no death
+   - short plain (`deathbed painting dark`, `king dead in bed illustration`, `medieval wedding night
+     tent art`) -> the event: dead king on a red bed (flat graphic), manuscript king-in-bed, dying king
+     by candlelight  <- **this is the shape to copy**
+   - short + style (`deathbed scene graphic novel`, `candlelit tent interior concept art`, `dead king
+     minimalist poster`) -> the room and comic-panel bed scenes
+   Show the three sets as a lettered choice **before** searching only when Drew wants to steer;
+   otherwise search all three at once (free) and show the sheet.
 3. Search:
    ```
    python scripts/refs/search.py find --video <slug> --scene <n> --narration "<line>" --q "<set1>" --q "<set2>" --q "<set3>"
