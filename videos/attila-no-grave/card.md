@@ -7,8 +7,8 @@ they pay for it (blood, coffins, killings, a river) → it worked → still hold
 | # | Spoken line | Words | Beat | Still | Motion | s |
 |---|---|---|---|---|---|---|
 | 1 | The most feared man in Europe has no grave. | 9 | claim | LOCKED stills/01-final.png (ref: sun-disc silhouette poster) | walk toward camera | 3 |
-| 2 | Fifteen hundred years ago, Attila the Hun choked to death in his sleep on his wedding night. | 17 | what happened | — | — | 5 |
-| 3 | His warriors had one fear bigger than his death: his enemies digging him up. | 14 | the WHY | — | — | 4 |
+| 2 | Fifteen hundred years ago, Attila the Hun choked to death in his sleep on his wedding night. | 17 | what happened | LOCKED stills/02-final.png (no ref; Attila = body, guard in door) | slow push in on the bed | 5 |
+| 3 | His warriors had one fear bigger than his death: his enemies digging him up. | 14 | the WHY | LOCKED stills/03-final.png (ref: Pinterest grave-robber, direction only) | lantern flicker, slow tilt down to the pit | 4 |
 | 4 | So they decided the world would never find him. | 9 | the decision | — | — | 3 |
 | 5 | They cut their own faces, so the greatest warrior would be mourned with blood, not tears. | 16 | price begins | — | — | 4.5 |
 | 6 | They laid him in iron for the nations he crushed, silver and gold for the empires that paid him. | 19 | the coffins mean something | — | — | 5 |

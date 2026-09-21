@@ -36,6 +36,8 @@ JS_OPEN_PICKER = "(function(){var b=Array.from(document.querySelectorAll('button
 JS_PICK_INDEX = "(function(){var d=document.querySelector('[role=dialog]');var imgs=d.querySelectorAll('img');imgs[%d].click();return d.innerText.match(/\\(\\d+\\/14\\)/)[0]})()"
 JS_INJECT_FILE = ("(async function(){var r=await fetch('%s');var b=await r.blob();var f=new File([b],'%s',{type:'image/png'});var dt=new DataTransfer();dt.items.add(f);"
                   "var inp=document.querySelector('[role=dialog] input[type=file]');inp.files=dt.files;inp.dispatchEvent(new Event('change',{bubbles:true}));return 'set'})()")
+JS_PICKER_SELECTED = ("(function(){var d=document.querySelector('[role=dialog]');if(!d)return 'closed';return Array.from(d.querySelectorAll('img')).map(function(i,n){var e=i.closest('.cursor-pointer');"
+                      "return e&&e.className.indexOf('ring-2')>=0?n:-1}).filter(function(n){return n>=0}).join(',')})()")
 JS_PICKER_COUNT = "(function(){var d=document.querySelector('[role=dialog]');return d?d.innerText.match(/\\(\\d+\\/14\\)/)[0]:'closed'})()"
 
 
@@ -46,7 +48,10 @@ def ev(js: str) -> str:
 
 def open_image_generate(editor_id: str) -> None:
     oc(["open", f"https://my.blotato.com/video-editor/{editor_id}"])
-    time.sleep(6)
+    time.sleep(7)
+    oc(["keys", "Escape"])
+    ev("(function(){var c=document.querySelector('canvas');if(c){c.dispatchEvent(new MouseEvent('click',{bubbles:true}))}return 'deselect'})()")
+    time.sleep(1)
     ev("(function(){var b=Array.from(document.querySelectorAll('button')).filter(function(b){return b.textContent.trim()==='Image'});b[b.length-1].click();return 'ok'})()")
     time.sleep(2)
     oc(["click", "button[id$='-trigger-generate']"])
@@ -80,8 +85,17 @@ def main() -> None:
         print("ratio:", ev(JS_SET_SELECT % (1, a.ratio)))
         ev(JS_OPEN_PICKER)
         time.sleep(2)
-        for i in a.ref_index:
-            print("pick", i, ev(JS_PICK_INDEX % i))
+        # the picker remembers earlier selections, and a click toggles: work from the selected set
+        want_idx = set(a.ref_index)
+        for attempt in range(4):
+            sel = ev(JS_PICKER_SELECTED)
+            have = {int(x) for x in sel.split(",") if x.strip().isdigit()} if sel != "closed" else set()
+            if have == want_idx:
+                break
+            for i in sorted((have - want_idx) | (want_idx - have)):
+                ev(JS_PICK_INDEX % i)
+                time.sleep(1.5)
+        print("picked", sorted(want_idx), "selected now:", ev(JS_PICKER_SELECTED), ev(JS_PICKER_COUNT))
         for f in a.ref_file:
             url = client.upload_file(client.load_api_key(), f)
             oc(["click", "[role=dialog] button[id$='-trigger-upload']"])
@@ -91,6 +105,12 @@ def main() -> None:
             print("upload", Path(f).name, ev(JS_PICKER_COUNT))
         oc(["keys", "Escape"])
         time.sleep(1)
+        got = ev("(function(){var p=Array.from(document.querySelectorAll('[role=tabpanel]')).find(function(p){return p.getAttribute('data-state')==='active' && p.innerText.indexOf('Reference Images')>=0});if(!p)return 0;var box=p.querySelector('img')?p:null;return p.querySelectorAll('img').length})()")
+        want = len(a.ref_index) + len(a.ref_file)
+        if not got.isdigit() or int(got) < want:
+            print(f"ABORT: {got or 0} reference(s) attached, wanted {want}. Nothing spent.")
+            sys.exit(3)
+        print(f"references attached: {got}")
     print("prompt chars:", ev(JS_SET_PROMPT % json.dumps(a.prompt)))
     print("price:", ev(JS_PRICE))
     ev(JS_CLICK_GENERATE)
