@@ -80,3 +80,33 @@ Verbs alone give floaty, weightless motion. Positions give physics.
 - A person described by gender ("a woman's hand… her hand") was refused; "a hand" passed.
 - Real named people are refused by name and by photo — see
   `tests/generation/video/verdicts.md`.
+
+## The ceiling, measured 2026-09-26
+
+**Both reference videos are single continuous takes.** ffmpeg scene detection at a
+sensitive threshold (0.08) finds **zero cuts** in either the parrot elevator
+(`data/refs/9aaY`, 30s) or the football one (`data/refs/qp4GR`, 11.7s).
+
+That is why they flow and why stitched clips never will. There is nothing to flow
+between - the camera simply runs.
+
+**Blotato cannot produce that.** The video generator offers four models
+(`mochi-v1`, `veo3`, `veo3.1/fast`, `veo3.1/fast/image-to-video`,
+`veo3.1/fast/first-last-frame-to-video`), a maximum duration of **8 seconds**, and **no
+extend or continue** anywhere in the editor - searched the whole UI for extend,
+continue, append, longer. Google's own docs say Veo 3.1 supports video extension;
+Blotato does not expose it.
+
+So a seamless 30-second take is off the table here. The options are:
+1. Accept cuts and design for them - shots that are *meant* to be separate angles,
+   rather than one action chopped up.
+2. `first-last-frame-to-video` between generated keyframe stills. Seamless at the
+   joins, still segments. Untested, 300 credits to find out.
+3. A tool with extend, which breaks the Blotato-only rule and needs Drew.
+
+**And the likeliest explanation for the reference is that it is not AI at all.** Thirty
+unbroken seconds of a bird operating a wooden lift with consistent physics is beyond
+any current single generation. A real homemade parrot elevator is a known viral clip,
+and the channel is 29 days old with 70 uploads - a reposting operation. If that is
+right, no prompt engineering was ever going to close the gap, which is worth knowing
+before spending another day on it.

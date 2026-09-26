@@ -83,6 +83,23 @@ def set_prompt(text):
               "return 'prompt '+t.value.length+' chars'})()" % json.dumps(text))
 
 
+def set_negative(text):
+    """Fill the Negative Prompt box.
+
+    Unwanted things belong here as plain nouns. Writing "no subtitles" in the positive
+    prompt does the opposite of what it looks like - the model binds to the noun - so
+    this box is the only correct place for them. See docs/video-prompt-rules.md.
+    """
+    if not text:
+        return "no negative"
+    return ev("(function(){var t=Array.from(document.querySelectorAll('textarea'))"
+              ".find(function(x){return (x.placeholder||'').indexOf('Negative')>=0});"
+              "if(!t)return 'no negative box';"
+              "var s=Object.getOwnPropertyDescriptor(window.HTMLTextAreaElement.prototype,'value').set;"
+              "s.call(t,%s);t.dispatchEvent(new Event('input',{bubbles:true}));"
+              "return 'negative '+t.value.length+' chars'})()" % json.dumps(text))
+
+
 def price():
     return ev("(function(){var m=document.body.innerText.match(/(\\d[\\d,]*) credits/);"
               "return m?m[1]:'unknown'})()")
@@ -180,6 +197,11 @@ if __name__ == "__main__":
     ap.add_argument("prompt", nargs="?", default="")
     ap.add_argument("--image")
     ap.add_argument("--seconds", default="4s")
+    ap.add_argument("--negative",
+                    default="warping, morphing, melting, distortion, extra limbs, "
+                            "duplicated body parts, floating objects, text, subtitles, "
+                            "watermark",
+                    help="plain nouns for the Negative Prompt box, 3-8 of them")
     ap.add_argument("--out", default="tests/generation/video/out.mp4")
     a = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -199,6 +221,7 @@ if __name__ == "__main__":
 
     print(set_options(a.seconds))
     print(set_prompt(a.prompt))
+    print(set_negative(a.negative))
     print("price shown:", price())
 
     url, after = generate_and_wait()
