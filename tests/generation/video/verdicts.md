@@ -154,3 +154,25 @@ Still open: `veo3.1/fast/image-to-video` (W7, never run) — feeding a photo ins
 a name. That is the likely method behind the reference video and the next test.
 
 Files: `tests/generation/video/celeb-test/control-no-names.mp4` + extracted frames.
+
+### Image-to-video is reachable but not yet drivable (2026-09-26)
+
+`fal-ai/veo3.1/fast/image-to-video` selects fine and prices at 300 credits for 6 s.
+Attaching the reference image is the blocker:
+
+- The video picker dialog has tabs `Scene Images | Upload | Close`. Its Upload tab
+  renders **no `input[type=file]`** at all, so the blob-injection trick that works for
+  the image generator's Reference Images picker (`web_image.py`, `JS_INJECT_FILE`) has
+  nothing to inject into. Those are two different dialogs.
+- `client.upload_file` puts the file in the same `public_media` bucket the picker reads
+  from, but the picker lists only registered scene images, so an API upload never
+  appears there.
+- The API cannot do this at all: all 37 templates are template-based (story video,
+  slideshows, combine-clips). No raw image-to-video. Website is the only route.
+
+Next person: the job is a real adapter for that dialog, not another poke. Worth checking
+whether the Upload tab lazily mounts its input on a pointer event rather than a click,
+and whether a scene image can be created from an arbitrary URL.
+
+**Not blocked by this:** text-to-video with described characters works today and is
+proven (T2). Only recognisable real faces need this path.
