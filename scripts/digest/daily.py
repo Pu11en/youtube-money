@@ -8,10 +8,12 @@ Drew's settings (chosen 2026-09-26): max 2 days old, 250k+ views, under 200k sub
 10 items, noon Chicago.
 
 Two ways in, both free:
-  trending charts (default) - 12 category charts, ~14 quota units, ~500 videos.
-  --wide                    - adds 25 keyword searches. Costs 25 of the 100
-                              search calls allowed per project per day, a limit
-                              separate from the 10,000 unit quota and easy to hit.
+  trending charts (default) - 12 categories x 12 regions, ~144 quota units of the
+                              10,000 a day, ~3,000 videos. No search calls at all.
+  --wide                    - adds 25 keyword searches for videos too new to have
+                              reached any chart. Costs 25 of the 100 search calls
+                              allowed per project per day, a separate limit that
+                              is very easy to hit.
 
     python scripts/digest/daily.py            # print the digest
     python scripts/digest/daily.py --post     # print it and post it to Discord
@@ -43,6 +45,12 @@ CATEGORIES = {1: "Film & Animation", 2: "Autos", 10: "Music", 15: "Pets & Animal
               17: "Sports", 20: "Gaming", 22: "People & Blogs", 23: "Comedy",
               24: "Entertainment", 25: "News", 26: "Howto & Style",
               28: "Science & Tech"}
+
+# Every English-language chart, not just the US one. Measured 2026-09-26: US alone
+# saw 502 videos, these twelve saw 3,033, for 144 quota units of the 10,000 a day.
+# The best find of that day - a 40-day-old channel at 17.2M views - was invisible
+# to the US chart.
+REGIONS = ["US", "GB", "CA", "AU", "IE", "NZ", "IN", "PH", "NG", "ZA", "SG", "JM"]
 
 # Generic on purpose. We want movement anywhere, not inside a chosen niche.
 QUERIES = ["story", "explained", "how", "why", "insane", "crazy", "first time",
@@ -95,14 +103,15 @@ def english(video):
 
 
 def from_trending():
-    """YouTube's own per-category charts. Cheap, and it never touches search quota."""
+    """YouTube's own per-category charts, per region. Never touches search quota."""
     found = {}
-    for cid, name in CATEGORIES.items():
-        d = get("videos", part="snippet,statistics", chart="mostPopular",
-                regionCode="US", videoCategoryId=cid, maxResults=50)
-        for item in d.get("items", []):
-            found.setdefault(item["id"], (item, name))
-        time.sleep(0.2)
+    for region in REGIONS:
+        for cid, name in CATEGORIES.items():
+            d = get("videos", part="snippet,statistics", chart="mostPopular",
+                    regionCode=region, videoCategoryId=cid, maxResults=50)
+            for item in d.get("items", []):
+                found.setdefault(item["id"], (item, "%s/%s" % (region, name)))
+            time.sleep(0.2)
     return found
 
 
