@@ -8,8 +8,9 @@ Drew's settings (chosen 2026-09-26): max 2 days old, 250k+ views, under 200k sub
 10 items, noon Chicago.
 
 Two ways in, both free:
-  trending charts (default) - 12 categories x 12 regions, ~144 quota units of the
-                              10,000 a day, ~3,000 videos. No search calls at all.
+  trending charts (default) - 12 categories x 16 regions (US + Europe), ~192
+                              quota units of the 10,000 a day, ~1,300 English
+                              videos. No search calls at all.
   --wide                    - adds 25 keyword searches for videos too new to have
                               reached any chart. Costs 25 of the 100 search calls
                               allowed per project per day, a separate limit that
@@ -47,11 +48,11 @@ CATEGORIES = {1: "Film & Animation", 2: "Autos", 10: "Music", 15: "Pets & Animal
               24: "Entertainment", 25: "News", 26: "Howto & Style",
               28: "Science & Tech"}
 
-# Every English-language chart, not just the US one. Measured 2026-09-26: US alone
-# saw 502 videos, these twelve saw 3,033, for 144 quota units of the 10,000 a day.
-# The best find of that day - a 40-day-old channel at 17.2M views - was invisible
-# to the US chart.
-REGIONS = ["US", "GB", "CA", "AU", "IE", "NZ", "IN", "PH", "NG", "ZA", "SG", "JM"]
+# US and Europe (Drew, 2026-09-26). Non-English charts still earn their place: an
+# English video that charts in Sweden or the Netherlands often never charts in the
+# US, and the English filter downstream throws away the local-language rest.
+REGIONS = ["US", "GB", "IE", "DE", "FR", "ES", "IT", "NL", "SE", "NO", "DK",
+           "FI", "PL", "BE", "AT", "CH"]
 
 # Generic on purpose. We want movement anywhere, not inside a chosen niche.
 QUERIES = ["story", "explained", "how", "why", "insane", "crazy", "first time",
