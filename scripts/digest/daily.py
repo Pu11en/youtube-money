@@ -41,6 +41,7 @@ MIN_VIEWS = 250_000
 MAX_SUBS = 200_000
 NEW_CHANNEL_DAYS = 90     # a young channel qualifies even if it passed MAX_SUBS
 TOP = 10
+SKIP_REPOSTS = True       # drop clip farms re-uploading someone else's video
 
 # Travel (19) and Education (27) have no trending chart and answer 404.
 CATEGORIES = {1: "Film & Animation", 2: "Autos", 10: "Music", 15: "Pets & Animals",
@@ -76,6 +77,10 @@ def env(name):
 KEY = env("YOUTUBE_API_KEY")
 
 
+class SearchCapReached(Exception):
+    """The 100 search.list calls per project per day are gone until 07:00 UTC."""
+
+
 def get(path, **params):
     """One API call. A 429 mentioning 'per day' is the daily search cap, not a blip."""
     params["key"] = KEY
@@ -87,7 +92,7 @@ def get(path, **params):
         except urllib.error.HTTPError as e:
             body = e.read().decode("utf-8", "replace")
             if "per day" in body:
-                raise SystemExit("Out of searches for today. Resets at 07:00 UTC.")
+                raise SearchCapReached()
             if e.code == 404:                       # category with no chart
                 return {"items": []}
             if e.code not in (429, 500, 503) or attempt == 3:
@@ -95,13 +100,45 @@ def get(path, **params):
             time.sleep(3 * (attempt + 1))
 
 
+ACCENTS = set("¡¿áéíóúüñàèìòùâêîôûäöëïçãõåæøœßığşþ")
+
+# Short, high-frequency words that are near-proof of a non-English title. Kept to
+# words that are not also English ("no", "son", "die", "van" would all misfire).
+FOREIGN_WORDS = re.compile(
+    r"\b(und|oder|nicht|ist|das|ich|du|wir|sie|mit|auf|für|von|zu|wie|"
+    r"que|para|por|con|los|las|una|uno|del|muy|más|pero|todo|esta|este|"
+    r"les|dans|pour|avec|sur|est|sont|tout|cette|mais|plus|"
+    r"nel|della|sono|questo|come|anche|perché|"
+    r"het|een|niet|voor|maar|ook|"
+    r"och|inte|för|att|"
+    r"bir|ile|nie|jest|jak)\b", re.I)
+
+
 def english(video):
+    """Language field when the uploader set one, otherwise prove it from the title.
+
+    The old version only counted non-ASCII characters, so a Spanish title written
+    in plain letters walked straight through. Measured 2026-09-26: 1 of 54.
+    """
     lang = (video["snippet"].get("defaultAudioLanguage")
             or video["snippet"].get("defaultLanguage") or "")
     if lang:
         return lang.lower().startswith("en")
+
     title = video["snippet"]["title"]
-    return len(re.sub(r"[\x00-\x7f]", "", title)) <= len(title) * 0.1
+    if any(c in ACCENTS for c in title.lower()):
+        return False
+    if FOREIGN_WORDS.search(title):
+        return False
+    # Nothing latin-alphabet left to judge (Cyrillic, Hindi, Korean, Arabic...).
+    letters = re.sub(r"[^A-Za-z]", "", title)
+    return len(letters) >= 6
+
+
+# A title crediting another account is a clip farm re-uploading someone else's
+# video, not a channel with an idea of its own. Measured 2026-09-26: 4 of 54
+# candidates, two of which had reached the top ten.
+REPOST = re.compile(r"(@\w|\bcredit|\bcr\s*:|\bYT\s*:|\bvia\s+@)", re.I)
 
 
 def from_trending():
@@ -118,16 +155,27 @@ def from_trending():
 
 
 def from_search():
-    """Keyword searches, for videos the trending charts never picked up."""
+    """Keyword searches, for videos the trending charts never picked up.
+
+    Running out of search calls mid-way is normal, not fatal: keep whatever ids
+    came back and let the charts carry the rest of the run.
+    """
     after = (NOW - datetime.timedelta(hours=MAX_AGE_HOURS)).strftime("%Y-%m-%dT%H:%M:%SZ")
     ids = []
     for q in QUERIES:
-        d = get("search", part="snippet", type="video", q=q, order="viewCount",
-                publishedAfter=after, maxResults=25, regionCode="US",
-                relevanceLanguage="en")
+        try:
+            d = get("search", part="snippet", type="video", q=q, order="viewCount",
+                    publishedAfter=after, maxResults=25, regionCode="US",
+                    relevanceLanguage="en")
+        except SearchCapReached:
+            print("[search cap reached after %d queries, charts only from here]"
+                  % QUERIES.index(q))
+            break
         ids += [i["id"]["videoId"] for i in d.get("items", [])]
         time.sleep(1)
     ids = list(dict.fromkeys(ids))
+    if not ids:
+        return {}
 
     found = {}
     for k in range(0, len(ids), 50):
@@ -160,7 +208,8 @@ def enrich(found):
             ch["snippet"]["publishedAt"].replace("Z", "+00:00"))
         age_h = max((NOW - pub).total_seconds() / 3600, 0.5)
         rows.append(dict(
-            title=v["snippet"]["title"], channel=v["snippet"]["channelTitle"],
+            vid=vid, title=v["snippet"]["title"],
+            channel=v["snippet"]["channelTitle"],
             source=source, url="https://youtu.be/" + vid, views=views, subs=subs,
             published=pub.strftime("%Y-%m-%d %H:%M"), age_h=round(age_h, 1),
             ratio=round(views / subs, 1) if subs else 0,
@@ -168,17 +217,50 @@ def enrich(found):
     return rows
 
 
-def pick(rows):
-    keep = [r for r in rows
+SEEN_PATH = os.path.join(ROOT, "data", "digest", "seen.json")
+SEEN_DAYS = 30            # long enough that nothing can come back around
+
+
+def load_seen():
+    """Video ids already sent, so a 47-hour-old video is never shown twice.
+
+    Without this the digest repeats itself: measured 2026-09-26, 38 of the 54
+    candidates were over 24h old and so were already eligible the day before.
+    """
+    if not os.path.exists(SEEN_PATH):
+        return {}
+    with open(SEEN_PATH, encoding="utf-8") as f:
+        seen = json.load(f)
+    cutoff = (NOW - datetime.timedelta(days=SEEN_DAYS)).strftime("%Y-%m-%d")
+    return {vid: day for vid, day in seen.items() if day >= cutoff}
+
+
+def save_seen(seen, picked):
+    today = NOW.strftime("%Y-%m-%d")
+    for r in picked:
+        seen[r["vid"]] = today
+    os.makedirs(os.path.dirname(SEEN_PATH), exist_ok=True)
+    with open(SEEN_PATH, "w", encoding="utf-8") as f:
+        json.dump(seen, f, indent=1)
+
+
+def eligible(rows, seen):
+    return [r for r in rows
             if r["age_h"] <= MAX_AGE_HOURS
             and r["views"] >= MIN_VIEWS
-            and (r["subs"] < MAX_SUBS or r["channel_age_days"] < NEW_CHANNEL_DAYS)]
+            and (r["subs"] < MAX_SUBS or r["channel_age_days"] < NEW_CHANNEL_DAYS)
+            and r["vid"] not in seen
+            and not (SKIP_REPOSTS and REPOST.search(r["title"]))]
+
+
+def pick(rows, seen):
+    keep = eligible(rows, seen)
     keep.sort(key=lambda r: -r["ratio"])
-    seen, out = set(), []
+    used, out = set(), []
     for r in keep:                       # one per channel, or one uploader eats the list
-        if r["channel"] in seen:
+        if r["channel"] in used:
             continue
-        seen.add(r["channel"])
+        used.add(r["channel"])
         out.append(r)
         if len(out) == TOP:
             break
@@ -240,8 +322,8 @@ def post(text):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--post", action="store_true", help="also send it to Discord")
-    ap.add_argument("--wide", action="store_true",
-                    help="add 25 keyword searches (uses the 100/day search cap)")
+    ap.add_argument("--charts-only", action="store_true",
+                    help="skip the keyword searches, trending charts alone")
     args = ap.parse_args()
     if not KEY:
         raise SystemExit("No YOUTUBE_API_KEY in .env or environment.")
@@ -251,13 +333,14 @@ if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
     found = from_trending()
-    if args.wide:
+    if not args.charts_only:
+        # The charts only carry what is already surfacing. Search reaches the ones
+        # still on the way up, and 25 calls leaves 75 of the daily 100 spare.
         found.update(from_search())
     rows = enrich(found)
-    passed = [r for r in rows if r["age_h"] <= MAX_AGE_HOURS
-              and r["views"] >= MIN_VIEWS
-              and (r["subs"] < MAX_SUBS or r["channel_age_days"] < NEW_CHANNEL_DAYS)]
-    text = render(pick(rows), len(rows), len(passed))
+    seen = load_seen()
+    picked = pick(rows, seen)
+    text = render(picked, len(rows), len(eligible(rows, seen)))
     print(text)
 
     outdir = os.path.join(ROOT, "data", "digest")
@@ -270,3 +353,6 @@ if __name__ == "__main__":
 
     if args.post:
         post(text)
+        # Only what actually went out is remembered, so a failed post does not
+        # silently burn ten finds.
+        save_seen(seen, picked)

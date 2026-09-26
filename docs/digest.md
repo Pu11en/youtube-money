@@ -13,11 +13,13 @@ idea that works from zero can be copied.
 
 | Rule | Value |
 |---|---|
-| Max age | 48 hours |
+| Max age | 48 hours, hard |
 | Min views | 250,000 |
 | Max subscribers | 200,000 (or any size if the channel is under 90 days old) |
 | Items | 10, one per channel |
-| Language | English |
+| Language | English only |
+| Never repeat | video ids remembered 30 days in `data/digest/seen.json` |
+| No clip farms | titles crediting another account are dropped |
 | Delivery | Discord webhook, noon Central |
 
 ## Commands
@@ -26,7 +28,7 @@ idea that works from zero can be copied.
 |---|---|
 | See it now | `python scripts/digest/daily.py` |
 | See it and post it | `python scripts/digest/daily.py --post` |
-| Wider net (spends search calls) | `python scripts/digest/daily.py --wide` |
+| Charts only, no search calls | `python scripts/digest/daily.py --charts-only` |
 | Check the schedule | `schtasks /Query /TN youtube-digest-noon` |
 | Turn it off | `schtasks /Delete /TN youtube-digest-noon /F` |
 | Read the last run | `data/digest/run.log` |
@@ -44,11 +46,20 @@ Every run also saves `data/digest/digest-<date>.md` and `raw-<date>.json`.
   units of 10,000. The best find that day, a 40-day-old channel at 17.2M views,
   was invisible to the US chart.
 
+## Why the sort does not matter
+
+Tried four ways of ranking the same day's candidates - views over subs, views per
+hour, a damped ratio, and a blend. The top five came out nearly identical every
+time. With only ~60 candidates for 10 slots the good ones win under any formula,
+so effort belongs in the pool, not the sort.
+
 ## What it still misses
 
-Videos in their first few hours, before any chart picks them up. `--wide` adds
-keyword search for those, at 25 of the 100 daily search calls. A second free API
-key in another Google Cloud project would double that budget.
+Videos in their first hour or two, before any chart or search index catches them.
+Keyword search (25 of the 100 daily calls, on by default) closes part of that gap
+and found the best item of 2026-09-26 - a 352-sub channel at 4,021x - which no
+chart carried. A second free API key in another Google Cloud project would double
+the search budget.
 
 ## Files
 
