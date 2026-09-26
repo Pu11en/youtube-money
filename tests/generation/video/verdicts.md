@@ -110,3 +110,40 @@ unpriced technique on a fresh run now refuses.
 - **Never let Blotato regenerate an asset that must stay exact.** Upload it. Free and perfect.
 - **Skip `video.character`.** Consistent but uncontrollable and six times the price.
 - Still unknown: `video.combine` (documented free), `image.from-text`, and both website routes.
+
+## 2026-09-26 — Can Veo make the celebrity-swap trend? (D0926-2)
+
+Reference: https://youtu.be/qp4GR-dd8dc — FunBall, 36.9k subs, 18.4M views in 39h.
+Two footballers on chairs in a parking garage, rope tied to each chair, a third rides
+off on a scooter, one chair gets yanked out. 11.7 s, 608x1080.
+
+Route: website via OpenCLI, video-editor → Video tool → Generate.
+Models offered: `fal-ai/mochi-v1`, `fal-ai/veo3`, `fal-ai/veo3.1/fast`,
+`fal-ai/veo3.1/fast/image-to-video`, `fal-ai/veo3.1/fast/first-last-frame-to-video`.
+Controls: aspect 16:9 / 1:1 / 9:16 · duration 4s / 6s / 8s · 720p / 1080p ·
+Generate Audio switch · negative prompt.
+
+| Test | Prompt | Result | Credits |
+|---|---|---|---|
+| T1 | same scene, **named** "Cristiano Ronaldo and Lionel Messi" | **refused** — `ValidationError: Unprocessable Entity` | 200 charged, **refunded** |
+| T2 | identical scene, **"two young men in football kits"** | **worked** — 4 s, 720x1280 | 200 |
+
+**Naming a real celebrity is refused.** The block is on the name, not the scene: T2
+changed nothing but the two names and went straight through.
+
+**Failed generations are refunded.** 8,689 → 8,489 → 8,689 → 8,489. Testing prompts
+that get rejected costs nothing, so there is no reason to guess cautiously.
+
+**T2 quality:** the set is right first time — parking garage, fluorescent strip
+lights, two chairs, blue rope tied to the chair legs, both men laughing, correct
+symmetrical wide framing. This is real generated motion, not a still with a zoom.
+
+Prompt lessons from T2:
+- "football kits" gave American football shoulder pads. Say **soccer jersey**.
+- Two people described once came out as near-twins. **Describe each person separately**
+  or the model reuses one face.
+
+Still open: `veo3.1/fast/image-to-video` (W7, never run) — feeding a photo instead of
+a name. That is the likely method behind the reference video and the next test.
+
+Files: `tests/generation/video/celeb-test/control-no-names.mp4` + extracted frames.
