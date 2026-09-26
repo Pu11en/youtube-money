@@ -41,10 +41,15 @@ Every run also saves `data/digest/digest-<date>.md` and `raw-<date>.json`.
   quota and not obvious until you hit it. This is why the default source is
   YouTube's own trending charts (`videos.list chart=mostPopular`), which cost
   1 unit each and no search calls.
-- **12 regions beat 1.** Measured the same minute: US alone saw 502 videos and 22
-  finds; twelve English charts saw 2,312 and 93. Cost of the difference is 144
-  units of 10,000. The best find that day, a 40-day-old channel at 17.2M views,
-  was invisible to the US chart.
+- **More regions beat one region.** Measured the same minute on 2026-09-26: US
+  alone saw 502 videos and 22 finds; every English chart worldwide saw 2,312 and
+  93; US + Europe, which is what Drew chose, sees ~1,350 and ~60. Each extra chart
+  costs 1 quota unit of 10,000. The best find that day, a 40-day-old channel at
+  17.2M views, was invisible to the US chart.
+
+  Current list: US, GB, IE, DE, FR, ES, IT, NL, SE, NO, DK, FI, PL, BE, AT, CH.
+  Non-English charts stay in because an English video that charts in Sweden often
+  never charts in the US, and the English filter drops the local-language rest.
 
 ## Why the sort does not matter
 
