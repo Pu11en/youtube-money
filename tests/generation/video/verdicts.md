@@ -155,7 +155,29 @@ a name. That is the likely method behind the reference video and the next test.
 
 Files: `tests/generation/video/celeb-test/control-no-names.mp4` + extracted frames.
 
-### Image-to-video is reachable but not yet drivable (2026-09-26)
+### SETTLED: Blotato blocks real celebrities by name and by photo (2026-09-26)
+
+The picker is drivable after all - the earlier "no file input" reading was wrong,
+caused by calling opencli with `--session` instead of the positional form `web.py`
+uses. Clicking the Upload tab does mount an `input[type=file]`. `web_video.py` now
+does the whole path end to end.
+
+With that fixed, the question got a clean answer. Two `veo3.1/fast/image-to-video`
+runs back to back, same prompt shape, same 4s / 9:16 / 720p, only the face changed:
+
+| Run | Reference image | Result | Credits |
+|---|---|---|---|
+| I1 | Wikimedia photo of Lamine Yamal (CC BY 4.0) | **refused** | 200 charged, **refunded** |
+| I2 | a frame from our own T2 clip (invented faces) | **worked**, clip saved | 200, **held** |
+
+So the block is on the person, not the route, not the prompt and not the licence of
+the photo. Real celebrities cannot be generated on Blotato by any path we have:
+typing the name fails (T1, T3) and feeding the face fails (I1).
+
+Anything that needs a recognisable real person is off the table here. Invented or
+described characters work on both routes.
+
+### Earlier note, now superseded: picker looked undrivable
 
 `fal-ai/veo3.1/fast/image-to-video` selects fine and prices at 300 credits for 6 s.
 Attaching the reference image is the blocker:
