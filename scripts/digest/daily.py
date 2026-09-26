@@ -203,20 +203,36 @@ def render(picked, scanned, passed):
 
 
 def post(text):
-    """Angle-bracketed URLs above keep Discord from expanding ten previews."""
-    base, secret, thread = (env("CCDB_API_URL"), env("CCDB_API_SECRET"),
-                            env("DISCORD_THREAD_ID"))
-    if not (base and secret and thread):
-        print("\n[not posted: CCDB_API_URL, CCDB_API_SECRET or DISCORD_THREAD_ID missing]")
+    """Send to the Discord webhook in .env, split to stay under Discord's 2000 chars.
+
+    flags=4 is SUPPRESS_EMBEDS: with the angle brackets it guarantees no link
+    previews, so ten finds stay ten lines instead of ten video cards.
+    """
+    hook = env("DISCORD_WEBHOOK_URL")
+    if not hook:
+        print("[not posted: DISCORD_WEBHOOK_URL missing from .env]")
         return
-    body = json.dumps({"text": text, "from_thread": thread,
-                       "mode": "queue", "hop": 0}).encode()
-    req = urllib.request.Request(
-        "%s/api/threads/%s/message" % (base, thread), data=body,
-        headers={"Authorization": "Bearer " + secret,
-                 "Content-Type": "application/json"})
-    with urllib.request.urlopen(req) as r:
-        print("\n[posted]", r.status)
+
+    para = "\n\n"
+    chunks, current = [], ""
+    for block in text.split(para):
+        if len(current) + len(block) + 2 > 1900:
+            chunks.append(current.rstrip())
+            current = ""
+        current += block + para
+    if current.strip():
+        chunks.append(current.rstrip())
+
+    for n, chunk in enumerate(chunks, 1):
+        body = json.dumps({"content": chunk, "flags": 4}).encode()
+        req = urllib.request.Request(
+            hook, data=body,
+            headers={"Content-Type": "application/json",
+                     # Discord's edge answers 403 to Python's default User-Agent.
+                     "User-Agent": "youtube-money-digest/1.0"})
+        with urllib.request.urlopen(req) as r:
+            print("[posted %d/%d] HTTP %s" % (n, len(chunks), r.status))
+        time.sleep(1)
 
 
 if __name__ == "__main__":
