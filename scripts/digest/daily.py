@@ -24,6 +24,7 @@ import datetime
 import json
 import os
 import re
+import sys
 import time
 import urllib.error
 import urllib.parse
@@ -243,6 +244,10 @@ if __name__ == "__main__":
     args = ap.parse_args()
     if not KEY:
         raise SystemExit("No YOUTUBE_API_KEY in .env or environment.")
+
+    # Under Task Scheduler stdout is a log file in cp1252, and one emoji in one
+    # video title is enough to kill the run before it posts anything.
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
     found = from_trending()
     if args.wide:
