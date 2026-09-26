@@ -90,6 +90,9 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
   session builds or improves a skill, and the build order.
 - `docs/video-flow.md` — one example recipe for a video (15 steps). Reference,
   not the rulebook.
+- `docs/video-prompt-rules.md` — **read before writing any video prompt.** Negative
+  prompts go in the negative box as nouns, never as "no X" in the positive prompt;
+  camera first; positions not verbs; what causes the melt and how deep chaining can go.
 - `docs/generation-types.md` — the 7 image/video generation types, what the
   master prompt teaches about prompting, and the test plan.
 - `docs/diagrams/phases/` — archify maps: overview + one per phase (JSON, HTML, PNG).

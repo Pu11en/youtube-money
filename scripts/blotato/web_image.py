@@ -42,8 +42,16 @@ JS_PICKER_COUNT = "(function(){var d=document.querySelector('[role=dialog]');ret
 
 
 def ev(js: str) -> str:
+    """Return the JS value, minus opencli's own chatter.
+
+    The CLI prints an "Update available / npm install" banner on its own lines, so
+    taking the last line silently returned the banner instead of the result.
+    """
     out = oc(["eval", js], timeout=120).strip()
-    return out.splitlines()[-1] if out else ""
+    noise = ("Update available", "npm install", "[exit")
+    lines = [l for l in out.splitlines() if l.strip()
+             and not any(n in l for n in noise)]
+    return lines[-1] if lines else ""
 
 
 def open_image_generate(editor_id: str) -> None:
