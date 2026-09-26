@@ -267,18 +267,47 @@ def pick(rows, seen):
     return out
 
 
+INDEX_PATH = os.path.join(ROOT, "data", "digest", "index.json")
+
+
+def digest_name():
+    """Short handle for today's digest, e.g. D0926. Items are D0926-1 .. D0926-10."""
+    return NOW.astimezone().strftime("D%m%d")
+
+
+def save_index(picked):
+    """One rolling file keyed by item id, so a later session can look up 'D0926-3'
+    without knowing which day's file to open or what the numbers meant."""
+    index = {}
+    if os.path.exists(INDEX_PATH):
+        with open(INDEX_PATH, encoding="utf-8") as f:
+            index = json.load(f)
+    name = digest_name()
+    for n, r in enumerate(picked, 1):
+        entry = dict(r)
+        entry["digest"] = name
+        entry["posted"] = NOW.astimezone().strftime("%Y-%m-%d %H:%M %Z")
+        index["%s-%d" % (name, n)] = entry
+    os.makedirs(os.path.dirname(INDEX_PATH), exist_ok=True)
+    with open(INDEX_PATH, "w", encoding="utf-8") as f:
+        json.dump(index, f, indent=1)
+
+
 def render(picked, scanned, passed):
     local = NOW.astimezone()
-    lines = ["**YouTube early signals - %s**" % local.strftime("%a %b %d"),
+    name = digest_name()
+    lines = ["**YouTube early signals - %s - %s**"
+             % (name, local.strftime("%a %b %d")),
              "Blew up in the last 2 days from a channel with no audience yet.",
              "Scanned %d videos, %d cleared the bar, top %d by how far each beat "
-             "its own channel." % (scanned, passed, len(picked)), ""]
+             "its own channel." % (scanned, passed, len(picked)),
+             "Call an item out by its code, e.g. `%s-3`." % name, ""]
     if not picked:
         lines.append("Nothing cleared the bar today.")
     for n, r in enumerate(picked, 1):
         young = (" - channel only %dd old" % r["channel_age_days"]
                  if r["channel_age_days"] < NEW_CHANNEL_DAYS else "")
-        lines += ["**%d. %s**" % (n, r["title"][:80]),
+        lines += ["**`%s-%d`  %s**" % (name, n, r["title"][:80]),
                   "%s - %s subs%s" % (r["channel"], format(r["subs"], ","), young),
                   "%s views in %dh - **%sx its subscriber count**"
                   % (format(r["views"], ","), int(r["age_h"]), r["ratio"]),
@@ -354,5 +383,6 @@ if __name__ == "__main__":
     if args.post:
         post(text)
         # Only what actually went out is remembered, so a failed post does not
-        # silently burn ten finds.
+        # silently burn ten finds or hand out codes for items nobody saw.
         save_seen(seen, picked)
+        save_index(picked)

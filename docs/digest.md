@@ -32,8 +32,21 @@ idea that works from zero can be copied.
 | Check the schedule | `schtasks /Query /TN youtube-digest-noon` |
 | Turn it off | `schtasks /Delete /TN youtube-digest-noon /F` |
 | Read the last run | `data/digest/run.log` |
+| Look up an item | `python scripts/digest/lookup.py D0926-3` |
+| Look up a whole digest | `python scripts/digest/lookup.py D0926` |
 
 Every run also saves `data/digest/digest-<date>.md` and `raw-<date>.json`.
+
+## Item codes
+
+Each digest is named after its date - `D0926` - and its items are `D0926-1`
+through `D0926-10`, printed next to each title. Say a code and step two knows
+exactly which video is meant, with no re-finding and no ambiguity about "the third
+one."
+
+Codes are written to `data/digest/index.json` only when a digest actually posts,
+so a code never refers to something nobody saw. `lookup.py` resolves one, and
+`--json` gives a later session the whole row to work from.
 
 ## The two limits that shaped it
 
@@ -70,5 +83,6 @@ the search budget.
 
 - `scripts/digest/daily.py` — the digest
 - `scripts/digest/run-noon.cmd` — what Task Scheduler runs
+- `scripts/digest/lookup.py` — resolve an item code like `D0926-3`
 - `scripts/digest/probe.py` — the exploration that produced the examples Drew
   picked the thresholds from
