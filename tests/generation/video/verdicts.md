@@ -128,8 +128,15 @@ Generate Audio switch · negative prompt.
 | T1 | same scene, **named** "Cristiano Ronaldo and Lionel Messi" | **refused** — `ValidationError: Unprocessable Entity` | 200 charged, **refunded** |
 | T2 | identical scene, **"two young men in football kits"** | **worked** — 4 s, 720x1280 | 200 |
 
-**Naming a real celebrity is refused.** The block is on the name, not the scene: T2
-changed nothing but the two names and went straight through.
+| T3 | same scene, **named** "Patrick Mahomes and Travis Kelce" | **refused**, twice | 400 charged, **all 400 refunded** |
+
+**Naming a real person is refused, whatever the sport.** The block is on the name,
+not the scene or the niche: T2 changed nothing but the two names and went straight
+through, and T3 swapped soccer names for NFL names and hit the same wall. Tested
+across two sports so this is a rule, not a one-off.
+
+Credits are the reliable signal here, not the page: charged then fully refunded
+means the run failed. The browser read-back is flaky over long waits.
 
 **Failed generations are refunded.** 8,689 → 8,489 → 8,689 → 8,489. Testing prompts
 that get rejected costs nothing, so there is no reason to guess cautiously.
