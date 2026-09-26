@@ -8,3 +8,15 @@ research/private-transcripts/
 __pycache__/
 config/machine.json
 data/digest/
+
+# Video work: keep the finished cut and the locked set still, drop the raw takes
+# and extracted frames - they are large, regenerable, and only useful mid-build.
+videos/**/*.jpg
+videos/**/b*.mp4
+videos/**/s[0-9].mp4
+videos/**/beat*.mp4
+videos/**/react.mp4
+videos/**/cross.mp4
+videos/**/press-rise.mp4
+videos/**/list.txt
+videos/**/l.txt
