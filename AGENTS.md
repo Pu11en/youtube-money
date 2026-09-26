@@ -66,6 +66,12 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
   go, **and** every input he named is actually in hand. Learned the hard way on
   2026-09-19 — a ceiling was read as a trigger and 100 credits ran on invented
   prompts (`tests/generation/images/logo-style-verdicts.md`).
+- **State the finished thing before starting, then build that.** One short paragraph -
+  what David will be holding at the end, its length, its beats, its cost - then one
+  question, then work. A test that proves a capability is a step, never the deliverable.
+  Learned 2026-09-26: an ask for an 11-second three-beat video was answered with a
+  4-second test clip of two men sitting still, and hours went by before anyone noticed
+  the gap. The recipe is `.agents/skills/clone-video/SKILL.md`.
 - **Never substitute your own taste for his reference.** If the style reference
   hasn't arrived, stop and ask. A reference is the starting point of a picture;
   inventing the scene yourself is the failure the prompt-kit rule below exists
@@ -92,6 +98,9 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
 - `.agents/skills/blotato-image/` — the image skill (new / from / upload, dry-run,
   credit meter). `.agents/skills/blotato-web/` — the OpenCLI website route
   (unverified). Code in `scripts/blotato/`, tests in `tests/generation/images/`.
+- `.agents/skills/clone-video/` — **one link in, one finished video out.** The contract,
+  the beat-sheet method, the character-locking trick, and a done-checklist that has to be
+  reported line by line. Read it before cloning anything.
 - `.agents/skills/visual-picker/` — narration → 3 keyword sets → 20 reference pictures in the
   thread (Pinterest via OpenCLI, Wikimedia, Openverse) → Drew picks one per scene. Free, links only.
   Script: `scripts/refs/search.py`.
