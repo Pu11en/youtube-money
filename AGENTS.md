@@ -47,6 +47,10 @@ in `.agents/skills/` (Claude sees them through `.claude/skills`, a symlink).
   (`SUMMARY.md` first), never from invented prompts.
 
 ## Hard rules
+- **David only sees Discord.** He cannot open a file, a folder, or the browser on this
+  machine, and he cannot click anything in it. Anything he is meant to look at goes
+  through `python scripts/send.py "what this is" <files...>` (webhook in `.env`), and no
+  turn ever ends with a step he has to perform on the machine.
 - **Paid services: Blotato only.** Never Kie.ai, HeyGen, Apify, OpenAI/Perplexity
   API keys, Bright Data or any other outside generator — take template prompt
   text only. Blotato's API/MCP does templates; for a specific video model
